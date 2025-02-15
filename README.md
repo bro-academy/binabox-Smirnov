@@ -1,5 +1,5 @@
 # Binabox - homework project
 
-Student: 
+Student: Ivan Smirnov
 
-Mentor: 
+Mentor:Yurii Kapustin
