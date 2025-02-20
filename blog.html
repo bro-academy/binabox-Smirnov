@@ -10,48 +10,48 @@
   </head>
 
   <body>
-    <header>
-      <nav>
-        <a href="home"
+    <header class="header">
+      <nav class="nav">
+        <a href="home" class="logo"
           ><img src="logo.svg" alt="logo" /><strong>BINABOX</strong></a
         >
-        <ul>
-          <li><a href="url">Home</a></li>
-          <li><a href="url">Blog</a></li>
-          <li><a href="url">Catalog</a></li>
-          <li><a href="url">Contact Us</a></li>
+        <ul nav__list>
+          <li class="nav__list-item"><a href="url">Home</a></li>
+          <li class="nav__list-item"><a href="url">Blog</a></li>
+          <li class="nav__list-item"><a href="url">Catalog</a></li>
+          <li class="nav__list-item"><a href="url">Contact Us</a></li>
         </ul>
       </nav>
       <hr />
-      <a href="url">Discord</a>
-      <a href="url">Connect</a>
+      <a href="url" target="_blank" class="button">Discord</a>
+      <a href="url" target="_blank" class="button">Connect</a>
     </header>
     <main>
-      <section>
+      <section class="ourblog">
         <img src="lines.svg" alt="bkdimage" />
-        <h1>Our Blog</h1>
-        <nav>
+        <h1 class="ourblog__title">Our Blog</h1>
+        <nav class="ourblog__nav">
           <a href="url">Home</a>
           <a href="url">Our blog</a>
           <a href="url"><span>The Basilisks NFT</span></a>
         </nav>
       </section>
 
-      <section>
-        <figure>
-          <img src="image.svg" alt="image" />
-          <figcaption>Photo caption</figcaption>
+      <section class="story">
+        <figure class="story__fig">
+          <img src="image.svg" alt="image" class="story__fig__img"/>
+          <figcaption class="story__fig__cap">Photo caption</figcaption>
         </figure>
-        <h2>The Basilisks NFT</h2>
-        <span>Gaming</span>
-        <img src="icon.png" alt="icon" />
-        <span>Tony Nguyen</span>
-        <img src="icon.png" alt="icon" />
-        <time datetime="2022-06-20">20 Jun 2022</time>
-        <p>
-          The Basilisks that <span>players</span> collect are represented with
+        <h2 class="story__title">The Basilisks NFT</h2>
+        <span class="story__tag button">Gaming</span>
+        <img src="icon.png" alt="icon" class="story__img"/>
+        <span class="story__name">Tony Nguyen</span>
+        <img src="icon.png" alt="icon" class="story__icon"/>
+        <time datetime="2022-06-20" class="story__date">20 Jun 2022</time>
+        <p class="story__desc">
+          The Basilisks that <span class="story__desc-item">players</span> collect are represented with
           NFTs on Ethereum’s blockchain with real-world value. Players use the
-          <span>Basilisks they have</span> gathered to battle other players to
+          <span class="story__desc-item">Basilisks they have</span> gathered to battle other players to
           win ether (ETH). In Balthazar Dragons, players are immersed in a 3D
           open world to explore and capture dragon-like beasts called Basilisks.
           Balthazar Dragons is an upcoming fantasy role-playing game developed
@@ -59,8 +59,8 @@
           (DAO) called the Balthazar DAO.
         </p>
 
-        <ul>
-          <li>
+        <ul class="story__list">
+          <li class="story__list-item">
             <p>
               The Basilisks that players collect are represented with NFTs on
               Ethereum’s blockchain with real-world value. Players use the
@@ -68,7 +68,7 @@
               (ETH).
             </p>
           </li>
-          <li>
+          <li class="story__list-item">
             <p>
               In Balthazar Dragons, players are immersed in a 3D open world to
               explore and capture dragon-like beasts called Basilisks. Balthazar
@@ -80,39 +80,39 @@
           </li>
         </ul>
 
-        <ul>
-          <li><img src="logo.png" alt="logo" />List name 1</li>
-          <li><img src="logo.png" alt="logo" />List name 2</li>
-          <li><img src="logo.png" alt="logo" />List name 3</li>
-          <li><img src="logo.png" alt="logo" />List name 4</li>
+        <ul class="story__nlist">
+          <li class="story__nlist-item"><img src="logo.png" alt="logo" />List name 1</li>
+          <li class="story__nlist-item"><img src="logo.png" alt="logo" />List name 2</li>
+          <li class="story__nlist-item"><img src="logo.png" alt="logo" />List name 3</li>
+          <li class="story__nlist-item"><img src="logo.png" alt="logo" />List name 4</li>
         </ul>
-        <section>
-          <blockquote>
+        <section class="quote">
+          <blockquote class="quote__box">
             “The first huge metaverse arena to arrange live sports, hang out and
             even make bets and wagers”
           </blockquote>
-          <img src="icon.png" alt="icon" />
-          <span>8.5/10</span>
-          <h4>Markout Corporation</h4>
+          <img src="icon.png" alt="icon" class="quote__img"/>
+          <span class="quote__rating">8.5/10</span>
+          <h4 class="quote__title">Markout Corporation</h4>
         </section>
 
-        <ul>
-          <li>
-            <figure>
-              <img src="image.svg" alt="image" />
-              <figcaption>Photo caption</figcaption>
+        <ul class="story__ilist">
+          <li class="story__ilist-item">
+            <figure class="story-fig">
+              <img src="image.svg" alt="image" class="story-fig__img"/>
+              <figcaption class="story-fig__cap">Photo caption</figcaption>
             </figure>
           </li>
-          <li>
-            <figure>
-              <img src="image.svg" alt="image" />
-              <figcaption>Photo caption</figcaption>
+          <li class="story__ilist-item">
+            <figure class="story-fig">
+              <img src="image.svg" alt="image" class="story-fig__img"/>
+              <figcaption class="story-fig__cap">Photo caption</figcaption>
             </figure>
           </li>
         </ul>
 
-        <h3>NFTs are digital assets that represent real-world objects</h3>
-        <p>
+        <h3 class="story__subtitle">NFTs are digital assets that represent real-world objects</h3>
+        <p class="story__desc">
           Setting up your avatar and personalizing your nickname on Binance is
           quick and easy. Users can go to binance.com under Dashboard > Settings
           > My Profile > Avatar and Nickname. For those of you who own NFT
@@ -120,7 +120,7 @@
           your avatar to personalize your profile. For users who do not own any
           NFT avatars, check out the NFT avatar collections page to get started.
         </p>
-        <p>
+        <p class="story__desc">
           Alternatively, if you’re on nft.binance.com, go to User Center >
           Settings > Basic > Set Avatar and Nickname, and you’ll be redirected
           to the main site. Binance NFT Creators have the option of setting
@@ -129,98 +129,101 @@
           ecosystem.
         </p>
 
-        <h3>NFT Avatar Generators</h3>
-        <p>
+        <h3 class="story__subtitle">NFT Avatar Generators</h3>
+        <p class="story__desc">
           You can find a range of NFT marketplaces where you can buy existing
           NFTs or list your own NFTs for sale
         </p>
 
-        <h4>Tags:</h4>
-        <ul>
-          <li>NFT</li>
-          <li>ICO</li>
-          <li>Crypto</li>
+        <h4 class="story__smltitle">Tags:</h4>
+        <ul class="story__taglist">
+          <li class="story__taglist-item">NFT</li>
+          <li class="story__taglist-item">ICO</li>
+          <li class="story__taglist-item">Crypto</li>
         </ul>
 
-        <h4>Share:</h4>
-        <ul>
-          <li>
+        <h4 class="story__smltitle">Share:</h4>
+        <ul class="story__taglist">
+          <li class="story__taglist-item">
             <a href="url" target="_blank"><img src="icon.png" alt="icon" /></a>
           </li>
-          <li>
+          <li class="story__taglist-item">
             <a href="url" target="_blank"><img src="icon.png" alt="icon" /></a>
           </li>
-          <li>
+          <li class="story__taglist-item">
             <a href="url" target="_blank"><img src="icon.png" alt="icon" /></a>
           </li>
         </ul>
-        <aside>
-          <h3>Categories</h3>
-          <ul>
-            <li><a href="url">Our blog (12)</a></li>
-            <li><a href="url">Metaverse (24)</a></li>
-            <li><a href="url">Gaming (24)</a></li>
-            <li><a href="url">Art (24)</a></li>
-            <li><a href="url">Robot (24)</a></li>
-            <li><a href="url">Launchpad (24)</a></li>
-            <li><a href="url">Crypto (430)</a></li>
+        <aside class="story-side">
+          <h3 class="story-side__title">Categories</h3>
+          <ul class="story-side__list">
+            <li class="story-side__list-item"><a href="url">Our blog (12)</a></li>
+            <li class="story-side__list-item"><a href="url">Metaverse (24)</a></li>
+            <li class="story-side__list-item"><a href="url">Gaming (24)</a></li>
+            <li class="story-side__list-item"><a href="url">Art (24)</a></li>
+            <li class="story-side__list-item"><a href="url">Robot (24)</a></li>
+            <li class="story-side__list-item"><a href="url">Launchpad (24)</a></li>
+            <li class="story-side__list-item"><a href="url">Crypto (430)</a></li>
           </ul>
         </aside>
 
-        <aside>
-          <h3>Tag</h3>
-          <ul>
-            <li>NFT</li>
-            <li>ICO</li>
-            <li>Robot</li>
-            <li>Crypto</li>
-            <li>Launchpad</li>
-            <li>Metaverse</li>
+        <aside class="story-side">
+          <h3 class="story-side__title">Tag</h3>
+          <ul class="story-side__taglist">
+            <li class="story-side__taglist-item">NFT</li>
+            <li class="story-side__taglist-item">ICO</li>
+            <li class="story-side__taglist-item">Robot</li>
+            <li class="story-side__taglist-item">Crypto</li>
+            <li class="story-side__taglist-item">Launchpad</li>
+            <li class="story-side__taglist-item">Metaverse</li>
           </ul>
         </aside>
       </section>
     </main>
 
-    <footer>
-      <nav>
-        <a href="home"
+    <footer class="footer">
+      <nav class="nav-foot">
+        <a href="home" class="logo"
           ><img src="logo.svg" alt="logo" /><strong>BINABOX</strong></a
         >
-        <p>We are the best way to check rarity of NFT collection</p>
-        <h4><a href="url">Subscribe</a></h4>
-        <ul>
-          <li><a href="url">Home</a></li>
-          <li><a href="url">Blog</a></li>
-          <li><a href="url">Catalog</a></li>
-          <li><a href="url">Contact Us</a></li>
+        <p class="nav-foot__txt">We are the best way to check rarity of NFT collection</p>
+        <h4 class="nav-foot__title"><a href="url">Subscribe</a></h4>
+        <ul class="nav-foot__list">
+          <li class="nav-foot__list-item"><a href="url">Home</a></li>
+          <li class="nav-foot__list-item"><a href="url">Blog</a></li>
+          <li class="nav-foot__list-item"><a href="url">Catalog</a></li>
+          <li class="nav-foot__list-item"><a href="url">Contact Us</a></li>
         </ul>
-        <h4><a href="url">Company</a></h4>
-        <ul>
-          <li><a href="url">Terms Conditions</a></li>
-          <li><a href="url">Privacy Policy</a></li>
-          <li><a href="url">Whitepaper</a></li>
-          <li><a href="url">Help Center</a></li>
+        <h4 class="nav-foot__title"><a href="url">Company</a></h4>
+        <ul class="nav-foot__list">
+          <li class="nav-foot__list-item"><a href="url">Terms Conditions</a></li>
+          <li class="nav-foot__list-item"><a href="url">Privacy Policy</a></li>
+          <li class="nav-foot__list-item"><a href="url">Whitepaper</a></li>
+          <li class="nav-foot__list-item"><a href="url">Help Center</a></li>
         </ul>
       </nav>
       <hr />
-      <p>BINABOX 2022 - All rights reserved</p>
-      <ul>
-        <li>
+      <p class="footer__txt">BINABOX 2022 - All rights reserved</p>
+      <ul class="footer__list">
+        <li class="footer__list-item">
           <a href="url" target="_blank"><img src="icon.svg" alt="icon" /></a>
         </li>
-        <li>
+        <li class="footer__list-item">
           <a href="url" target="_blank"><img src="icon.svg" alt="icon" /></a>
         </li>
-        <li>
+        <li class="footer__list-item">
           <a href="url" target="_blank"><img src="icon.svg" alt="icon" /></a>
         </li>
-        <li>
+        <li class="footer__list-item">
           <a href="url" target="_blank"><img src="icon.svg" alt="icon" /></a>
         </li>
-        <li>
+        <li class="footer__list-item">
           <a href="url" target="_blank"><img src="icon.svg" alt="icon" /></a>
         </li>
-        <li>
+        <li class="footer__list-item">
+          <a href="url" target="_blank"><img src="icon.svg" alt="icon" /></a>
+        </li>
+        <li class="footer__list-item">
           <a href="url" target="_blank"><img src="icon.svg" alt="icon" /></a>
         </li>
       </ul>
