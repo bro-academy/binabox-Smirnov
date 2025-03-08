@@ -1,98 +1,130 @@
-* { margin: 0; padding: 0; }
+* {
+    margin: 0;
+    padding: 0;
+}
 
 
-.header{
-    height:80px;
+html {
+    font-size: 16px;
+}
 
+body {
+    font-family: "Bakbak One", sans-serif;
+}
+
+
+
+.header {
     background: #0D0D15;
-    display: flex;
-    justify-content: space-between;
-    gap: 2rem;
-    align-items: center;
+
 }
 
 
-.nav{
-    display: flex;
-}
+
 
 
 
 .nav__list {
     list-style: none;
     font-family: "Poppins", sans-serif;
-    font-size: 0.8rem;
-    font-weight: bolder;
-    display: flex;
-    gap: 1.5rem;
-    text-decoration: none;
-    color: #FFFFFF;     
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 24px;
 
-    margin-right: 30em;
-    margin-left: 20em;
+
 
 }
+
+.nav__link {
+    text-decoration: none;
+    /* Links do not nasledovat*/
+    color: #FFFFFF;
+    /* Links do not nasledovat*/
+    text-align: center;
+}
+
+.nav__link--active {
+    border-bottom-style: solid;
+    border-color: #0265DC;
+    border-width: 2px;
+}
+
 
 .button {
     text-align: center;
     background-color: rgba(0, 0, 0, 0);
     color: #FFFFFF;
     border: 2px solid #D0D7FB2B;
-
+    font-weight: 600;
     font-family: "Poppins", sans-serif;
-    font-size: 0.8rem;
+    font-size: 1.125rem;
     text-decoration: none;
+    line-height: 28px;
 
-
-    padding: 6px 20px;
-
- 
 }
 
 .button--glow {
     background-color: #0265DC;
-    margin-right: 10px;
 }
+
+
+
+
+
+
+
+
+
 
 
 .banner {
     background-image: radial-gradient(circle, #0265DC, #0D0D15);
     background-position: top left;
-    
+
 }
 
 .banner__title {
-    font-size: 2rem;
+    font-size: 1.75rem;
     color: #FFFFFF;
-    font-family: "Bakbak One", sans-serif;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 36px;
 
 }
 
-.banner__title--highlight{
-    color: #0265DC;    
+.banner__title--highlight {
+    color: #0265DC;
 }
 
-.banner__subtitle{
+.banner__subtitle {
     color: #FFFFFF;
-    font-size: 1rem;
+    font-weight: 500;
+    font-size: 1.25rem;
     font-family: "Poppins", sans-serif;
-    
+    line-height: 28px;
+    letter-spacing: 0;
+
 }
 
 .banner__stat {
     color: #FFFFFF;
-    font-size: 2rem;
-
 }
 
 
 .banner__stat-txt {
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0;
+
 }
 
 .banner__stat-num {
-    font-family: "Bakbak One", sans-serif;
+    font-size: 1.75rem;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: -0.5px;
 }
 
 
@@ -105,13 +137,16 @@
 
 .catalog {
     background-color: #0D0D15;
-    
+
 
 }
 
 .catalog__title {
     color: #FFFFFF;
-    font-size: 1rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0;
 }
 
 
@@ -119,43 +154,37 @@
 
 .catalog-card {
     background-color: #1D1C28;
-    justify-content: space-between;
-    line-height: 2em;
 }
 
 .catalog-card__txt {
-    font-family: "Bakbak One", sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
+    font-weight: 400;
+    line-height: 36px;
     color: #FFFFFF;
 }
 
 .catalog-card__title {
     font-family: "Poppins", sans-serif;
-    font-size: 0.9rem;
+    font-size: 1.25rem;
     color: #FFFFFF;
-    font-weight:400;
+    font-weight: 500;
+    line-height: 28px;
 }
 
 .catalog-card__tag {
-    text-align: center;
+    text-align: right;
     background-color: #ffffff;
     color: #0265DC;
-    border: 2px solid #D0D7FB2B;
-
     font-family: "Poppins", sans-serif;
-    font-size: 0.8rem;
-    font-weight: bold;
+    font-size: 0.875rem;
+    font-weight: 600;
     text-decoration: none;
-
-
-    padding: 3px 10px;
+    line-height: 20px;
 }
 
 .catalog-card__tag--highlight {
     background-color: #EA3829;
     color: #FFFFFF;
-    font-family: "Poppins", sans-serif;
-
 }
 
 
@@ -167,7 +196,7 @@
 
 .blog {
     background-color: #0D0D15;
-    
+
 }
 
 
@@ -175,43 +204,55 @@
 .blog-card {
     background-color: #1D1C28;
     color: #FFFFFF;
-    line-height: 1.5em;
 }
 
 .blog-card__title {
     font-size: 1.5rem;
-    font-family: "Bakbak One", sans-serif;
-    font-weight: lighter;
+    font-weight: 400;
+    line-height: 32px;
 }
 
 .blog-card__subtext {
     font-family: "Poppins", sans-serif;
-    font-size: 0.9rem;
-    font-weight: normal;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 24px;
 
 }
 
-.blog-card__name, .blog-card__date {
+.blog-card__name,
+.blog-card__date {
     font-family: "Poppins", sans-serif;
-    font-size: 0.8rem;
-    line-height: 2em;
-}   
+    font-size: 0.875rem;
+    line-height: 20px;
+    font-weight: 600;
+}
 
 .blog-card__tag {
-    text-align: center;
+    text-align: right;
     background-color: #ffffff;
     color: #0265DC;
-    border: 2px solid #D0D7FB2B;
-    font-weight: bold;
-
+    font-weight: 600;
     font-family: "Poppins", sans-serif;
-    font-size: 0.8rem;
+    font-size: 0.875rem;
+    line-height: 20px;
     text-decoration: none;
-
-
-    padding: 3px 10px;
 }
 
+.blog-card__link {
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.blog__link,
+.info__link {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.125rem;
+    line-height: 28px;
+    font-weight: 600;
+}
 
 
 
@@ -222,39 +263,45 @@
     background-color: #0D0D15;
 }
 
-.blog__title, .info__title, .team__title, .faqs__title {
-    font-size: 1.5rem;
-    font-family: "Bakbak One", sans-serif;
+.blog__title,
+.info__title,
+.team__title,
+.faqs__title {
+    font-size: 1.75rem;
     color: #FFFFFF;
-    font-weight: lighter;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: center;
 }
 
 .info__desc {
     color: #FFFFFF;
     font-family: "Poppins", sans-serif;
-    font-size: 0.8rem;
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: center;
 }
 
 .info__list {
     background-color: #1D1C28;
     list-style-type: decimal-leading-zero;
     color: #FFFFFF;
-    display: flex;
-    line-height: 3em;
 }
 
 .info__item-title {
-    font-family: "Bakbak One", sans-serif;
-    font-weight: lighter;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 32px;
 
-    
 }
 
 .info__item-desc {
     color: #FFFFFF;
     font-family: "Poppins", sans-serif;
-    line-height: normal;
-    font-size: 0.7rem;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 28px;
 }
 
 
@@ -272,26 +319,26 @@
 .team-card {
     background-color: #1D1C28;
     color: #FFFFFF;
-    line-height: 1.5em;
-
 }
 
 .team-card__title {
-    font-family: "Bakbak One", sans-serif;
-    font-weight: lighter;
-    font-size: 1.1rem;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 32px;
+    text-align: center;
 }
 
 
 
 .team-card__subtext {
     font-family: "Poppins", sans-serif;
-    font-size: 0.9rem;
-    font-weight: normal;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
 }
 
 .team-card__list {
-    display: flex;
     list-style: none;
 }
 
@@ -310,20 +357,22 @@
 
 
 
-.faqs__details{
+.faqs__details {
     background-color: #1D1C28;
 }
 
 .faqs__details-question {
-    font-family: "Bakbak One", sans-serif;
-    font-weight: lighter;
-    font-size: 1.1rem;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 32px;
 
 }
 
-.faqs__details-answer{
+.faqs__details-answer {
     font-family: "Poppins", sans-serif;
-    font-size: 0.9rem;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 24px;
 }
 
 
@@ -334,46 +383,53 @@
     background-color: #1A1925;
 }
 
-.footer-nav {
-    
-}
+
 
 .logo__txt {
-    font-family: "Bakbak One", sans-serif;
     font-size: 2rem;
     font-weight: normal;
-    color:#0265DC;
+    color: #0265DC;
     text-align: left;
 }
 
 
 
-.footer-nav__txt, .footer__txt {
+.footer-nav__txt,
+.footer__txt {
     font-family: "Poppins", sans-serif;
     color: #FFFFFF;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 20px;
 }
 
 .footer-nav__list-title {
     color: #FFFFFF;
     font-family: "Poppins", sans-serif;
-    font-weight: normal;
-    text-align: right;
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 28px;
 }
 
 .footer-nav__list {
-    color: #FFFFFF;
-    font-family: "Poppins", sans-serif;
-    font-size: 0.7rem;
-    text-decoration: none;
-    text-align: right;
+
+    list-style: none;
 }
 
 
+.footer-nav__link {
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    font-size: 0.75rem;
+    font-weight: 600;
+    line-height: 16px;
+    text-align: center;
+    color: #FFFFFF;
+}
 
 
 
 .logo__txt--header {
-    font-family: "Bakbak One", sans-serif;
     font-size: 2rem;
     font-weight: normal;
     color: #FFFFFF;
