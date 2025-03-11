@@ -12,17 +12,9 @@ body {
     font-family: "Bakbak One", sans-serif;
 }
 
-
-
 .header {
     background: #0D0D15;
-
 }
-
-
-
-
-
 
 .nav__list {
     list-style: none;
@@ -30,9 +22,6 @@ body {
     font-size: 1rem;
     font-weight: 600;
     line-height: 24px;
-
-
-
 }
 
 .nav__link {
@@ -60,7 +49,6 @@ body {
     font-size: 1.125rem;
     text-decoration: none;
     line-height: 28px;
-
 }
 
 .button--glow {
@@ -80,16 +68,13 @@ body {
 .banner {
     background-image: radial-gradient(circle, #0265DC, #0D0D15);
     background-position: top left;
-
 }
 
 .banner__title {
     font-size: 1.75rem;
     color: #FFFFFF;
     font-weight: 400;
-    letter-spacing: 0;
     line-height: 36px;
-
 }
 
 .banner__title--highlight {
@@ -102,8 +87,6 @@ body {
     font-size: 1.25rem;
     font-family: "Poppins", sans-serif;
     line-height: 28px;
-    letter-spacing: 0;
-
 }
 
 .banner__stat {
@@ -116,8 +99,6 @@ body {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     line-height: 24px;
-    letter-spacing: 0;
-
 }
 
 .banner__stat-num {
@@ -137,8 +118,6 @@ body {
 
 .catalog {
     background-color: #0D0D15;
-
-
 }
 
 .catalog__title {
@@ -146,7 +125,6 @@ body {
     font-size: 1.5rem;
     font-weight: 400;
     line-height: 32px;
-    letter-spacing: 0;
 }
 
 
@@ -196,7 +174,6 @@ body {
 
 .blog {
     background-color: #0D0D15;
-
 }
 
 
@@ -217,7 +194,6 @@ body {
     font-size: 1rem;
     font-weight: 400;
     line-height: 24px;
-
 }
 
 .blog-card__name,
@@ -293,7 +269,6 @@ body {
     font-weight: 400;
     font-size: 1.5rem;
     line-height: 32px;
-
 }
 
 .info__item-desc {
@@ -412,7 +387,6 @@ body {
 }
 
 .footer-nav__list {
-
     list-style: none;
 }
 
@@ -433,4 +407,183 @@ body {
     font-size: 2rem;
     font-weight: normal;
     color: #FFFFFF;
+}
+
+
+
+/*Blog Page */
+
+
+
+.blogpage {
+    background-color: #1A1925;
+}
+
+.blogpage__title {
+    font-weight: 400;
+    font-size: 1.75rem;
+    line-height: 36px;
+    text-align: center;
+    color: #F8F7FF;
+}
+
+
+
+.blogpage__link {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 20px;
+    text-align: center;
+    color: #F8F7FF;
+    text-decoration: none;
+}
+
+.blogpage__link--target {
+    color: #E7EEF7A8;
+    text-decoration: none;
+}
+
+
+
+.story {
+    background-color: #0D0D15;
+}
+
+.story-fig__cap {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 24px;
+    color: #F8F7FF;
+}
+
+.story__title {
+    font-weight: 400;
+    font-size: 2.25rem;
+    line-height: 48px;
+    letter-spacing: -0.5px;
+    color: #F8F7FF;
+}
+
+.story__name, .story__date {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 20px;
+    color: #EFF5FAD1;
+}
+
+.story__desc {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 28px;
+    color: #F8F7FF;
+}
+
+.story__desc--mark {
+    font-weight: 600;
+    background-color: #0265DC;
+}
+
+.story__desc--accent {
+    color: #78BBFA;
+}
+
+
+.story__set {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 28px;
+    color: #F8F7FF;
+}
+
+.quote {
+    background-color: #002754;
+    color: #F8F7FF;
+}
+
+.quote-box {
+    font-weight: 400;
+    font-size: 1.75rem;
+    line-height: 36px;
+}
+
+.quote__rating {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 20px;
+    color: #EFF5FAD1;
+}
+
+.quote__title {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 20px;
+}
+
+
+.story__subtitle {
+    font-weight: 400;
+    font-size: 1.75rem;
+    line-height: 36px;
+    color: #F8F7FF;
+}
+
+.story__tag-title {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 24px;
+    color: #F8F7FF
+}
+
+
+.story__taglist-item {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 20px;
+    text-align: center;
+    color: #F8F7FF;
+}
+
+.story-sidebar {
+    background-color: #1D1C28;
+    color: #F8F7FF;
+}
+
+.story-sidebar__title {
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 32px;
+}
+
+.story-sidebar__list {
+    list-style: none;
+}
+
+.story-sidebar__link {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 20px;
+    text-decoration: none;
+    color: #F5F8FB
+}
+
+.story-sidebar__taglist {
+    list-style: none;
+}
+
+.story-sidebar__taglist-item {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 20px;
+    text-align: center;
 }
