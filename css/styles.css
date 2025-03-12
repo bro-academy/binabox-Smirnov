@@ -14,6 +14,12 @@ body {
 
 .header {
     background: #0D0D15;
+    padding: 16px;
+}
+
+.logo {
+    width: 188px;
+    height: 42px;
 }
 
 .nav__list {
@@ -30,6 +36,7 @@ body {
     color: #FFFFFF;
     /* Links do not nasledovat*/
     text-align: center;
+    padding: 8px 20px;
 }
 
 .nav__link--active {
@@ -49,25 +56,49 @@ body {
     font-size: 1.125rem;
     text-decoration: none;
     line-height: 28px;
+
+    padding: 10px 24px;
 }
 
 .button--glow {
     background-color: #0265DC;
+    border: none;
 }
 
 
+.button:hover {
+    background-color: #BFC5EE1F;
+}
+
+.button:focus {
+    background-color: #BFC5EE1F;
+    border: 4px solid #3892F3;
+}
+
+.button--glow:hover {
+    background-color: #3892F3;
+}
+
+.button--glow:focus {
+    background-color: #0265DC;
+    border: 4px solid #3892F3;
+}
 
 
+a:not(.button):hover {
+    color: #3892F3;
+}
 
-
-
-
+a:not(.button):focus {
+    border: 4px solid #3892F3;
+}
 
 
 
 .banner {
     background-image: radial-gradient(circle, #0265DC, #0D0D15);
     background-position: top left;
+    padding: 32px 16px;
 }
 
 .banner__title {
@@ -75,6 +106,7 @@ body {
     color: #FFFFFF;
     font-weight: 400;
     line-height: 36px;
+    margin-bottom: 8px;
 }
 
 .banner__title--highlight {
@@ -87,11 +119,14 @@ body {
     font-size: 1.25rem;
     font-family: "Poppins", sans-serif;
     line-height: 28px;
+    margin-bottom: 32px;
 }
 
 .banner__stat {
     color: #FFFFFF;
+    margin-bottom: 32px;
 }
+
 
 
 .banner__stat-txt {
@@ -99,6 +134,7 @@ body {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     line-height: 24px;
+    margin-bottom: 4px;
 }
 
 .banner__stat-num {
@@ -108,9 +144,9 @@ body {
     letter-spacing: -0.5px;
 }
 
-
-
-
+.button:first-child {
+    margin-bottom: 16px;
+}
 
 
 
@@ -118,6 +154,11 @@ body {
 
 .catalog {
     background-color: #0D0D15;
+    padding: 32px 16px;
+}
+
+.catalog:nth-child(-n + 2) {
+    padding: 2px 0px 2px 0px;
 }
 
 .catalog__title {
@@ -125,6 +166,7 @@ body {
     font-size: 1.5rem;
     font-weight: 400;
     line-height: 32px;
+    margin-bottom: 34px;
 }
 
 
@@ -132,6 +174,11 @@ body {
 
 .catalog-card {
     background-color: #1D1C28;
+    padding: 16px;
+}
+
+.catalog-card__img {
+    margin-bottom: 16px;
 }
 
 .catalog-card__txt {
@@ -139,6 +186,8 @@ body {
     font-weight: 400;
     line-height: 36px;
     color: #FFFFFF;
+    margin-bottom: 8px;
+    margin-right: 56px;
 }
 
 .catalog-card__title {
@@ -147,6 +196,7 @@ body {
     color: #FFFFFF;
     font-weight: 500;
     line-height: 28px;
+    margin-right: 56px;
 }
 
 .catalog-card__tag {
@@ -158,6 +208,7 @@ body {
     font-weight: 600;
     text-decoration: none;
     line-height: 20px;
+    padding: 8px 10px;
 }
 
 .catalog-card__tag--highlight {
@@ -174,19 +225,31 @@ body {
 
 .blog {
     background-color: #0D0D15;
+    padding: 32px 16px;
 }
 
+.blog__title {
+    margin-bottom: 40px;
+}
 
 
 .blog-card {
     background-color: #1D1C28;
     color: #FFFFFF;
+    padding: 16px;
+    margin-bottom: 40px;
+    margin-right: 16px;
+}
+
+.blog-card__img {
+    margin-bottom: 16px;
 }
 
 .blog-card__title {
     font-size: 1.5rem;
     font-weight: 400;
     line-height: 32px;
+    margin-top: 16px;
 }
 
 .blog-card__subtext {
@@ -194,6 +257,7 @@ body {
     font-size: 1rem;
     font-weight: 400;
     line-height: 24px;
+    margin-bottom: 16px;
 }
 
 .blog-card__name,
@@ -213,6 +277,7 @@ body {
     font-size: 0.875rem;
     line-height: 20px;
     text-decoration: none;
+    padding: 8px, 10px;
 }
 
 .blog-card__link {
@@ -220,6 +285,13 @@ body {
     font-size: 1rem;
     font-weight: 600;
     line-height: 24px;
+    margin-right: 100px;
+    padding: 8px 20px;
+}
+
+.blog__link {
+    margin-bottom: 24px;
+    padding: 10px 24px;
 }
 
 .blog__link,
@@ -237,6 +309,11 @@ body {
 
 .info {
     background-color: #0D0D15;
+    padding: 32px 16px;
+}
+
+.info__title {
+    margin-bottom: 16px;
 }
 
 .blog__title,
@@ -257,6 +334,7 @@ body {
     font-weight: 500;
     line-height: 28px;
     text-align: center;
+    margin-bottom: 40px;
 }
 
 .info__list {
@@ -265,10 +343,21 @@ body {
     color: #FFFFFF;
 }
 
+.info__list-item {
+    padding: 24px;
+    margin-bottom: 16px;
+}
+
+.info__list-item:last-child {
+    margin-bottom: 24px;
+}
+
 .info__item-title {
     font-weight: 400;
     font-size: 1.5rem;
     line-height: 32px;
+    margin-top: 30.32px;
+    margin-bottom: 24px;
 }
 
 .info__item-desc {
@@ -289,18 +378,30 @@ body {
 
 .team {
     background-color: #0D0D15;
+    padding: 32px 16px;
+}
+
+.team__title {
+    margin-bottom: 40px;
 }
 
 .team-card {
     background-color: #1D1C28;
     color: #FFFFFF;
+    padding: 16px;
+    margin-right: 16px;
 }
 
+.team-card__img {
+    margin-left: auto;
+    margin-right: auto;
+}
 .team-card__title {
     font-weight: 400;
     font-size: 1.5rem;
     line-height: 32px;
     text-align: center;
+    margin-top: 16px;
 }
 
 
@@ -311,10 +412,12 @@ body {
     font-weight: 400;
     line-height: 28px;
     text-align: center;
+    margin-bottom: 16px;
 }
 
 .team-card__list {
     list-style: none;
+    margin-right: 8px;
 }
 
 
@@ -328,19 +431,31 @@ body {
 .faqs {
     background-color: #0D0D15;
     color: #FFFFFF;
+    padding: 32px 16px;
 }
 
 
 
 .faqs__details {
     background-color: #1D1C28;
+    padding: 16px;
+    margin-bottom: 16px;
+}
+
+.faqs__title {
+    margin-bottom: 40px;
+}
+
+.faqs__details:last-child {
+    margin-bottom: 48px;
 }
 
 .faqs__details-question {
     font-weight: 400;
     font-size: 1.5rem;
     line-height: 32px;
-
+    padding-bottom: 24px;
+    margin-bottom: 16px;
 }
 
 .faqs__details-answer {
@@ -356,6 +471,7 @@ body {
 
 .footer {
     background-color: #1A1925;
+    padding: 64px 16px 32px 16px;
 }
 
 
@@ -365,9 +481,14 @@ body {
     font-weight: normal;
     color: #0265DC;
     text-align: left;
+    margin-bottom: 12px;
+    margin-right: 132px;
 }
 
-
+.footer-nav__txt {
+    margin-right: 32px;
+    margin-bottom: 36px;
+}
 
 .footer-nav__txt,
 .footer__txt {
@@ -384,10 +505,19 @@ body {
     font-weight: 500;
     font-size: 1.25rem;
     line-height: 28px;
+    padding: 0 0 0 8px;
+    margin-bottom: 8px;
+}
+
+.footer-nav__list-item {
+    margin-bottom: 8px;
+    padding: 4px 8px 4px 8px;
 }
 
 .footer-nav__list {
     list-style: none;
+    margin-right: 24px;
+    margin-bottom: 64px;
 }
 
 
@@ -402,6 +532,15 @@ body {
 }
 
 
+.footer__txt {
+    margin-top: 32px;
+    margin-right: 86px;
+    margin-bottom: 20px;
+}
+
+.footer__iconlist-item {
+    margin-right: 48px;
+}
 
 .logo__txt--header {
     font-size: 2rem;
