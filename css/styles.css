@@ -89,7 +89,9 @@ body {
 
 .button:focus {
     background-color: #BFC5EE1F;
-    border: 4px solid #3892F3;
+    outline-style: solid;
+    outline-color: #3892F3;
+    outline-width: 4px;
 }
 
 .button--glow:hover {
@@ -98,7 +100,9 @@ body {
 
 .button--glow:focus {
     background-color: #0265DC;
-    border: 4px solid #3892F3;
+    outline-style: solid;
+    outline-color: #3892F3;
+    outline-width: 4px;
 }
 
 
@@ -107,9 +111,20 @@ a:not(.button):hover {
 }
 
 a:not(.button):focus {
-    border: 4px solid #3892F3;
+    outline-style: solid;
+    outline-color: #3892F3;
+    outline-width: 4px;
 }
 
+.button:focus:not(:focus-visible) {
+    outline: none;
+    background-color: inherit;
+}
+
+.button--glow:focus:not(:focus-visible) {
+    outline: none;
+    background-color: inherit;
+}
 
 
 .banner {
@@ -194,6 +209,7 @@ a:not(.button):focus {
 .catalog-card {
     background-color: #1D1C28;
     padding: 1rem;
+    margin-bottom: 1rem;
 }
 
 .catalog-card__img {
@@ -358,17 +374,14 @@ a:not(.button):focus {
 
 .info__list {
     background-color: #1D1C28;
-    list-style-type: decimal-leading-zero;
+    list-style-type: none;
     color: #FFFFFF;
+    margin-bottom: 2.5rem;
 }
 
 .info__list-item {
     padding: 1.5rem;
     margin-bottom: 1rem;
-}
-
-.info__list-item:last-child {
-    margin-bottom: 1.5rem;
 }
 
 .info__item-title {
