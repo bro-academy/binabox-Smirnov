@@ -373,15 +373,16 @@ a:not(.button):focus {
 }
 
 .info__list {
-    background-color: #1D1C28;
-    list-style-type: none;
+    list-style: none;
     color: #FFFFFF;
     margin-bottom: 2.5rem;
 }
 
 .info__list-item {
+    display: block;
     padding: 1.5rem;
     margin-bottom: 1rem;
+    background-color: #1D1C28;
 }
 
 .info__item-title {
