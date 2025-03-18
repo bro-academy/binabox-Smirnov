@@ -1,6 +1,13 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+
+*:before,
+*:after {
+  box-sizing: border-box;
 }
 
 
@@ -14,6 +21,12 @@ body {
 
 .header {
     background: #0D0D15;
+    padding: 1rem;
+}
+
+.logo {
+    width: 188px;
+    height: 42px;
 }
 
 .nav__list {
@@ -30,6 +43,9 @@ body {
     color: #FFFFFF;
     /* Links do not nasledovat*/
     text-align: center;
+    padding: 0.5rem 1.25rem;
+    display: inline-block;
+    margin-bottom: 0.5rem;
 }
 
 .nav__link--active {
@@ -49,25 +65,72 @@ body {
     font-size: 1.125rem;
     text-decoration: none;
     line-height: 28px;
+
+    padding: 0.625rem 1.5rem;
 }
 
 .button--glow {
     background-color: #0265DC;
+    border: none;
+}
+
+.button--nav {
+    width: 48px;
+    height: 48px;
+    padding: 1rem;
+    font-size: 0px;
 }
 
 
 
+.button:hover {
+    background-color: #BFC5EE1F;
+}
+
+.button:focus {
+    background-color: #BFC5EE1F;
+    outline-style: solid;
+    outline-color: #3892F3;
+    outline-width: 4px;
+}
+
+.button--glow:hover {
+    background-color: #3892F3;
+}
+
+.button--glow:focus {
+    background-color: #0265DC;
+    outline-style: solid;
+    outline-color: #3892F3;
+    outline-width: 4px;
+}
 
 
+a:not(.button):hover {
+    color: #3892F3;
+}
 
+a:not(.button):focus {
+    outline-style: solid;
+    outline-color: #3892F3;
+    outline-width: 4px;
+}
 
+.button:focus:not(:focus-visible) {
+    outline: none;
+    background-color: inherit;
+}
 
-
+.button--glow:focus:not(:focus-visible) {
+    outline: none;
+    background-color: inherit;
+}
 
 
 .banner {
     background-image: radial-gradient(circle, #0265DC, #0D0D15);
     background-position: top left;
+    padding: 2rem 1rem;
 }
 
 .banner__title {
@@ -75,6 +138,7 @@ body {
     color: #FFFFFF;
     font-weight: 400;
     line-height: 36px;
+    margin-bottom: 0.5rem;
 }
 
 .banner__title--highlight {
@@ -87,11 +151,14 @@ body {
     font-size: 1.25rem;
     font-family: "Poppins", sans-serif;
     line-height: 28px;
+    margin-bottom: 2rem;
 }
 
 .banner__stat {
     color: #FFFFFF;
+    margin-bottom: 2rem;
 }
+
 
 
 .banner__stat-txt {
@@ -99,6 +166,7 @@ body {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     line-height: 24px;
+    margin-bottom: 0.25rem;
 }
 
 .banner__stat-num {
@@ -108,9 +176,9 @@ body {
     letter-spacing: -0.5px;
 }
 
-
-
-
+.button:first-child {
+    margin-bottom: 1rem;
+}
 
 
 
@@ -118,7 +186,15 @@ body {
 
 .catalog {
     background-color: #0D0D15;
+    padding: 2rem 1rem;
 }
+
+.catalog__box {
+    padding: 0.125rem 0;
+    display: flex;
+    margin-bottom: 2rem;
+}
+
 
 .catalog__title {
     color: #FFFFFF;
@@ -132,6 +208,12 @@ body {
 
 .catalog-card {
     background-color: #1D1C28;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.catalog-card__img {
+    margin-bottom: 1rem;
 }
 
 .catalog-card__txt {
@@ -139,6 +221,8 @@ body {
     font-weight: 400;
     line-height: 36px;
     color: #FFFFFF;
+    margin-bottom: 0.5rem;
+    margin-right: 3.5rem;
 }
 
 .catalog-card__title {
@@ -147,6 +231,7 @@ body {
     color: #FFFFFF;
     font-weight: 500;
     line-height: 28px;
+    margin-right: 3.5rem;
 }
 
 .catalog-card__tag {
@@ -158,6 +243,7 @@ body {
     font-weight: 600;
     text-decoration: none;
     line-height: 20px;
+    padding: 0.5rem 0.625rem;
 }
 
 .catalog-card__tag--highlight {
@@ -174,19 +260,31 @@ body {
 
 .blog {
     background-color: #0D0D15;
+    padding: 2rem 1rem;
 }
 
+.blog__title {
+    margin-bottom: 2.5rem;
+}
 
 
 .blog-card {
     background-color: #1D1C28;
     color: #FFFFFF;
+    padding: 1rem;
+    margin-bottom: 2.5rem;
+    margin-right: 1rem;
+}
+
+.blog-card__img {
+    margin-bottom: 1rem;
 }
 
 .blog-card__title {
     font-size: 1.5rem;
     font-weight: 400;
     line-height: 32px;
+    margin-top: 1rem;
 }
 
 .blog-card__subtext {
@@ -194,6 +292,7 @@ body {
     font-size: 1rem;
     font-weight: 400;
     line-height: 24px;
+    margin-bottom: 1rem;
 }
 
 .blog-card__name,
@@ -213,6 +312,7 @@ body {
     font-size: 0.875rem;
     line-height: 20px;
     text-decoration: none;
+    padding: 0.5rem, 0.625rem;
 }
 
 .blog-card__link {
@@ -220,6 +320,13 @@ body {
     font-size: 1rem;
     font-weight: 600;
     line-height: 24px;
+    margin-right: 6.25rem;
+    padding: 0.5rem 1.25rem;
+}
+
+.blog__link {
+    margin-bottom: 1.5rem;
+    padding: 0.625rem 1.5rem;
 }
 
 .blog__link,
@@ -237,6 +344,11 @@ body {
 
 .info {
     background-color: #0D0D15;
+    padding: 2rem 1rem;
+}
+
+.info__title {
+    margin-bottom: 1rem;
 }
 
 .blog__title,
@@ -257,18 +369,28 @@ body {
     font-weight: 500;
     line-height: 28px;
     text-align: center;
+    margin-bottom: 2.5rem;
 }
 
 .info__list {
-    background-color: #1D1C28;
-    list-style-type: decimal-leading-zero;
+    list-style: none;
     color: #FFFFFF;
+    margin-bottom: 2.5rem;
+}
+
+.info__list-item {
+    display: block;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    background-color: #1D1C28;
 }
 
 .info__item-title {
     font-weight: 400;
     font-size: 1.5rem;
     line-height: 32px;
+    margin-top: 1.895rem;
+    margin-bottom: 1.5rem;
 }
 
 .info__item-desc {
@@ -289,18 +411,31 @@ body {
 
 .team {
     background-color: #0D0D15;
+    padding: 2rem 1rem;
+}
+
+.team__title {
+    margin-bottom: 2.5rem;
 }
 
 .team-card {
     background-color: #1D1C28;
     color: #FFFFFF;
+    padding: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
 }
 
+.team-card__img {
+    margin-left: auto;
+    margin-right: auto;
+}
 .team-card__title {
     font-weight: 400;
     font-size: 1.5rem;
     line-height: 32px;
     text-align: center;
+    margin-top: 1rem;
 }
 
 
@@ -311,10 +446,12 @@ body {
     font-weight: 400;
     line-height: 28px;
     text-align: center;
+    margin-bottom: 1rem;
 }
 
 .team-card__list {
     list-style: none;
+    margin-right: 0.5rem;
 }
 
 
@@ -328,19 +465,31 @@ body {
 .faqs {
     background-color: #0D0D15;
     color: #FFFFFF;
+    padding: 2rem 1rem;
 }
 
 
 
 .faqs__details {
     background-color: #1D1C28;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.faqs__title {
+    margin-bottom: 2.5rem;
+}
+
+.faqs__details:last-child {
+    margin-bottom: 3rem;
 }
 
 .faqs__details-question {
     font-weight: 400;
     font-size: 1.5rem;
     line-height: 32px;
-
+    padding-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .faqs__details-answer {
@@ -356,6 +505,7 @@ body {
 
 .footer {
     background-color: #1A1925;
+    padding: 4rem 1rem 2rem 1rem;
 }
 
 
@@ -365,9 +515,14 @@ body {
     font-weight: normal;
     color: #0265DC;
     text-align: left;
+    margin-bottom: 0.75rem;
+    margin-right: 8.25rem;
 }
 
-
+.footer-nav__txt {
+    margin-right: 2rem;
+    margin-bottom: 2.25rem;
+}
 
 .footer-nav__txt,
 .footer__txt {
@@ -384,10 +539,19 @@ body {
     font-weight: 500;
     font-size: 1.25rem;
     line-height: 28px;
+    padding: 0 0 0 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.footer-nav__list-item {
+    margin-bottom: 0.5rem;
+    padding: 0.25rem 0.5rem 0.25rem 0.5rem;
 }
 
 .footer-nav__list {
     list-style: none;
+    margin-right: 1.5rem;
+    margin-bottom: 4rem;
 }
 
 
@@ -402,6 +566,15 @@ body {
 }
 
 
+.footer__txt {
+    margin-top: 2rem;
+    margin-right: 5.375rem;
+    margin-bottom: 1.25rem;
+}
+
+.footer__iconlist-item {
+    margin-right: 3rem;
+}
 
 .logo__txt--header {
     font-size: 2rem;
@@ -417,6 +590,7 @@ body {
 
 .blogpage {
     background-color: #1A1925;
+    padding: 1.5rem 0 0 0;
 }
 
 .blogpage__title {
@@ -425,6 +599,7 @@ body {
     line-height: 36px;
     text-align: center;
     color: #F8F7FF;
+    margin-bottom: 1rem;
 }
 
 
@@ -437,6 +612,8 @@ body {
     text-align: center;
     color: #F8F7FF;
     text-decoration: none;
+    padding: 0.375rem 0.75rem;
+    margin-bottom: 5.6875rem;
 }
 
 .blogpage__link--target {
@@ -448,6 +625,7 @@ body {
 
 .story {
     background-color: #0D0D15;
+    padding: 0 1rem 4rem 1rem;
 }
 
 .story-fig__cap {
@@ -464,6 +642,8 @@ body {
     line-height: 48px;
     letter-spacing: -0.5px;
     color: #F8F7FF;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
 }
 
 .story__name, .story__date {
@@ -472,6 +652,8 @@ body {
     font-size: 0.875rem;
     line-height: 20px;
     color: #EFF5FAD1;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .story__desc {
@@ -480,6 +662,7 @@ body {
     font-size: 1.125rem;
     line-height: 28px;
     color: #F8F7FF;
+    margin-bottom: 2rem;
 }
 
 .story__desc--mark {
@@ -498,17 +681,20 @@ body {
     font-size: 1.125rem;
     line-height: 28px;
     color: #F8F7FF;
+    margin-bottom: 2rem;
 }
 
 .quote {
     background-color: #002754;
     color: #F8F7FF;
+    padding: 1rem;
 }
 
 .quote-box {
     font-weight: 400;
     font-size: 1.75rem;
     line-height: 36px;
+    margin-bottom: 0.5rem;
 }
 
 .quote__rating {
@@ -517,6 +703,7 @@ body {
     font-size: 0.875rem;
     line-height: 20px;
     color: #EFF5FAD1;
+    margin-left: 0.5rem;
 }
 
 .quote__title {
@@ -524,6 +711,7 @@ body {
     font-weight: 600;
     font-size: 0.875rem;
     line-height: 20px;
+    margin-left: 0.5rem;
 }
 
 
@@ -532,6 +720,8 @@ body {
     font-size: 1.75rem;
     line-height: 36px;
     color: #F8F7FF;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
 }
 
 .story__tag-title {
@@ -539,7 +729,8 @@ body {
     font-weight: 400;
     font-size: 1rem;
     line-height: 24px;
-    color: #F8F7FF
+    color: #F8F7FF;
+    margin-right: 0.75rem;
 }
 
 
@@ -550,17 +741,23 @@ body {
     line-height: 20px;
     text-align: center;
     color: #F8F7FF;
+    margin-right: 0.75rem;
+    padding: 0.375rem 0.75rem;
 }
 
 .story-sidebar {
     background-color: #1D1C28;
     color: #F8F7FF;
+    padding: 1rem;
 }
+
 
 .story-sidebar__title {
     font-weight: 400;
     font-size: 1.5rem;
     line-height: 32px;
+    padding: 0 0 1rem 0;
+    margin-bottom: 1rem;
 }
 
 .story-sidebar__list {
@@ -573,12 +770,21 @@ body {
     font-size: 0.875rem;
     line-height: 20px;
     text-decoration: none;
-    color: #F5F8FB
+    color: #F5F8FB;
+   
 }
+
+
+.story-sidebar:not(:last-child){
+    margin-bottom: 0.5rem;  
+}
+
 
 .story-sidebar__taglist {
     list-style: none;
 }
+
+
 
 .story-sidebar__taglist-item {
     font-family: "Poppins", sans-serif;
@@ -586,4 +792,5 @@ body {
     font-size: 0.875rem;
     line-height: 20px;
     text-align: center;
+    margin-right: 0.5rem;
 }
