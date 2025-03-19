@@ -628,6 +628,10 @@ a:not(.button):focus {
     padding: 0 1rem 4rem 1rem;
 }
 
+.story-fig__img:first-child {
+    margin-top: 2.5rem;
+}
+
 .story-fig__cap {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
@@ -688,6 +692,8 @@ a:not(.button):focus {
     background-color: #002754;
     color: #F8F7FF;
     padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: -0.5rem;
 }
 
 .quote-box {
