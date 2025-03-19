@@ -126,6 +126,11 @@ a:not(.button):focus {
     background-color: inherit;
 }
 
+a:not(.button):focus:not(:focus-visible) {
+    outline: none;
+    background-color: inherit;
+}
+
 
 .banner {
     background-image: radial-gradient(circle, #0265DC, #0D0D15);
