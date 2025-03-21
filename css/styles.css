@@ -145,8 +145,7 @@ a:not(.button):focus:not(:focus-visible) {
     line-height: 36px;
     margin-bottom: 0.5rem;
     background-image: url("./img/cube.png");
-    width: 682px;
-    height: 595px;
+    background-size: 682px 595px;
     background-position: right;
 }
 
