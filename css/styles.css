@@ -126,10 +126,16 @@ a:not(.button):focus {
     background-color: inherit;
 }
 
+a:not(.button):focus:not(:focus-visible) {
+    outline: none;
+    background-color: inherit;
+}
+
 
 .banner {
-    background-image: radial-gradient(circle, #0265DC, #0D0D15);
-    background-position: top left;
+    background-image: url("../img/cube.png"), radial-gradient(circle, #0265DC, #0D0D15);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right, top left;
     padding: 2rem 1rem;
 }
 
@@ -138,7 +144,7 @@ a:not(.button):focus {
     color: #FFFFFF;
     font-weight: 400;
     line-height: 36px;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.5rem;   
 }
 
 .banner__title--highlight {
@@ -202,7 +208,6 @@ a:not(.button):focus {
     font-weight: 400;
     line-height: 32px;
 }
-
 
 
 
@@ -628,6 +633,10 @@ a:not(.button):focus {
     padding: 0 1rem 4rem 1rem;
 }
 
+.story-fig__img:first-child {
+    margin-top: 2.5rem;
+}
+
 .story-fig__cap {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
@@ -688,6 +697,8 @@ a:not(.button):focus {
     background-color: #002754;
     color: #F8F7FF;
     padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: -0.5rem;
 }
 
 .quote-box {
