@@ -133,8 +133,9 @@ a:not(.button):focus:not(:focus-visible) {
 
 
 .banner {
-    background-image: radial-gradient(circle, #0265DC, #0D0D15);
-    background-position: top left;
+    background-image: url("../img/cube.png"), radial-gradient(circle, #0265DC, #0D0D15);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right, top left;
     padding: 2rem 1rem;
 }
 
@@ -143,15 +144,8 @@ a:not(.button):focus:not(:focus-visible) {
     color: #FFFFFF;
     font-weight: 400;
     line-height: 36px;
-    margin-bottom: 0.5rem;
-    background-image: url("./img/cube.png");
-    background-size: 682px 595px;
-    background-position: right;
+    margin-bottom: 0.5rem;   
 }
-
-/* .banner__img {
-    background-image: url("/img/cube.png");
-} */
 
 .banner__title--highlight {
     color: #0265DC;
