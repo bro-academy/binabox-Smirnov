@@ -53,62 +53,68 @@
     }
   ],
 
-  "blogItems": [
+  "blog":
     {
-      "blogimg": "./img/womansleep.webp",
-      "blogtag": "NFT",
-      "blogname": "Tony Nguyen",
-      "blogtime": "20 Jun 2022",
-      "blogtitle": "Sonic Live",
-      "blogtxt": "One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet...",
-      "btnlink": "/"
+      "title": "Our blog"
     },
-    {
-      "blogimg": "./img/skeleton.webp",
-      "blogtag": "NFT",
-      "blogname": "Tony Nguyen",
-      "blogtime": "20 Jun 2022",
-      "blogtitle": "Sonic Live",
-      "blogtxt": "One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet...",
-      "btnlink": "/"
-    },
-    {
-      "blogimg": "./img/cat.webp",
-      "blogtag": "NFT",
-      "blogname": "Tony Nguyen",
-      "blogtime": "20 Jun 2022",
-      "blogtitle": "Sonic Live",
-      "blogtxt": "One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet...",
-      "btnlink": "/"
-    },
-    {
-      "blogimg": "./img/gorilla.webp",
-      "blogtag": "NFT",
-      "blogname": "Tony Nguyen",
-      "blogtime": "20 Jun 2022",
-      "blogtitle": "Sonic Live",
-      "blogtxt": "One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet...",
-      "btnlink": "/"
-    },
-    {
-      "blogimg": "./img/duck.webp",
-      "blogtag": "NFT",
-      "blogname": "Tony Nguyen",
-      "blogtime": "20 Jun 2022",
-      "blogtitle": "Sonic Live",
-      "blogtxt": "One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet...",
-      "btnlink": "/"
-    },
-    {
-      "blogimg": "./img/rectangle.webp",
-      "blogtag": "NFT",
-      "blogname": "Tony Nguyen",
-      "blogtime": "20 Jun 2022",
-      "blogtitle": "Sonic Live",
-      "blogtxt": "One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet...",
-      "btnlink": "/"
-    }
-  ],
+
+
+    "blogItems": [
+      {
+        "blogimg": "./img/womansleep.webp",
+        "blogtag": "NFT",
+        "blogname": "Tony Nguyen",
+        "blogtime": "20 Jun 2022",
+        "blogtitle": "Sonic Live",
+        "blogtxt": "One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet...",
+        "btnlink": "/"
+      },
+      {
+        "blogimg": "./img/skeleton.webp",
+        "blogtag": "NFT",
+        "blogname": "Tony Nguyen",
+        "blogtime": "20 Jun 2022",
+        "blogtitle": "Sonic Live",
+        "blogtxt": "One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet...",
+        "btnlink": "/"
+      },
+      {
+        "blogimg": "./img/cat.webp",
+        "blogtag": "NFT",
+        "blogname": "Tony Nguyen",
+        "blogtime": "20 Jun 2022",
+        "blogtitle": "Sonic Live",
+        "blogtxt": "One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet...",
+        "btnlink": "/"
+      },
+      {
+        "blogimg": "./img/gorilla.webp",
+        "blogtag": "NFT",
+        "blogname": "Tony Nguyen",
+        "blogtime": "20 Jun 2022",
+        "blogtitle": "Sonic Live",
+        "blogtxt": "One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet...",
+        "btnlink": "/"
+      },
+      {
+        "blogimg": "./img/duck.webp",
+        "blogtag": "NFT",
+        "blogname": "Tony Nguyen",
+        "blogtime": "20 Jun 2022",
+        "blogtitle": "Sonic Live",
+        "blogtxt": "One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet...",
+        "btnlink": "/"
+      },
+      {
+        "blogimg": "./img/rectangle.webp",
+        "blogtag": "NFT",
+        "blogname": "Tony Nguyen",
+        "blogtime": "20 Jun 2022",
+        "blogtitle": "Sonic Live",
+        "blogtxt": "One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet...",
+        "btnlink": "/"
+      }
+    ],
 
   "abouts": [
     {

@@ -52,30 +52,7 @@
         </ul>
     </section>
 
-    <section class="blog">
-        <h2 class="blog__title">Our Blog</h2>
-        <ul class="blog__list">
-            {% for item in blogItems %}
-                <li class="blog__list-item">
-                    <article class="blog-card">
-                        <img src="{{ item.blogimg }}" alt="image" class="blog-card__img" width="261px" height="340px"/>
-                        <span class="blog-card__tag">{{ item.blogtag }}</span>
-                        <img src="icon.svg" alt="icon" class="blog-card__img"/>
-                        <span class="blog-card__name">{{ item.blogname }}</span>
-                        <img src="icon.svg" alt="icon"/>
-                        <time datetime="2022-06-20" class="blog-card__date">{{ item.blogtime }}</time>
-                        <h3 class="blog-card__title">{{ item.blogtitle }}</h3>
-                        <p class="blog-card__subtext">
-                            {{ item.blogtxt }}
-                        </p>
-                        <a href="{{ items.btnlink }}" class="blog-card__link button">See more</a>
-                    </article>
-                </li>
-
-            {% endfor %}
-        </ul>
-        <a href="#" class="blog__link button">Read more</a>
-    </section>
+    {% include 'partials/blog.njk' %}
 
     <section class="info">
         <h2 class="info__title">About us</h2>
