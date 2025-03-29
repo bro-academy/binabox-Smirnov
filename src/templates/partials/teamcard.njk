@@ -1,0 +1,12 @@
+<article class="team-card">
+    <img src="{{ member.face }}" alt="image" class="team-card__img" width="120px" height="120px"/>
+    <h3 class="team-card__title">{{ member.name }}</h3>
+    <span class="team-card__subtext">{{ member.role }}</span>
+    <ul class="team-card__list">
+        {% for icon in member.networks %}
+            <li class="team-card__list-item">
+                <a href="{{ networks.url }}" target="_blank" class="team-card__link"><img src="{{ networks.img }}" alt="icon" class="team-card__icon"/></a>
+            </li>
+        {% endfor %}
+    </ul>
+</article>

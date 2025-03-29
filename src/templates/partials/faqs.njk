@@ -1,0 +1,6 @@
+<section class="faqs">
+    <h2 class="faqs__title">{{ faqs.title }}</h2>
+    {% for item in faqs.faqscards %}
+        {% include 'partials/faqscard.njk' %}
+    {% endfor %}
+</section>

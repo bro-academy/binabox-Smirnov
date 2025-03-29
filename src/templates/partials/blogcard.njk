@@ -1,0 +1,13 @@
+<article class="blog-card">
+    <img src="{{ item.blogimg }}" alt="image" class="blog-card__img" width="261px" height="340px"/>
+    <span class="blog-card__tag">{{ item.blogtag }}</span>
+    <img src="icon.svg" alt="icon" class="blog-card__img"/>
+    <span class="blog-card__name">{{ item.blogname }}</span>
+    <img src="icon.svg" alt="icon"/>
+    <time datetime="2022-06-20" class="blog-card__date">{{ item.blogtime }}</time>
+    <h3 class="blog-card__title">{{ item.blogtitle }}</h3>
+    <p class="blog-card__subtext">
+        {{ item.blogtxt }}
+    </p>
+    <a href="{{ items.btnlink }}" class="blog-card__link button">See more</a>
+</article>

@@ -1,0 +1,8 @@
+<a href="{{ items.link }}" class="catalog__link">
+    <article class="catalog-card">
+        <img src="{{ items.image }}" alt="skeleton" class="catalog-card__img" width="296px" height="324px"/>
+        <span class="catalog-card__txt">{{ items.price }}$</span>
+        <h3 class="catalog-card__title">{{ items.name }}</h3>
+        <span class="catalog-card__tag {% if items.label == "Sold out" %} catalog-card__tag--highlight {% endif %}">{{ items.label }}</span>
+    </article>
+</a>
