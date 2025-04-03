@@ -5,19 +5,19 @@
     "nav": [
       {
         "title": "Home",
-        "link": "url"
+        "link": "/"
       },
       {
         "title": "Blog",
-        "link": "/"
+        "link": "/blog"
       },
       {
         "title": "Catalog",
-        "link": "/"
+        "link": "/catalog"
       },
       {
         "title": "Contact Us",
-        "link": "/"
+        "link": "/contacts"
       }
     ]
   },
@@ -27,7 +27,9 @@
   "banner": {
     "title": "WITH EXPLORE NFT COLLECTION",
     "btn1": "Connect Wallet",
-    "btn2": "Whitelist now"
+    "btn2": "Whitelist now",
+    "image": "/img/cube-1x.webp",
+    "image1": "/img/cube-2x.webp"
   },
   "bannerStats": [
     {
@@ -50,7 +52,8 @@
       "state": "new",
       "name": "Name Product",
       "price": "199",
-      "image": "src/images/static/skeleton.webp"
+      "image": "/img/skeleton-1x.webp",
+      "image1": "/img/skeleton-2x.webp" 
     },
     {
       "link": "/",
@@ -58,7 +61,8 @@
       "state": "new",
       "name": "Name Product",
       "price": "199",
-      "image": "./img/cat.webp"
+      "image": "/img/cat-1x.webp",
+      "image1": "/img/cat-2x.webp"
     },
     {
       "link": "/",
@@ -66,7 +70,8 @@
       "state": "sold out",
       "name": "Name Product",
       "price": "199",
-      "image": "./img/scissors.webp"
+      "image": "/img/scissors-1x.webp",
+      "image1": "/img/scissors-2x.webp"
     },
     {
       "link": "/",
@@ -74,7 +79,8 @@
       "state": "new",
       "name": "Name Product",
       "price": "199",
-      "image": "./img/cardgreen.webp"
+      "image": "/img/cardgreen-1x.webp",
+      "image1": "/img/cardgreen-2x.webp"
     },
     {
       "link": "/",
@@ -82,7 +88,8 @@
       "state": "new",
       "name": "Name Product",
       "price": "199",
-      "image": "./img/rectangle.webp"
+      "image": "/img/rectangle-1x.webp",
+      "image1": "/img/rectangle-2x.webp"
     }
   ],
   "blog": {
@@ -91,7 +98,8 @@
   },
   "blogItems": [
     {
-      "blogimg": "./img/womansleep.webp",
+      "blogimg": "/img/womansleep-1x.webp",
+      "blogimg1": "/img/womansleep-2x.webp",
       "blogtag": "NFT",
       "blogname": "Tony Nguyen",
       "blogtime": "20 Jun 2022",
@@ -100,7 +108,8 @@
       "btnlink": "/"
     },
     {
-      "blogimg": "./img/skeleton.webp",
+      "blogimg": "/img/skeleton-1x.webp",
+      "blogimg1": "/img/skeleton-2x.webp",
       "blogtag": "NFT",
       "blogname": "Tony Nguyen",
       "blogtime": "20 Jun 2022",
@@ -109,7 +118,8 @@
       "btnlink": "/"
     },
     {
-      "blogimg": "./img/cat.webp",
+      "blogimg": "/img/cat-1x.webp",
+      "blogimg1": "/img/cat-2x.webp",
       "blogtag": "NFT",
       "blogname": "Tony Nguyen",
       "blogtime": "20 Jun 2022",
@@ -118,7 +128,8 @@
       "btnlink": "/"
     },
     {
-      "blogimg": "./img/gorilla.webp",
+      "blogimg": "/img/gorilla-1x.webp",
+      "blogimg1": "/img/gorilla-2x.webp",
       "blogtag": "NFT",
       "blogname": "Tony Nguyen",
       "blogtime": "20 Jun 2022",
@@ -127,7 +138,8 @@
       "btnlink": "/"
     },
     {
-      "blogimg": "./img/duck.webp",
+      "blogimg": "/img/duck-1x.webp",
+      "blogimg1": "/img/duck-2x.webp",
       "blogtag": "NFT",
       "blogname": "Tony Nguyen",
       "blogtime": "20 Jun 2022",
@@ -136,7 +148,8 @@
       "btnlink": "/"
     },
     {
-      "blogimg": "./img/rectangle.webp",
+      "blogimg": "/img/rectangle-1x.webp",
+      "blogimg1": "/img/rectangle-2x.webp",
       "blogtag": "NFT",
       "blogname": "Tony Nguyen",
       "blogtime": "20 Jun 2022",
@@ -174,7 +187,8 @@
   },
   "team": [
     {
-      "face": "./img/face.png",
+      "face": "/img/face-1x.webp",
+      "face1": "/img/face-2x.webp",
       "name": "Jason Smith",
       "role": "Co - Founder",
       "networks": [

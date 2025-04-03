@@ -1,5 +1,8 @@
 <article class="blog-card">
-    <img src="{{ item.blogimg }}" alt="image" class="blog-card__img" width="261px" height="340px"/>
+    <picture>
+        <source srcset="{{ item.blogimg }}, {{ item.blogimg1 }} 2x">
+        <img src="{{ item.blogimg }}" alt="image" class="blog-card__img" width="261px" height="340px"/>
+    </picture>
     <span class="blog-card__tag">{{ item.blogtag }}</span>
     <img src="icon.svg" alt="icon" class="blog-card__img"/>
     <span class="blog-card__name">{{ item.blogname }}</span>

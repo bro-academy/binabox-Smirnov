@@ -1,5 +1,8 @@
 <article class="team-card">
-    <img src="{{ member.face }}" alt="image" class="team-card__img" width="120px" height="120px"/>
+    <picture>
+        <source srcset="{{ member.face }}, {{ member.face1 }} 2x">
+        <img src="{{ member.face }}" alt="image" class="team-card__img" width="120px" height="120px"/>
+    </picture>
     <h3 class="team-card__title">{{ member.name }}</h3>
     <span class="team-card__subtext">{{ member.role }}</span>
     <ul class="team-card__list">
