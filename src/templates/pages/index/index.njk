@@ -1,5 +1,19 @@
 {% extends "layouts/base.njk" %}
 
+{% set title = "BINABOX"%}
+{{ title }}
+{% set url = "/" %}
+
 {% block content %}
-index page content
+    {% include 'partials/banner.njk'%}
+
+    {% include 'partials/catalog.njk'%}
+
+    {% include 'partials/blog.njk' %}
+
+    {% include 'partials/info.njk' %}
+
+    {% include 'partials/team.njk' %}
+
+    {% include 'partials/faqs.njk'%}
 {% endblock %}

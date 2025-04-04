@@ -1,4 +1,244 @@
 {
-  "title": "test",
-  "h1": ""
+
+  "header": {
+    "title": "BINABOX",
+    "nav": [
+      {
+        "title": "Home",
+        "link": "/"
+      },
+      {
+        "title": "Blog",
+        "link": "/blog"
+      },
+      {
+        "title": "Catalog",
+        "link": "/catalog"
+      },
+      {
+        "title": "Contact Us",
+        "link": "/contacts"
+      }
+    ]
+  },
+
+
+
+  "banner": {
+    "title": "WITH EXPLORE NFT COLLECTION",
+    "btn1": "Connect Wallet",
+    "btn2": "Whitelist now",
+    "image": "/img/cube-1x.webp",
+    "image1": "/img/cube-2x.webp"
+  },
+  "bannerStats": [
+    {
+      "statname": "Total Items",
+      "statnum": "2200+"
+    },
+    {
+      "statname": "Profiles whitelisted",
+      "statnum": "1000+"
+    }
+  ],
+  "catalog": {
+    "title": "Catalog",
+    "btn1": "See all"
+  },
+  "catalogItems": [
+    {
+      "link": "/",
+      "label": "New",
+      "state": "new",
+      "name": "Name Product",
+      "price": "199",
+      "image": "/img/skeleton-1x.webp",
+      "image1": "/img/skeleton-2x.webp" 
+    },
+    {
+      "link": "/",
+      "label": "New",
+      "state": "new",
+      "name": "Name Product",
+      "price": "199",
+      "image": "/img/cat-1x.webp",
+      "image1": "/img/cat-2x.webp"
+    },
+    {
+      "link": "/",
+      "label": "Sold out",
+      "state": "sold out",
+      "name": "Name Product",
+      "price": "199",
+      "image": "/img/scissors-1x.webp",
+      "image1": "/img/scissors-2x.webp"
+    },
+    {
+      "link": "/",
+      "label": "New",
+      "state": "new",
+      "name": "Name Product",
+      "price": "199",
+      "image": "/img/cardgreen-1x.webp",
+      "image1": "/img/cardgreen-2x.webp"
+    },
+    {
+      "link": "/",
+      "label": "New",
+      "state": "new",
+      "name": "Name Product",
+      "price": "199",
+      "image": "/img/rectangle-1x.webp",
+      "image1": "/img/rectangle-2x.webp"
+    }
+  ],
+  "blog": {
+    "title": "Our blog",
+    "link": "Read more"
+  },
+  "blogItems": [
+    {
+      "blogimg": "/img/womansleep-1x.webp",
+      "blogimg1": "/img/womansleep-2x.webp",
+      "blogtag": "NFT",
+      "blogname": "Tony Nguyen",
+      "blogtime": "20 Jun 2022",
+      "blogtitle": "Sonic Live",
+      "blogtxt": "One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet...",
+      "btnlink": "/"
+    },
+    {
+      "blogimg": "/img/skeleton-1x.webp",
+      "blogimg1": "/img/skeleton-2x.webp",
+      "blogtag": "NFT",
+      "blogname": "Tony Nguyen",
+      "blogtime": "20 Jun 2022",
+      "blogtitle": "Sonic Live",
+      "blogtxt": "One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet...",
+      "btnlink": "/"
+    },
+    {
+      "blogimg": "/img/cat-1x.webp",
+      "blogimg1": "/img/cat-2x.webp",
+      "blogtag": "NFT",
+      "blogname": "Tony Nguyen",
+      "blogtime": "20 Jun 2022",
+      "blogtitle": "Sonic Live",
+      "blogtxt": "One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet...",
+      "btnlink": "/"
+    },
+    {
+      "blogimg": "/img/gorilla-1x.webp",
+      "blogimg1": "/img/gorilla-2x.webp",
+      "blogtag": "NFT",
+      "blogname": "Tony Nguyen",
+      "blogtime": "20 Jun 2022",
+      "blogtitle": "Sonic Live",
+      "blogtxt": "One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet...",
+      "btnlink": "/"
+    },
+    {
+      "blogimg": "/img/duck-1x.webp",
+      "blogimg1": "/img/duck-2x.webp",
+      "blogtag": "NFT",
+      "blogname": "Tony Nguyen",
+      "blogtime": "20 Jun 2022",
+      "blogtitle": "Sonic Live",
+      "blogtxt": "One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet...",
+      "btnlink": "/"
+    },
+    {
+      "blogimg": "/img/rectangle-1x.webp",
+      "blogimg1": "/img/rectangle-2x.webp",
+      "blogtag": "NFT",
+      "blogname": "Tony Nguyen",
+      "blogtime": "20 Jun 2022",
+      "blogtitle": "Sonic Live",
+      "blogtxt": "One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet...",
+      "btnlink": "/"
+    }
+  ],
+  "abouts": {
+    "title": "About us",
+    "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occae cat cupidatat non proident, sunt in culpa qui officia dese runt mollit anim id est laborum velit esse cillum dolore eu fugiat nulla pariatu epteur sint occaecat",
+    "btn": "Read more",
+    "btnlink": "/",
+    "cards": [
+      {
+        "title": "High Quality",
+        "description": "Lorem Ipsum is simply dummy text of the printing and Ipsum typesetting industry."
+      },
+      {
+        "title": "Big Collection",
+        "description": "Lorem Ipsum is simply dummy text of the printing and Ipsum typesetting industry."
+      },
+      {
+        "title": "Top Resource",
+        "description": "Lorem Ipsum is simply dummy text of the printing and Ipsum typesetting industry."
+      },
+      {
+        "title": "Big Community",
+        "description": "Lorem Ipsum is simply dummy text of the printing and Ipsum typesetting industry."
+      }
+    ]
+  },
+  "teamtitle": {
+    "title": "Our team"
+  },
+  "team": [
+    {
+      "face": "/img/face-1x.webp",
+      "face1": "/img/face-2x.webp",
+      "name": "Jason Smith",
+      "role": "Co - Founder",
+      "networks": [
+        {
+          "platform": "twitter",
+          "url": "/",
+          "img": "twitter.svg"
+        },
+        {
+          "platform": "facebook",
+          "url": "/",
+          "img": "facebook.svg"
+        },
+        {
+          "platform": "telegram",
+          "url": "/",
+          "img": "telegram.svg"
+        },
+        {
+          "platform": "linkedin",
+          "url": "/",
+          "img": "linkedin.svg"
+        },
+        {
+          "platform": "instagram",
+          "url": "/",
+          "img": "instagram.svg"
+        }
+      ]
+    }
+  ],
+  "faqs": {
+    "title": "FAQs",
+    "faqscards": [
+      {
+        "question": "What are the NFTs?",
+        "answer": "Urna vitae erat et lacus, consectetur ac nulla vestibulum lobortis. Nulla dapibus urna volutpat venenatis, risus faucibus."
+      },
+      {
+        "question": "How do I get NFTs?",
+        "answer": "Urna vitae erat et lacus, consectetur ac nulla vestibulum lobortis. Nulla dapibus urna volutpat venenatis, risus faucibus."
+      },
+      {
+        "question": "How can we buy your NFTs?",
+        "answer": "Urna vitae erat et lacus, consectetur ac nulla vestibulum lobortis. Nulla dapibus urna volutpat venenatis, risus faucibus."
+      },
+      {
+        "question": "Who are the team behind the project?",
+        "answer": "Urna vitae erat et lacus, consectetur ac nulla vestibulum lobortis. Nulla dapibus urna volutpat venenatis, risus faucibus."
+      }
+    ]
+  }
 }

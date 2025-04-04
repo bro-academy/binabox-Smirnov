@@ -1,0 +1,19 @@
+<section class="banner">
+    <h1 class="banner__title">WITH <span class="banner__title banner__title--highlight">BINABOX</span> EXPLORE NFT COLLECTION</h1>
+    {# fix banner for separate span #}
+    <p class="banner__subtitle">
+          We are the best way to check rarity of NFT <span class="banner__subtitle banner__subtitle--highlight">collection</span>
+    </p>
+    <picture>
+        <source srcset="{{ banner.image }}, {{ banner.image1 }} 2x">
+        <img src="{{ banner.image }} "alt="image" class="banner__img" width="682px" height="596px"/>
+    </picture>
+    <dl class="banner__stat">
+        {% for stat in bannerStats %}
+            <dt class="banner__stat-txt">{{ stat.statname }}</dt>
+            <dd class="banner__stat-num">{{ stat.statnum }}</dd>
+        {% endfor %}
+    </dl>
+    <a href="#" class="button button--glow">{{ banner.btn1 }}</a>
+    <a href="#" class="button">{{ banner.btn2 }}</a>
+</section>

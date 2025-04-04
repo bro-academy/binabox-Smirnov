@@ -1,0 +1,17 @@
+<section class="info">
+    <h2 class="info__title">{{ abouts.title }}</h2>
+    <p class="info__desc">
+          {{ abouts.description }}
+        </p>
+    <ol class="info__list">
+        {% for item in abouts.cards %}
+            <li class="info__list-item">
+                <h3 class="info__item-title">{{ item.title }}</h3>
+                <p class="info__item-desc">
+                    {{ item.description }}
+                </p>
+            </li>
+        {% endfor %}
+    </ol>
+    <a href="{{ abouts.btnlink }}" class="info__link button">{{ abouts.btn }}</a>
+</section>

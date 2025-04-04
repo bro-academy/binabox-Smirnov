@@ -1,1 +1,22 @@
-header
+<header class="header">
+    <a href="#" class="button button--nav"><img src="icon.svg" alt="burger menu"></a>
+    <nav class="nav">
+        <a href="#" class="logo"
+          ><img src="logo.svg" alt="logo" class="logo__img"/>
+            <strong class="logo__txt logo__txt--header">{{ header.title }}</strong>
+        </a
+        >
+
+        <ul class="nav__list">
+            {% for item in header.nav %}
+                <li class="nav__list-item">
+                    <a href="{{ item.link }}" class="nav__link {% if item.link == url %} nav__link--active {% endif %}">{{ item.title }}</a>
+                </li> 
+                {# fix nav active link  #}
+            {% endfor %}
+        </ul>
+
+    </nav>
+    <a href="#" target="_blank" class="button button--nav"><img src="icon.svg" alt="Discord icon"></a>
+    <button type="button" class="button button--glow button--nav"><img src="icon.svg" alt="Wallet icon"></button>
+</header>
