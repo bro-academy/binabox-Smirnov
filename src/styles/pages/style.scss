@@ -16,11 +16,11 @@ html {
 }
 
 body {
-  font-family: "Bakbak One", sans-serif;
+  font-family: $main-font;
 }
 
 .header {
-  background: #0D0D15;
+  background: $block-color;
   padding: 1rem;
 }
 
@@ -36,7 +36,7 @@ body {
 .nav {
   &__list {
     list-style: none;
-    font-family: "Poppins", sans-serif;
+    font-family: $text-font;
     font-size: 1rem;
     font-weight: 600;
     line-height: 24px;
@@ -45,7 +45,7 @@ body {
   &__link {
     text-decoration: none;
     /* Links do not nasledovat*/
-    color: #FFFFFF;
+    color: $text-color;
     /* Links do not nasledovat*/
     text-align: center;
     padding: 0.5rem 1.25rem;
@@ -55,7 +55,7 @@ body {
 
   &__link--active {
     border-bottom-style: solid;
-    border-color: #0265DC;
+    border-color: $blue-color;
     border-width: 2px;
   }
 }
@@ -63,10 +63,10 @@ body {
 .button {
   text-align: center;
   background-color: rgba(0, 0, 0, 0);
-  color: #FFFFFF;
+  color: $text-color;
   border: 2px solid #D0D7FB2B;
   font-weight: 600;
-  font-family: "Poppins", sans-serif;
+  font-family: $text-font;
   font-size: 1.125rem;
   text-decoration: none;
   line-height: 28px;
@@ -76,7 +76,7 @@ body {
 }
 
 .button--glow {
-  background-color: #0265DC;
+  background-color: $blue-color;
   border: none;
 }
 
@@ -105,7 +105,7 @@ body {
 }
 
 .button--glow:focus {
-  background-color: #0265DC;
+  background-color: $blue-color;
   outline-style: solid;
   outline-color: #3892F3;
   outline-width: 4px;
@@ -139,34 +139,34 @@ a:not(.button):focus:not(:focus-visible) {
 
 // banner block
 .banner {
-  background-image: url("../img/cube.png"), radial-gradient(circle, #0265DC, #0D0D15);
+  background-image: url("../img/cube.png"), radial-gradient(circle, $blue-color, $block-color);
   background-repeat: no-repeat, no-repeat;
   background-position: right, top left;
   padding: 2rem 1rem;
 
   &__title {
     font-size: 1.75rem;
-    color: #FFFFFF;
+    color: $text-color;
     font-weight: 400;
     line-height: 36px;
     margin-bottom: 0.5rem;
   }
 
   &__title--highlight {
-    color: #0265DC;
+    color: $blue-color;
   }
 
   &__subtitle {
-    color: #FFFFFF;
+    color: $text-color;
     font-weight: 500;
     font-size: 1.25rem;
-    font-family: "Poppins", sans-serif;
+    font-family: $text-font;
     line-height: 28px;
     margin-bottom: 2rem;
   }
 
   &__stat {
-    color: #FFFFFF;
+    color: $text-color;
     margin-bottom: 2rem;
   }
 
@@ -174,7 +174,7 @@ a:not(.button):focus:not(:focus-visible) {
 
   &__stat-txt {
     font-size: 1rem;
-    font-family: "Poppins", sans-serif;
+    font-family: $text-font;
     font-weight: 400;
     line-height: 24px;
     margin-bottom: 0.25rem;
@@ -199,7 +199,7 @@ a:not(.button):focus:not(:focus-visible) {
 
 // catalog block
 .catalog {
-  background-color: #0D0D15;
+  background-color: $block-color;
   padding: 2rem 1rem;
 
 
@@ -211,7 +211,7 @@ a:not(.button):focus:not(:focus-visible) {
 
 
   &__title {
-    color: #FFFFFF;
+    color: $text-color;
     font-size: 1.5rem;
     font-weight: 400;
     line-height: 32px;
@@ -220,7 +220,7 @@ a:not(.button):focus:not(:focus-visible) {
 
 // Catalog card block
 .catalog-card {
-  background-color: #1D1C28;
+  background-color: $card-color;
   padding: 1rem;
   margin-bottom: 1rem;
 
@@ -233,15 +233,15 @@ a:not(.button):focus:not(:focus-visible) {
     font-size: 1.75rem;
     font-weight: 400;
     line-height: 36px;
-    color: #FFFFFF;
+    color: $text-color;
     margin-bottom: 0.5rem;
     margin-right: 3.5rem;
   }
 
   &__title {
-    font-family: "Poppins", sans-serif;
+    font-family: $text-font;
     font-size: 1.25rem;
-    color: #FFFFFF;
+    color: $text-color;
     font-weight: 500;
     line-height: 28px;
     margin-right: 3.5rem;
@@ -249,9 +249,9 @@ a:not(.button):focus:not(:focus-visible) {
 
   &__tag {
     text-align: right;
-    background-color: #ffffff;
-    color: #0265DC;
-    font-family: "Poppins", sans-serif;
+    background-color: $text-color;
+    color: $blue-color;
+    font-family: $text-font;
     font-size: 0.875rem;
     font-weight: 600;
     text-decoration: none;
@@ -261,7 +261,7 @@ a:not(.button):focus:not(:focus-visible) {
 
   &__tag--highlight {
     background-color: #EA3829;
-    color: #FFFFFF;
+    color: $text-color;
   }
 }
 
@@ -272,21 +272,21 @@ a:not(.button):focus:not(:focus-visible) {
 
 // Blog block
 .blog {
-  background-color: #0D0D15;
+  background-color: $block-color;
   padding: 2rem 1rem;
 
 
   &__title {
     margin-bottom: 2.5rem;
     font-size: 1.75rem;
-    color: #FFFFFF;
+    color: $text-color;
     font-weight: 400;
     line-height: 36px;
     text-align: center;
   }
 
   &__link {
-    font-family: "Poppins", sans-serif;
+    font-family: $text-font;
     font-size: 1.125rem;
     line-height: 28px;
     font-weight: 600;
@@ -297,8 +297,8 @@ a:not(.button):focus:not(:focus-visible) {
 
 // Blog card block
 .blog-card {
-  background-color: #1D1C28;
-  color: #FFFFFF;
+  background-color: $card-color;
+  color: $text-color;
   padding: 1rem;
   margin-bottom: 2.5rem;
   margin-right: 1rem;
@@ -316,7 +316,7 @@ a:not(.button):focus:not(:focus-visible) {
   }
 
   &__subtext {
-    font-family: "Poppins", sans-serif;
+    font-family: $text-font;
     font-size: 1rem;
     font-weight: 400;
     line-height: 24px;
@@ -325,7 +325,7 @@ a:not(.button):focus:not(:focus-visible) {
 
   &__name,
   &__date {
-    font-family: "Poppins", sans-serif;
+    font-family: $text-font;
     font-size: 0.875rem;
     line-height: 20px;
     font-weight: 600;
@@ -333,10 +333,10 @@ a:not(.button):focus:not(:focus-visible) {
 
   &__tag {
     text-align: right;
-    background-color: #ffffff;
-    color: #0265DC;
+    background-color: $text-color;
+    color: $blue-color;
     font-weight: 600;
-    font-family: "Poppins", sans-serif;
+    font-family: $text-font;
     font-size: 0.875rem;
     line-height: 20px;
     text-decoration: none;
@@ -344,7 +344,7 @@ a:not(.button):focus:not(:focus-visible) {
   }
 
   &__link {
-    font-family: "Poppins", sans-serif;
+    font-family: $text-font;
     font-size: 1rem;
     font-weight: 600;
     line-height: 24px;
@@ -362,29 +362,29 @@ a:not(.button):focus:not(:focus-visible) {
 
 // info block
 .info {
-  background-color: #0D0D15;
+  background-color: $block-color;
   padding: 2rem 1rem;
 
 
   &__title {
     margin-bottom: 1rem;
     font-size: 1.75rem;
-    color: #FFFFFF;
+    color: $text-color;
     font-weight: 400;
     line-height: 36px;
     text-align: center;
   }
 
   &__link {
-    font-family: "Poppins", sans-serif;
+    font-family: $text-font;
     font-size: 1.125rem;
     line-height: 28px;
     font-weight: 600;
   }
 
   &__desc {
-    color: #FFFFFF;
-    font-family: "Poppins", sans-serif;
+    color: $text-color;
+    font-family: $text-font;
     font-size: 1.25rem;
     font-weight: 500;
     line-height: 28px;
@@ -394,7 +394,7 @@ a:not(.button):focus:not(:focus-visible) {
 
   &__list {
     list-style: none;
-    color: #FFFFFF;
+    color: $text-color;
     margin-bottom: 2.5rem;
   }
 
@@ -402,7 +402,7 @@ a:not(.button):focus:not(:focus-visible) {
     display: block;
     padding: 1.5rem;
     margin-bottom: 1rem;
-    background-color: #1D1C28;
+    background-color: $card-color;
   }
 
   &__item-title {
@@ -414,8 +414,8 @@ a:not(.button):focus:not(:focus-visible) {
   }
 
   &__item-desc {
-    color: #FFFFFF;
-    font-family: "Poppins", sans-serif;
+    color: $text-color;
+    font-family: $text-font;
     font-weight: 400;
     font-size: 1.125rem;
     line-height: 28px;
@@ -432,14 +432,14 @@ a:not(.button):focus:not(:focus-visible) {
 // Team block
 
 .team {
-  background-color: #0D0D15;
+  background-color: $block-color;
   padding: 2rem 1rem;
 
 
   &__title {
     margin-bottom: 2.5rem;
     font-size: 1.75rem;
-    color: #FFFFFF;
+    color: $text-color;
     font-weight: 400;
     line-height: 36px;
     text-align: center;
@@ -448,8 +448,8 @@ a:not(.button):focus:not(:focus-visible) {
 
 // Team card block
 .team-card {
-  background-color: #1D1C28;
-  color: #FFFFFF;
+  background-color: $card-color;
+  color: $text-color;
   padding: 1rem;
   margin-right: 1rem;
   margin-bottom: 1rem;
@@ -471,7 +471,7 @@ a:not(.button):focus:not(:focus-visible) {
 
 
   &__subtext {
-    font-family: "Poppins", sans-serif;
+    font-family: $text-font;
     font-size: 1.125rem;
     font-weight: 400;
     line-height: 28px;
@@ -493,15 +493,15 @@ a:not(.button):focus:not(:focus-visible) {
 // FAQS block
 
 .faqs {
-  background-color: #0D0D15;
-  color: #FFFFFF;
+  background-color: $block-color;
+  color: $text-color;
   padding: 2rem 1rem;
 
 
 
 
   &__details {
-    background-color: #1D1C28;
+    background-color: $card-color;
     padding: 1rem;
     margin-bottom: 1rem;
   }
@@ -509,7 +509,7 @@ a:not(.button):focus:not(:focus-visible) {
   &__title {
     margin-bottom: 2.5rem;
     font-size: 1.75rem;
-    color: #FFFFFF;
+    color: $text-color;
     font-weight: 400;
     line-height: 36px;
     text-align: center;
@@ -528,7 +528,7 @@ a:not(.button):focus:not(:focus-visible) {
   }
 
   &__details-answer {
-    font-family: "Poppins", sans-serif;
+    font-family: $text-font;
     font-weight: 400;
     font-size: 1.125rem;
     line-height: 24px;
@@ -543,8 +543,8 @@ a:not(.button):focus:not(:focus-visible) {
   padding: 4rem 1rem 2rem 1rem;
 
   &__txt {
-    font-family: "Poppins", sans-serif;
-    color: #FFFFFF;
+    font-family: $text-font;
+    color: $text-color;
     font-weight: 400;
     font-size: 0.875rem;
     line-height: 20px;
@@ -563,16 +563,16 @@ a:not(.button):focus:not(:focus-visible) {
   &__txt {
     margin-right: 2rem;
     margin-bottom: 2.25rem;
-    font-family: "Poppins", sans-serif;
-    color: #FFFFFF;
+    font-family: $text-font;
+    color: $text-color;
     font-weight: 400;
     font-size: 0.875rem;
     line-height: 20px;
   }
 
   &__list-title {
-    color: #FFFFFF;
-    font-family: "Poppins", sans-serif;
+    color: $text-color;
+    font-family: $text-font;
     font-weight: 500;
     font-size: 1.25rem;
     line-height: 28px;
@@ -593,13 +593,13 @@ a:not(.button):focus:not(:focus-visible) {
 
 
   &__link {
-    font-family: "Poppins", sans-serif;
+    font-family: $text-font;
     text-decoration: none;
     font-size: 0.75rem;
     font-weight: 600;
     line-height: 16px;
     text-align: center;
-    color: #FFFFFF;
+    color: $text-color;
   }
 }
 
@@ -608,7 +608,7 @@ a:not(.button):focus:not(:focus-visible) {
   &__txt {
     font-size: 2rem;
     font-weight: normal;
-    color: #0265DC;
+    color: $blue-color;
     text-align: left;
     margin-bottom: 0.75rem;
     margin-right: 8.25rem;
@@ -617,7 +617,7 @@ a:not(.button):focus:not(:focus-visible) {
   &__txt--header {
     font-size: 2rem;
     font-weight: normal;
-    color: #FFFFFF;
+    color: $text-color;
   }
 }
 
@@ -657,7 +657,7 @@ a:not(.button):focus:not(:focus-visible) {
 
 
   &__link {
-    font-family: "Poppins", sans-serif;
+    font-family: $text-font;
     font-weight: 600;
     font-size: 0.875rem;
     line-height: 20px;
@@ -676,7 +676,7 @@ a:not(.button):focus:not(:focus-visible) {
 
 // Story block
 .story {
-  background-color: #0D0D15;
+  background-color: $block-color;
   padding: 0 1rem 4rem 1rem;
 
   &__title {
@@ -691,7 +691,7 @@ a:not(.button):focus:not(:focus-visible) {
 
   &__name,
   &__date {
-    font-family: "Poppins", sans-serif;
+    font-family: $text-font;
     font-weight: 600;
     font-size: 0.875rem;
     line-height: 20px;
@@ -701,7 +701,7 @@ a:not(.button):focus:not(:focus-visible) {
   }
 
   &__desc {
-    font-family: "Poppins", sans-serif;
+    font-family: $text-font;
     font-weight: 400;
     font-size: 1.125rem;
     line-height: 28px;
@@ -711,7 +711,7 @@ a:not(.button):focus:not(:focus-visible) {
 
   &__desc--mark {
     font-weight: 600;
-    background-color: #0265DC;
+    background-color: $blue-color;
   }
 
   &__desc--accent {
@@ -720,7 +720,7 @@ a:not(.button):focus:not(:focus-visible) {
 
 
   &__set {
-    font-family: "Poppins", sans-serif;
+    font-family: $text-font;
     font-weight: 400;
     font-size: 1.125rem;
     line-height: 28px;
@@ -738,7 +738,7 @@ a:not(.button):focus:not(:focus-visible) {
   }
 
   &__tag-title {
-    font-family: "Poppins", sans-serif;
+    font-family: $text-font;
     font-weight: 400;
     font-size: 1rem;
     line-height: 24px;
@@ -748,7 +748,7 @@ a:not(.button):focus:not(:focus-visible) {
 
 
   &__taglist-item {
-    font-family: "Poppins", sans-serif;
+    font-family: $text-font;
     font-weight: 600;
     font-size: 0.875rem;
     line-height: 20px;
@@ -767,7 +767,7 @@ a:not(.button):focus:not(:focus-visible) {
   }
 
   &__cap {
-    font-family: "Poppins", sans-serif;
+    font-family: $text-font;
     font-weight: 500;
     font-size: 1rem;
     line-height: 24px;
@@ -786,7 +786,7 @@ a:not(.button):focus:not(:focus-visible) {
   margin-bottom: -0.5rem;
 
   &__rating {
-    font-family: "Poppins", sans-serif;
+    font-family: $text-font;
     font-weight: 600;
     font-size: 0.875rem;
     line-height: 20px;
@@ -795,7 +795,7 @@ a:not(.button):focus:not(:focus-visible) {
   }
 
   &__title {
-    font-family: "Poppins", sans-serif;
+    font-family: $text-font;
     font-weight: 600;
     font-size: 0.875rem;
     line-height: 20px;
@@ -817,7 +817,7 @@ a:not(.button):focus:not(:focus-visible) {
 
 // Story sidebar block
 .story-sidebar {
-  background-color: #1D1C28;
+  background-color: $card-color;
   color: #F8F7FF;
   padding: 1rem;
 
@@ -834,7 +834,7 @@ a:not(.button):focus:not(:focus-visible) {
   }
 
   &__link {
-    font-family: "Poppins", sans-serif;
+    font-family: $text-font;
     font-weight: 600;
     font-size: 0.875rem;
     line-height: 20px;
@@ -856,7 +856,7 @@ a:not(.button):focus:not(:focus-visible) {
 
 
   &__taglist-item {
-    font-family: "Poppins", sans-serif;
+    font-family: $text-font;
     font-weight: 600;
     font-size: 0.875rem;
     line-height: 20px;
