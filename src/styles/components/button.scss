@@ -1,22 +1,48 @@
 .button {
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0);
-    color: $text-color;
-    border: 2px solid #D0D7FB2B;
-    font-weight: 600;
-    font-family: $text-font;
-    font-size: 1.125rem;
-    text-decoration: none;
-    line-height: 28px;
-    padding: 0.625rem 1.5rem;
+    @include button-base;
 
+    &:hover {
+        background-color: #BFC5EE1F;
+    }
 
+    &:focus {
+        background-color: #BFC5EE1F;
+        outline-style: solid;
+        outline-color: $outlineblue-color;
+        outline-width: 4px;
+    }
+
+    &:focus:not(:focus-visible) {
+        outline: none;
+        background-color: inherit;
+    }
+
+    &:first-child {
+        margin-bottom: 1rem;
+    }
 }
 
 .button--glow {
-    background-color: $blue-color;
-    border: none;
+    @include button-glow;
+
+    &:hover {
+        background-color: $outlineblue-color;
+    }
+
+    &:focus {
+        background-color: $blue-color;
+        outline-style: solid;
+        outline-color: $outlineblue-color;
+        outline-width: 4px;
+    }
+
+    &:focus:not(:focus-visible) {
+        outline: none;
+        background-color: inherit;
+    }
 }
+
+
 
 .button--nav {
     width: 48px;
@@ -25,57 +51,3 @@
     font-size: 0px;
 }
 
-
-
-.button:hover {
-    background-color: #BFC5EE1F;
-}
-
-.button:focus {
-    background-color: #BFC5EE1F;
-    outline-style: solid;
-    outline-color: $outlineblue-color;
-    outline-width: 4px;
-}
-
-.button--glow:hover {
-    background-color: $outlineblue-color;
-}
-
-.button--glow:focus {
-    background-color: $blue-color;
-    outline-style: solid;
-    outline-color: $outlineblue-color;
-    outline-width: 4px;
-}
-
-
-a:not(.button):hover {
-    color: $outlineblue-color;
-}
-
-a:not(.button):focus {
-    outline-style: solid;
-    outline-color: $outlineblue-color;
-    outline-width: 4px;
-}
-
-.button:focus:not(:focus-visible) {
-    outline: none;
-    background-color: inherit;
-}
-
-.button--glow:focus:not(:focus-visible) {
-    outline: none;
-    background-color: inherit;
-}
-
-a:not(.button):focus:not(:focus-visible) {
-    outline: none;
-    background-color: inherit;
-}
-
-
-.button:first-child {
-    margin-bottom: 1rem;
-  }

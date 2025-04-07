@@ -20,3 +20,18 @@ html {
 body {
     font-family: $main-font;
 }
+
+a:not(.button):hover {
+    color: $outlineblue-color;
+}
+
+a:not(.button):focus {
+    outline-style: solid;
+    outline-color: $outlineblue-color;
+    outline-width: 4px;
+}
+
+a:not(.button):focus:not(:focus-visible) {
+    outline: none;
+    background-color: inherit;
+}
