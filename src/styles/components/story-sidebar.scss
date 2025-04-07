@@ -1,0 +1,49 @@
+// Story sidebar block
+.story-sidebar {
+    background-color: $card-color;
+    color: #F8F7FF;
+    padding: 1rem;
+
+    &__title {
+        font-weight: 400;
+        font-size: 1.5rem;
+        line-height: 32px;
+        padding: 0 0 1rem 0;
+        margin-bottom: 1rem;
+    }
+
+    &__list {
+        list-style: none;
+    }
+
+    &__link {
+        font-family: $text-font;
+        font-weight: 600;
+        font-size: 0.875rem;
+        line-height: 20px;
+        text-decoration: none;
+        color: #F5F8FB;
+
+    }
+
+
+    &:not(:last-child) {
+        margin-bottom: 0.5rem;
+    }
+
+
+    &__taglist {
+        list-style: none;
+    }
+
+
+
+    &__taglist-item {
+        font-family: $text-font;
+        font-weight: 600;
+        font-size: 0.875rem;
+        line-height: 20px;
+        text-align: center;
+        margin-right: 0.5rem;
+    }
+}

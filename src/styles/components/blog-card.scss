@@ -1,0 +1,57 @@
+// Blog card block
+.blog-card {
+    background-color: $card-color;
+    color: $text-color;
+    padding: 1rem;
+    margin-bottom: 2.5rem;
+    margin-right: 1rem;
+
+
+    &__img {
+        margin-bottom: 1rem;
+    }
+
+    &__title {
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 32px;
+        margin-top: 1rem;
+    }
+
+    &__subtext {
+        font-family: $text-font;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 24px;
+        margin-bottom: 1rem;
+    }
+
+    &__name,
+    &__date {
+        font-family: $text-font;
+        font-size: 0.875rem;
+        line-height: 20px;
+        font-weight: 600;
+    }
+
+    &__tag {
+        text-align: right;
+        background-color: $text-color;
+        color: $blue-color;
+        font-weight: 600;
+        font-family: $text-font;
+        font-size: 0.875rem;
+        line-height: 20px;
+        text-decoration: none;
+        padding: 0.5rem, 0.625rem;
+    }
+
+    &__link {
+        font-family: $text-font;
+        font-size: 1rem;
+        font-weight: 600;
+        line-height: 24px;
+        margin-right: 6.25rem;
+        padding: 0.5rem 1.25rem;
+    }
+}

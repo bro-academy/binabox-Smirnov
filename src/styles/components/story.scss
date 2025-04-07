@@ -1,0 +1,85 @@
+// Story block
+.story {
+    background-color: $block-color;
+    padding: 0 1rem 4rem 1rem;
+
+    &__title {
+        font-weight: 400;
+        font-size: 2.25rem;
+        line-height: 48px;
+        letter-spacing: -0.5px;
+        color: #F8F7FF;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    &__name,
+    &__date {
+        font-family: $text-font;
+        font-weight: 600;
+        font-size: 0.875rem;
+        line-height: 20px;
+        color: #EFF5FAD1;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    &__desc {
+        font-family: $text-font;
+        font-weight: 400;
+        font-size: 1.125rem;
+        line-height: 28px;
+        color: #F8F7FF;
+        margin-bottom: 2rem;
+    }
+
+    &__desc--mark {
+        font-weight: 600;
+        background-color: $blue-color;
+    }
+
+    &__desc--accent {
+        color: #78BBFA;
+    }
+
+
+    &__set {
+        font-family: $text-font;
+        font-weight: 400;
+        font-size: 1.125rem;
+        line-height: 28px;
+        color: #F8F7FF;
+        margin-bottom: 2rem;
+    }
+
+    &__subtitle {
+        font-weight: 400;
+        font-size: 1.75rem;
+        line-height: 36px;
+        color: #F8F7FF;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    &__tag-title {
+        font-family: $text-font;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 24px;
+        color: #F8F7FF;
+        margin-right: 0.75rem;
+    }
+
+
+    &__taglist-item {
+        font-family: $text-font;
+        font-weight: 600;
+        font-size: 0.875rem;
+        line-height: 20px;
+        text-align: center;
+        color: #F8F7FF;
+        margin-right: 0.75rem;
+        padding: 0.375rem 0.75rem;
+    }
+
+}
