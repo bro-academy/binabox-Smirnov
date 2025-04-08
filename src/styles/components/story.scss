@@ -1,4 +1,5 @@
 // Story block
+@use '../global/variables.scss' as *;
 .story {
     background-color: $block-color;
     padding: 0 1rem 4rem 1rem;

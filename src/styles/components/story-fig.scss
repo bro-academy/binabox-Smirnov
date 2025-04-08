@@ -1,4 +1,6 @@
 // Story fig block
+@use '../global/variables.scss' as *;
+
 .story-fig {
     &__img:first-child {
         margin-top: 2.5rem;

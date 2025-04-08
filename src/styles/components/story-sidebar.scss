@@ -1,4 +1,5 @@
 // Story sidebar block
+@use '../global/variables.scss' as *;
 .story-sidebar {
     background-color: $card-color;
     color: #F8F7FF;

@@ -1,4 +1,5 @@
 // Footer block
+@use '../global/variables.scss' as *;
 .footer {
     background-color: #1A1925;
     padding: 4rem 1rem 2rem 1rem;

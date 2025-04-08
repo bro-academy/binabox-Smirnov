@@ -1,4 +1,5 @@
 // catalog block
+@use '../global/variables.scss' as *;
 .catalog {
     background-color: $block-color;
     padding: 2rem 1rem;

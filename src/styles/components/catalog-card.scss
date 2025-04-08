@@ -1,4 +1,5 @@
 // Catalog card block
+@use '../global/variables.scss' as *;
 .catalog-card {
     background-color: $card-color;
     padding: 1rem;

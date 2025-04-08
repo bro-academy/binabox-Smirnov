@@ -1,4 +1,5 @@
 // Blog card block
+@use '../global/variables.scss' as *;
 .blog-card {
     background-color: $card-color;
     color: $text-color;

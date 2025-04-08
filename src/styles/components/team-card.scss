@@ -1,4 +1,5 @@
 // Team card block
+@use '../global/variables.scss' as *;
 .team-card {
     background-color: $card-color;
     color: $text-color;

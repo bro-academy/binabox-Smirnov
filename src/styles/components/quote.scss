@@ -1,4 +1,6 @@
 // Quote block
+@use '../global/variables.scss' as *;
+
 .quote {
     background-color: #002754;
     color: #F8F7FF;

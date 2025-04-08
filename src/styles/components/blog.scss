@@ -1,4 +1,5 @@
 // Blog block
+@use '../global/variables.scss' as *;
 .blog {
     background-color: $block-color;
     padding: 2rem 1rem;

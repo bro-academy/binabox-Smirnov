@@ -1,4 +1,5 @@
 // Footer nav block
+@use '../global/variables.scss' as *;
 .footer-nav {
     &__txt {
         margin-right: 2rem;

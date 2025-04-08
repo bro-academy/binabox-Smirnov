@@ -1,5 +1,5 @@
 // FAQS block
-
+@use '../global/variables.scss' as *;
 .faqs {
     background-color: $block-color;
     color: $text-color;

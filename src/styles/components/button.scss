@@ -1,3 +1,5 @@
+@use '../global/mixins.scss' as *;
+@use '../global/variables.scss' as *;
 .button {
     @include button-base;
 

@@ -1,4 +1,6 @@
 // Block page block
+@use '../global/variables.scss' as *;
+
 .blogpage {
     background-color: #1A1925;
     padding: 1.5rem 0 0 0;

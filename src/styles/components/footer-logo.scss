@@ -1,4 +1,5 @@
 // Footer logo block
+@use '../global/variables.scss' as *;
 .logo {
     &__txt {
         font-size: 2rem;
