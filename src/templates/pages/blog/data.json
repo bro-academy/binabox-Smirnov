@@ -1,0 +1,156 @@
+{
+    "blogpage":{
+        "image": "lines.webp",
+        "title": "Our blog",
+        "nav": [
+            {
+                "link": "/",
+                "title": "Home"
+            },
+            {
+                "link": "/",
+                "title":"Our blog"
+            },
+            {
+                "link": "/",
+                "title": "The Basilisks NFT"
+            }
+        ]
+    },
+
+    "story": {
+        "image": "public/img/twoheaddragon-1x.webp",
+        "image1": "public/img/twoheaddragon-2x.webp",
+        "caption": "Photo caption",
+        "title": "The Basilisks NFT",
+        "genre": "Genre",
+        "name": "Tony Nguyen",
+        "date": "20 Jun 2022",
+        "story-set": [
+            {
+                "title": "List name 1",
+                "logo": "logo.svg"
+            },
+            {
+                "title": "List name 2",
+                "logo": "logo.svg"
+            },
+            {
+                "title": "List name 3",
+                "logo": "logo.svg"
+            },
+            {
+                "title": "List name 4",
+                "logo": "logo.svg"
+            }
+        ],
+        "subtitle": "NFTs are digital assets that represent real-world objects",
+        "subtitle1": "NFT Avatar Generators",
+        "description": "You can find a range of NFT marketplaces where you can buy existing NFTs or list your own NFTs for sale",
+        "tagtitle": "Tags:",
+        "tags": [
+            {
+                "title": "NFT"
+            },
+            {
+                "title": "ICO"
+            },
+            {
+                "title": "Crypto"
+            }
+        ] ,
+        "sharetitle": "Share:",
+        "share": [
+            {
+                "link": "/",
+                "icon": "icon.svg"
+            },
+            {
+                "link": "/",
+                "icon": "icon.svg"
+            },
+            {
+                "link": "/",
+                "icon": "icon.svg"
+            }
+        ],
+
+        "aside": {
+            "title": "Categories",
+            "categories": [
+                {
+                    "link": "/",
+                    "title": "Our blog (12)"
+                },
+                {
+                    "link": "/",
+                    "title": "Metaverse (24)"
+                },
+                {
+                    "link": "/",
+                    "title": "Gaming (24)"
+                },
+                {
+                    "link": "/",
+                    "title": "Art (24)"
+                },
+                {
+                    "link": "/",
+                    "title": "Robot (24)"
+                },
+                {
+                    "link": "/",
+                    "title": "Launchpad (24)"
+                },
+                {
+                    "link": "/",
+                    "title": "Crypto (340)"
+                }
+            ]
+        },
+        "aside1":{
+            "title": "Tag",
+            "tags": [
+                {
+                    "title": "NFT"
+                },
+                {
+                    "title": "ICO"
+                },
+                {
+                    "title": "Robot"
+                },
+                {
+                    "title": "Crypto"
+                },
+                {
+                    "title": "Launchpad"
+                },
+                {
+                    "title": "Metaverse"
+                }
+            ]
+        }
+    },
+
+    "quote": {
+        "quote": "“The first huge metaverse arena to arrange live sports, hang out and even make bets and wagers”",
+        "rating": "8.5/10",
+        "title": "Markout Corporation"
+    },
+
+    "imagelist": [
+        {
+        "image": "public/img/dragonleft-1x.webp",
+        "image1": "public/img/dragonleft-2x.webp",
+        "caption": "Photo caption"
+        },
+        {
+        "image": "public/img/dragonlarge-1x.webp",
+        "image1": "public/img/dragonlarge-2x.webp",
+        "caption":"Photo caption"
+        }
+    ]
+
+
+}
