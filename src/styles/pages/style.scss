@@ -1,3 +1,29 @@
-@use 'index.scss';
-/*Blog Page */
-@use 'blog-page.scss'
+@use '../global/variables.scss';
+@use '../global/mixins.scss'; // done
+@use '../global/global.scss';
+
+@use '../components/button.scss';
+@use '../components/header.scss';
+
+@use '../components/banner.scss';
+@use '../components/catalog.scss';
+@use '../components/catalog-card.scss';
+
+@use '../components/blog.scss';
+@use '../components/blog-card.scss';
+
+@use '../components/info.scss';
+@use '../components/team.scss';
+@use '../components/team-card.scss';
+
+@use '../components/faqs.scss';
+@use '../components/footer.scss';
+@use '../components/footer-nav.scss';
+@use '../components/footer-logo.scss';
+
+@use '../components/blog-page.scss';
+@use '../components/story.scss';
+@use '../components/story-fig.scss';
+@use '../components/quote.scss';
+@use '../components/quote-box.scss';
+@use '../components/story-sidebar';
