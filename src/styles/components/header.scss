@@ -1,19 +1,14 @@
 @use '../global/variables.scss' as *;
+
 .header {
     background: $block-color;
     padding: 1rem;
-}
 
-.logo {
-    width: 188px;
-    height: 42px;
-}
+    &__logo {
+        width: 188px;
+        height: 42px;
+    }
 
-
-
-
-// Nav block
-.nav {
     &__list {
         list-style: none;
         font-family: $text-font;
@@ -38,4 +33,11 @@
         border-color: $blue-color;
         border-width: 2px;
     }
+
+    &__txt {
+        font-size: 2rem;
+        font-weight: normal;
+        color: $text-color;
+    }
+
 }
