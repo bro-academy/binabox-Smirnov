@@ -1,0 +1,18 @@
+@use '../global/variables.scss' as *;
+@mixin button-base {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0);
+    color: $text-color;
+    border: 2px solid #D0D7FB2B;
+    font-weight: 600;
+    font-family: $text-font;
+    font-size: 1.125rem;
+    text-decoration: none;
+    line-height: 28px;
+    padding: 0.625rem 1.5rem;
+}
+
+@mixin button-glow {
+    background-color: $blue-color;
+    border: none;
+}

@@ -1,0 +1,11 @@
+{% extends "layouts/base.njk" %}
+
+{% set title = "Blog Page"%}
+{{ title }}
+{% set url = "/" %}
+
+{% block content %}
+  {% include 'partials/blogpage.njk'%}
+  {% include 'partials/story.njk'%}
+{% endblock %}
+

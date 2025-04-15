@@ -1,0 +1,27 @@
+// Quote block
+@use '../global/variables.scss' as *;
+
+.quote {
+    background-color: #002754;
+    color: #F8F7FF;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: -0.5rem;
+
+    &__rating {
+        font-family: $text-font;
+        font-weight: 600;
+        font-size: 0.875rem;
+        line-height: 20px;
+        color: #EFF5FAD1;
+        margin-left: 0.5rem;
+    }
+
+    &__title {
+        font-family: $text-font;
+        font-weight: 600;
+        font-size: 0.875rem;
+        line-height: 20px;
+        margin-left: 0.5rem;
+    }
+}

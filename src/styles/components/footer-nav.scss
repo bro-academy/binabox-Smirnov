@@ -1,0 +1,45 @@
+// Footer nav block
+@use '../global/variables.scss' as *;
+.footer-nav {
+    &__txt {
+        margin-right: 2rem;
+        margin-bottom: 2.25rem;
+        font-family: $text-font;
+        color: $text-color;
+        font-weight: 400;
+        font-size: 0.875rem;
+        line-height: 20px;
+    }
+
+    &__list-title {
+        color: $text-color;
+        font-family: $text-font;
+        font-weight: 500;
+        font-size: 1.25rem;
+        line-height: 28px;
+        padding: 0 0 0 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    &__list-item {
+        margin-bottom: 0.5rem;
+        padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+    }
+
+    &__list {
+        list-style: none;
+        margin-right: 1.5rem;
+        margin-bottom: 4rem;
+    }
+
+
+    &__link {
+        font-family: $text-font;
+        text-decoration: none;
+        font-size: 0.75rem;
+        font-weight: 600;
+        line-height: 16px;
+        text-align: center;
+        color: $text-color;
+    }
+}

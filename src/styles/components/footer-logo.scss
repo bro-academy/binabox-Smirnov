@@ -1,0 +1,13 @@
+// Footer logo block
+@use '../global/variables.scss' as *;
+.logo {
+    &__txt {
+        font-size: 2rem;
+        font-weight: normal;
+        color: $blue-color;
+        text-align: left;
+        margin-bottom: 0.75rem;
+        margin-right: 8.25rem;
+    }
+
+}

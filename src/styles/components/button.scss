@@ -1,0 +1,55 @@
+@use '../global/mixins.scss' as *;
+@use '../global/variables.scss' as *;
+.button {
+    @include button-base;
+
+    &:hover {
+        background-color: #BFC5EE1F;
+    }
+
+    &:focus {
+        background-color: #BFC5EE1F;
+        outline-style: solid;
+        outline-color: $outlineblue-color;
+        outline-width: 4px;
+    }
+
+    &:focus:not(:focus-visible) {
+        outline: none;
+        background-color: inherit;
+    }
+
+    &:first-child {
+        margin-bottom: 1rem;
+    }
+}
+
+.button--glow {
+    @include button-glow;
+
+    &:hover {
+        background-color: $outlineblue-color;
+    }
+
+    &:focus {
+        background-color: $blue-color;
+        outline-style: solid;
+        outline-color: $outlineblue-color;
+        outline-width: 4px;
+    }
+
+    &:focus:not(:focus-visible) {
+        outline: none;
+        background-color: inherit;
+    }
+}
+
+
+
+.button--nav {
+    width: 48px;
+    height: 48px;
+    padding: 1rem;
+    font-size: 0px;
+}
+
