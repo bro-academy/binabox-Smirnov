@@ -40,4 +40,45 @@
         color: $text-color;
     }
 
+    &__search {
+        width: 11.75rem;
+        height: 3rem;
+        border: 2px solid #D0D7FB2B;
+        padding: 8px 12px;
+        margin-right: 1rem;
+        display: flex;
+    }
+
+    &__search:hover {
+        border: 2px solid $outlineblue-color;
+    }
+
+    &__search:focus-within {
+        border: 3px solid $outlineblue-color;
+    }
+
+    &__search-icon {
+        border: 1px dotted;
+        margin-right: 0.5rem;
+    }
+
+    &__search-input {
+        background-color: $block-color;
+        border: none;
+        outline: none;
+        width: 8.25rem;
+        color: $text-color;
+
+    }
+
+    &__search-input::placeholder {
+        font-family: $text-font;
+        font-weight: 400;
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        color: #E7EEF7A8;
+        
+      }
+      
+
 }
