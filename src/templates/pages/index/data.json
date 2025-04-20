@@ -5,11 +5,11 @@
     "nav": [
       {
         "title": "Home",
-        "link": "/"
+        "link": "http://localhost:8080/index.html"
       },
       {
         "title": "Blog",
-        "link": "/blog"
+        "link": "http://localhost:8080/blog.html"
       },
       {
         "title": "Catalog",
@@ -17,7 +17,7 @@
       },
       {
         "title": "Contact Us",
-        "link": "/contacts"
+        "link": "http://localhost:8080/contact.html"
       }
     ]
   },

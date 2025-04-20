@@ -1,0 +1,9 @@
+<section class="contacts">
+    <img src="{{ contacts.image }}" alt="bkdimage" class="contacts__image"/>
+    <h1 class="contacts__title">{{ contacts.title }}</h1>
+    <nav class="contacts__nav">
+        {% for item in contacts.nav %}
+            <a href="{{ item.link }}" class="contacts__link {% if item.link == url %} contacts__link--target {% endif %}">{{ item.title }}</a>
+        {% endfor %}
+    </nav>
+</section>

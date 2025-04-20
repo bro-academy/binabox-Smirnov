@@ -1,0 +1,11 @@
+{% extends "layouts/base.njk" %}
+
+{% set title = "Contact Us"%}
+{{ title }}
+{% set url = "http://localhost:8080/contact.html" %}
+
+{% block content %}
+    {% include 'partials/contact-nav.njk' %}
+    {% include 'partials/contact-details.njk' %}
+    {% include 'partials/contact-form.njk' %}
+{% endblock %}

@@ -22,6 +22,10 @@ body {
     font-family: $main-font;
 }
 
+a {
+    text-decoration: none;
+}
+
 a:not(.button):hover {
     color: $outlineblue-color;
 }
@@ -36,3 +40,9 @@ a:not(.button):focus:not(:focus-visible) {
     outline: none;
     background-color: inherit;
 }
+
+input[type=text] {
+    color: $text-color;
+    background-color: $block-color;
+}
+

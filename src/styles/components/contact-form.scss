@@ -1,0 +1,101 @@
+@use '../global/variables.scss' as *;
+
+.contact-form {
+    background-color: $block-color;
+    &__title {
+        font-weight: 400;
+        font-size: 1.75rem;
+        line-height: 2.25rem;
+        color: $text-color;
+        margin: auto;
+    }
+
+    &__subtitle {
+        font-family: $text-font;
+        font-weight: 500;
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+        color: #EFF5FAD1;
+        margin-top: 0.5rem;
+        margin-bottom: 2.5rem;
+        margin: auto;
+    }
+
+    &__agree-switch {
+        padding: 1rem;
+        background-color: $card-color;
+        width: 20.5rem;
+        height: 3.6rem;
+        margin: auto;
+        margin-bottom: 1.5rem;
+        
+    }
+
+    &__agree-switch label {
+        width: 15.5rem;
+        height: 1.25rem;
+        font-family: $text-font;
+        color: $text-color;
+        font-weight: 400;
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        margin: 1.125rem 0.5rem 1.125rem 1rem;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        width: 20.5rem;
+        height: 4.25rem;
+        color: $text-color;
+        margin: auto;
+        margin-bottom: 1.5rem;
+    }
+
+    &__item label {
+        font-family: $text-font;
+        font-weight: 400;
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        margin-bottom: 0.375rem;
+    }
+
+    &__item span {
+        font-family: $text-font;
+        font-weight: 400;
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        margin-bottom: 0.375rem;
+    }
+
+
+    &__input {
+        border: 2px solid #D0D7FB2B; 
+        outline: none;
+        padding: 0.625rem 0.75rem;
+        color: $text-color;
+        background-color: $block-color;
+        width: 20.5rem;
+        height: 2.5rem;
+    }
+
+    &__item textarea {
+        height: 10rem;
+    }
+
+    &__input:hover {
+        outline: 2px solid $outlineblue-color;
+    }
+    
+    &__input:focus {
+        outline: 3px solid $outlineblue-color;
+    }
+
+    &__input::placeholder {
+        font-family: $text-font;
+        font-weight: 400;
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        color: #E7EEF7A8;
+    }
+}

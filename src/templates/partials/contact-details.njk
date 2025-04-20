@@ -1,0 +1,9 @@
+<section class="contact-details">
+    {% for item in contact-details %}
+        <article class="contact-card">
+            <img src="{{ item.icon }}" alt="contacticon" class="contact-card__icon"/>
+            <h2 class="contact-card__title">{{ item.title }}</h2>
+            <span class="contact-card__info">{{ item.info }}</span>
+        </article>
+    {% endfor %}
+</section>

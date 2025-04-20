@@ -50,11 +50,11 @@
     }
 
     &__search:hover {
-        border: 2px solid $outlineblue-color;
+        outline: 2px solid $outlineblue-color;
     }
 
     &__search:focus-within {
-        border: 3px solid $outlineblue-color;
+        outline: 3px solid $outlineblue-color;
     }
 
     &__search-icon {
