@@ -100,13 +100,13 @@
     }
 
     &__input:invalid {
-        border: 2px solid #EA3829
+        border: 2px solid $invalid-color;
     }
 
 
     // to show invlaid after form validation use Js
     // Use mixin to style checkbox later
     &__policy:invalid{
-        outline: 2px solid #EA3829;
+        outline: 2px solid $invalid-color;
     }
 }

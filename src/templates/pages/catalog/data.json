@@ -114,6 +114,7 @@
     "catalogpage": {
         "title": "All Item",
         "button": "Sort by",
+        "sort": ["Newest", "Most Popular", "Increasing in price", "Lowering in price"],
         "tags": [
             "NFT",
             "ICO",
