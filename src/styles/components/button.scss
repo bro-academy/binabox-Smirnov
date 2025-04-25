@@ -44,7 +44,25 @@
     }
 }
 
+.button--reset {
+    @include button-reset;
 
+    &:hover {
+        background-color: #F4F7FA;
+    }
+
+    &:focus {
+        background-color: $text-color;
+        outline-style: solid;
+        outline-color: $outlineblue-color;
+        outline-width: 4px;
+    }
+
+    &:focus:not(:focus-visible) {
+        outline: none;
+        background-color: inherit;
+    }
+}
 
 .button--nav {
     width: 48px;

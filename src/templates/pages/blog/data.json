@@ -12,7 +12,7 @@
       },
       {
         "title": "Catalog",
-        "link": "/catalog"
+        "link": "http://localhost:8080/catalog.html"
       },
       {
         "title": "Contact Us",

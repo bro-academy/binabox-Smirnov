@@ -1,0 +1,27 @@
+{# Markup catalog filter #}
+
+
+<section class="filter">
+    <details class="filter__details">
+        <summary class="filter__title">{{ filtering.title }}</summary>
+        <form class="filter__form" action="url" method="post">
+            {% for item in filtering.filters %}
+                <article class="filter-card">
+                    <h2 class="filter-card__title">{{ item.title }}</h2>
+                    {% if item.type == "checkbox" or item.type == "radio" %}
+                        <div class="filter-card__list">
+                            {% for option in item.filter %}
+                                {% set optionId = "input-" + item.name + "-" + loop.index %}
+
+                                <input class="filter-card__list-input "id="{{ optionId }}" type="{{ item.type }}" name="item.name" {% if item.defualt == option %}checked{% endif %}/>
+                                <label class="filter-card__list-label" for="{{ optionId }}" >{{ option }}</label>
+
+                            {% endfor %}
+                        </div>
+                    {% endif %}
+                </article>
+            {% endfor %}
+            <button class="button button--glow" type="submit">{{ filtering.button }}</button>
+        </form>
+    </details>
+</section>

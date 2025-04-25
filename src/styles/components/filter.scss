@@ -1,0 +1,35 @@
+@use '../global/variables.scss' as *;
+@use '../global/mixins.scss' as *;
+.filter {
+    background-color: $block-color;
+    color: $text-color;
+    padding: 0rem 1rem 4rem 1rem;
+
+    &__title {
+        @include button-base;
+        text-align: left;
+        width: 328px;
+        height: 48px;
+        margin: auto;  
+    }
+
+
+    &__title::after {
+        content: '';
+        background-image: url('icon.svg');
+        background-repeat: no-repeat;
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    &__form {
+        padding: 1rem;
+    }
+
+    &__form button {
+        width: 328px;
+        height: 48px;
+        margin: auto;
+    }
+
+}
