@@ -12,9 +12,9 @@
         <div class="contact-form__item">
             <label for="last-name">Last name</label><input class="contact-form__input" id="lastname" type="text"/>
         </div>
-        <div class="contact-form__item">
+        <div class="contact-form__item">    
             <label for="birth">Birthday</label>
-            <input type="date" class="contact-form__input" id="birth"/>
+            <input type="date" class="contact-form__input" id="birth" pattern="^(0[1-9]|1[012])[- /.] (0[1-9]|[12][0-9]|3[01])[- /.] (19|20)\d\d$" required/>
         </div>
         <div class="contact-form__item">
             <span class="contact-form__heading">Gender</span>
@@ -25,11 +25,11 @@
         </div>
         <div class="contact-form__item">
             <label for="email">Email</label>
-            <input type="email" class="contact-form__input" id="email"/>
+            <input type="email" class="contact-form__input" id="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required/>
         </div>
         <div class="contact-form__item">
             <label for="telephone">Telephone Number</label
-    ><input type="tel" class="contact-form__input" id="telephone"/>
+    ><input type="tel" class="contact-form__input" id="telephone" pattern="^[+]{1}(?:[0-9\-\(\)\/\.]\s?){6, 15}[0-9]{1}$" required/>
         </div>
         <div class="contact-form__item">
             <label for="message">Message</label>
@@ -40,7 +40,7 @@
       >By clicking on the 'Send Message' button I agree to
       <a href="url" target="_blank">all the terms of security policy</a>
             </label
-    ><input type="checkbox" id="policy"/>
+    ><input type="checkbox" id="policy" required class="contact-form__policy"/>
         </div>
         <button class="button button--glow" type="submit">Send Message</button>
     </form>
