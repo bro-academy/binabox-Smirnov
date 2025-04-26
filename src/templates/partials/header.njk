@@ -16,10 +16,12 @@
         </ul>
 
     </nav>
-    <form action="" class="header__search-area">
+    <form action="/submit-search" method="post" class="header__search-area">
         <div class="header__search">
             <img src="icon.svg" alt="icon" class="header__search-icon"/>
-            <input id="search "type="text" placeholder="Search" class="header__search-input">
+            <label for="search" hidden>Search</label>
+            <input id="search" type="text" pattern="^[a-zA-Z0-9\s]+$" placeholder="Search" class="header__search-input" required>
+            <button type="submit" hidden></button>
         </div>
     </form>
     <a href="#" target="_blank" class="button button--nav"><img src="icon.svg" alt="Discord icon"></a>
