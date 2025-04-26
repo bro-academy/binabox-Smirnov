@@ -10,11 +10,11 @@
             <label for="name">Name</label><input class="contact-form__input" id="name" type="text"/>
         </div>
         <div class="contact-form__item">
-            <label for="last-name">Last name</label><input class="contact-form__input" id="lastname" type="text"/>
+            <label for="lastname">Last name</label><input class="contact-form__input" id="lastname" type="text"/>
         </div>
         <div class="contact-form__item">    
             <label for="birth">Birthday</label>
-            <input type="date" class="contact-form__input" id="birth" pattern="^(0[1-9]|1[012])[- /.] (0[1-9]|[12][0-9]|3[01])[- /.] (19|20)\d\d$" required/>
+            <input type="date" class="contact-form__input" id="birth" required/>
         </div>
         <div class="contact-form__item">
             <span class="contact-form__heading">Gender</span>
@@ -29,11 +29,11 @@
         </div>
         <div class="contact-form__item">
             <label for="telephone">Telephone Number</label
-    ><input type="tel" class="contact-form__input" id="telephone" pattern="^[+]{1}(?:[0-9\-\(\)\/\.]\s?){6, 15}[0-9]{1}$" required/>
+    ><input type="tel" class="contact-form__input" id="telephone" pattern="^[+]{1}(?:[0-9\-\(\)\/\.]\s?){6,15}[0-9]{1}$" required/>
         </div>
         <div class="contact-form__item">
             <label for="message">Message</label>
-            <textarea class="contact-form__input" name="welcome" id="message"></textarea>
+            <textarea class="contact-form__input" name="welcome" id="message" required></textarea>
         </div>
         <div class="contact-form__item">
             <label for="policy"
