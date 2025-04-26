@@ -13,7 +13,7 @@
                             {% for option in item.filter %}
                                 {% set optionId = "input-" + item.name + "-" + loop.index %}
 
-                                <input class="filter-card__list-input "id="{{ optionId }}" type="{{ item.type }}" name="item.name" {% if item.defualt == option %}checked{% endif %}/>
+                                <input class="filter-card__list-input "id="{{ optionId }}" type="{{ item.type }}" name="{{ item.name }}" {% if item.defualt == option %}checked{% endif %}/>
                                 <label class="filter-card__list-label" for="{{ optionId }}" >{{ option }}</label>
 
                             {% endfor %}

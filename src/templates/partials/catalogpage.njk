@@ -9,10 +9,12 @@
             <option>{{ item }}</option>
         {% endfor %}
     </select>
-    <form action="" class="header__search-area">
-        <div class="header__search">
-            <img src="icon.svg" alt="icon" class="header__search-icon"/>
-            <input id="search "type="text" placeholder="Search NFT" class="header__search-input">
+    <form action="/submit-search" method="post" class="catalog-page__form">
+        <div class="catalog-page__search">
+            <img src="icon.svg" alt="icon" class="catalog-page__search-icon"/>
+            <label for="search" hidden>Search</label>
+            <input id="search" type="text" pattern="^[a-zA-Z0-9\s]+$" placeholder="Search" class="catalog-page__search-input" required>
+            <button type="submit" hidden></button>
         </div>
     </form>
     <article class="catalog-page__tags">

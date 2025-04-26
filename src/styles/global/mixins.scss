@@ -22,3 +22,36 @@
     color: $block-color;
     border: none;
 }
+
+
+@mixin search-box {
+    border: 2px solid #D0D7FB2B;
+    padding: 8px 12px;
+    margin-right: 1rem;
+    display: flex;
+    
+    &:hover {
+        outline: 2px solid $outlineblue-color;
+    }
+
+    &:focus-within {
+        outline: 3px solid $outlineblue-color;
+    }
+}
+
+@mixin search-input {
+    background-color: $block-color;
+    border: none;
+    outline: none;
+    color: $text-color;
+
+    &::placeholder {
+        font-family: $text-font;
+        font-weight: 400;
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        color: #E7EEF7A8;
+    }
+
+    
+}
