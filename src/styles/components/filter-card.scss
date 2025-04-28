@@ -1,0 +1,95 @@
+@use '../global/variables.scss' as *;
+
+
+.filter-card {
+    background-color: $card-color;
+    // width: 328px;
+    padding: 1.5rem;
+    margin-bottom: 1.3125rem;
+    margin-right: auto;
+    margin-left: auto;
+
+    &__title {
+        font-weight: 400;
+        font-size: 1.5rem;
+        line-height: 2rem;
+        color: $text-color;
+
+        width: 17.5rem;
+        height: 3rem;
+        padding: 0 0 1rem 0;
+        margin-bottom: 1rem;
+
+        border-bottom: 1px solid #BFC5EE1F;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    &__list-label {
+        width: 15.75rem;
+        height: 1.5rem;
+        padding: 2px 0;
+        font-family: $text-font;
+        font-weight: 400;
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        
+
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+        user-select: none;
+        transition: all 0.2s ease;
+        position: relative;;
+    }
+
+    &__list-label::before {
+        content: "";
+        display: inline-block;
+        width: 1rem;
+        height: 1rem;
+        border: 2px solid #D4D9F242;
+        background-color: $block-color;
+        transition: 0.2s;
+        margin-right: 0.5rem;
+    }
+
+    &__list-input {
+        opacity: 0;
+        pointer-events: 0;
+    }
+    
+    // Use mixin for checkbox style and radio later 
+    &__list-input[type="checkbox"] + .filter-card__list-label::before {
+        border-radius: 4px;
+    }
+  
+
+    &__list-input[type="radio"] + .filter-card__list-label::before {
+        border-radius: 50%;
+    }
+
+    &__list-input[type="checkbox"]:checked + &__list-label::before {
+        background-color: $blue-color;
+        border-color: $blue-color;
+    }
+      
+    &__list-input[type="radio"]:checked + &__list-label::before {
+        background-color: $block-color;
+        border: 5px solid $blue-color;
+    }
+
+    &__list-input[type="checkbox"]:checked + &__list-label::after {
+        content: "✔";
+        position: absolute;
+        left: 0.25rem;
+        top: 0.3125rem;
+        color: $text-color;
+    }
+
+
+}

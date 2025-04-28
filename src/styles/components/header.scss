@@ -1,5 +1,5 @@
 @use '../global/variables.scss' as *;
-
+@use '../global/mixins.scss' as *;
 .header {
     background: $block-color;
     padding: 1rem;
@@ -39,5 +39,21 @@
         font-weight: normal;
         color: $text-color;
     }
+
+    &__search {
+        @include search-box;
+        width: 11.75rem;
+        height: 3rem;
+    }
+
+    &__search-icon {
+        margin-right: 0.5rem;
+    }
+
+    &__search-input {
+        @include search-input;
+        width: 8.25rem;
+    }
+      
 
 }

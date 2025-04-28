@@ -2,10 +2,9 @@
 
 {% set title = "Blog Page"%}
 {{ title }}
-{% set url = "/" %}
+{% set url = "http://localhost:8080/blog.html" %}
 
 {% block content %}
-  {% include 'partials/blogpage.njk'%}
-  {% include 'partials/story.njk'%}
+    {% include 'partials/blogpage.njk' %}
+    {% include 'partials/story.njk' %}
 {% endblock %}
-

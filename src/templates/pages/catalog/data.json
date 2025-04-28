@@ -1,0 +1,146 @@
+{
+    "header": {
+        "title": "Catalog",
+        "nav": [
+            {
+                "title": "Home",
+                "link": "http://localhost:8080/index.html"
+            },
+            {
+                "title": "Blog",
+                "link": "http://localhost:8080/blog.html"
+            },
+            {
+                "title": "Catalog",
+                "link": "http://localhost:8080/catalog.html"
+            },
+            {
+                "title": "Contact Us",
+                "link": "http://localhost:8080/contact.html"
+            }
+        ]
+    },
+    "contacts": {
+        "title": "Explore Catalog",
+        "image": "lines.webp",
+        "nav": [
+            {
+                "link": "http://localhost:8080/index.html",
+                "title": "Home"
+            },
+            {
+                "link": "http://localhost:8080/catalog.html",
+                "title": "Catalog"
+            }
+        ]
+    },
+    "filtering": {
+        "title": "Filters",
+        "button": "Apply All",
+        "filters": [
+            {
+                "title": "Clothing",
+                "name": "clothing",
+                "type": "checkbox",
+                "default": "King",
+                "filter": [
+                    "Combatment",
+                    "Ninja",
+                    "King",
+                    "Queen",
+                    "Robot"
+                ]
+            },
+            {
+                "title": "Eyes",
+                "name": "eyes",
+                "type": "radio",
+                "default": "Green",
+                "filter": [
+                    "Yellow",
+                    "Green",
+                    "Mix",
+                    "Orange"
+                ]
+            },
+            {
+                "title": "Face",
+                "name": "face",
+                "type": "radio",
+                "default": "Green",
+                "filter": [
+                    "Yellow",
+                    "Green",
+                    "Mix",
+                    "Orange"
+                ]
+            },
+            {
+                "title": "Skin",
+                "name": "skin",
+                "type": "checkbox",
+                "default": "Skin 1",
+                "filter": [
+                    "Skin 1",
+                    "Skin 2"
+                ]
+            },
+            {
+                "title": "Background",
+                "name": "background",
+                "type": "radio",
+                "default": "Green",
+                "filter": [
+                    "Yellow",
+                    "Green",
+                    "Mix",
+                    "Orange"
+                ]
+            },
+            {
+                "title": "Special",
+                "name": "special",
+                "type": "checkbox",
+                "default": "Mix",
+                "filter": [
+                    "Yellow",
+                    "Green",
+                    "Mix",
+                    "Orange"
+                ]
+            }
+        ]
+    },
+    "catalogpage": {
+        "title": "All Item",
+        "button": "Sort by",
+        "sort": ["Newest", "Most Popular", "Increasing in price", "Lowering in price"],
+        "tags": [
+            "NFT",
+            "ICO",
+            "Crypto"
+        ],
+        "reset": "Clear All"
+    },
+
+    "catalog": [
+        {
+            "link": "/",
+            "label": "Sold out",
+            "state": "sold out",
+            "name": "Name Product",
+            "price": "199",
+            "image": "/img/scissors-1x.webp",
+            "image1": "/img/scissors-2x.webp"
+        },
+        {
+            "link": "/",
+            "label": "Sold out",
+            "state": "sold out",
+            "name": "Name Product",
+            "price": "199",
+            "image": "/img/scissors-1x.webp",
+            "image1": "/img/scissors-2x.webp"
+        }
+    ]
+}

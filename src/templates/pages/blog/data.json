@@ -1,4 +1,25 @@
 {
+    "header": {
+    "title": "Blog",
+    "nav": [
+      {
+        "title": "Home",
+        "link": "http://localhost:8080/index.html"
+      },
+      {
+        "title": "Blog",
+        "link": "http://localhost:8080/blog.html"
+      },
+      {
+        "title": "Catalog",
+        "link": "http://localhost:8080/catalog.html"
+      },
+      {
+        "title": "Contact Us",
+        "link": "http://localhost:8080/contact.html"
+      }
+    ]
+  },
     "blogpage":{
         "image": "lines.webp",
         "title": "Our blog",
@@ -19,8 +40,8 @@
     },
 
     "story": {
-        "image": "public/img/twoheaddragon-1x.webp",
-        "image1": "public/img/twoheaddragon-2x.webp",
+        "image": "/img/twoheaddragon-1x.webp",
+        "image1": "/img/twoheaddragon-2x.webp",
         "caption": "Photo caption",
         "title": "The Basilisks NFT",
         "genre": "Genre",
@@ -141,13 +162,13 @@
 
     "imagelist": [
         {
-        "image": "public/img/dragonleft-1x.webp",
-        "image1": "public/img/dragonleft-2x.webp",
+        "image": "/img/dragonleft-1x.webp",
+        "image1": "/img/dragonleft-2x.webp",
         "caption": "Photo caption"
         },
         {
-        "image": "public/img/dragonlarge-1x.webp",
-        "image1": "public/img/dragonlarge-2x.webp",
+        "image": "/img/dragonlarge-1x.webp",
+        "image1": "/img/dragonlarge-2x.webp",
         "caption":"Photo caption"
         }
     ]

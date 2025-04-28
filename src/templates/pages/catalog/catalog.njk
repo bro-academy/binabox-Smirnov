@@ -1,0 +1,11 @@
+{% extends "layouts/base.njk" %}
+
+{% set title = "Catalog"%}
+{{ title }}
+{% set url = "http://localhost:8080/catalog.html" %}
+
+{% block content %}
+    {% include 'partials/contact-nav.njk' %}
+    {% include 'partials/catalogfilter.njk' %}
+    {% include 'partials/catalogpage.njk' %}
+{% endblock %}
