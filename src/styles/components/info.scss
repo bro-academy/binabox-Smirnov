@@ -19,10 +19,12 @@
         font-size: 1.125rem;
         line-height: 28px;
         font-weight: 600;
+        display: block;
+        margin: 0 auto;
     }
 
     &__desc {
-        color: $text-color;
+        color: #EFF5FAD1;
         font-family: $text-font;
         font-size: 1.25rem;
         font-weight: 500;
@@ -35,6 +37,8 @@
         list-style: none;
         color: $text-color;
         margin-bottom: 2.5rem;
+        display: flex;
+        flex-wrap: wrap;
     }
 
     &__list-item {
@@ -53,7 +57,7 @@
     }
 
     &__item-desc {
-        color: $text-color;
+        color: #EFF5FAD1;
         font-family: $text-font;
         font-weight: 400;
         font-size: 1.125rem;

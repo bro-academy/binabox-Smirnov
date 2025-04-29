@@ -1,11 +1,11 @@
 // banner block
 @use '../global/variables.scss' as *;
 .banner {
-    background-image: url("../img/cube.png"), radial-gradient(circle, $blue-color, $block-color);
+    background-image: radial-gradient(circle, $blue-color, $block-color); //hide on mobile
     background-repeat: no-repeat, no-repeat;
     background-position: right, top left;
     padding: 2rem 1rem;
-  
+  // url("../img/cube.png"),
     &__title {
       font-size: 1.75rem;
       color: $text-color;
@@ -30,9 +30,14 @@
     &__stat {
       color: $text-color;
       margin-bottom: 2rem;
+      display: flex;
+      gap: 64px;
     }
   
-  
+    &__stats {
+      display: flex;
+      flex-direction: column-reverse;
+    }
   
     &__stat-txt {
       font-size: 1rem;
@@ -47,6 +52,11 @@
       font-weight: 400;
       line-height: 36px;
       letter-spacing: -0.5px;
+    }
+
+    &__buttons {
+      display: flex;
+      flex-direction: column;
     }
   }
   

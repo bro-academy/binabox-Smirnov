@@ -17,5 +17,30 @@
       font-size: 1.5rem;
       font-weight: 400;
       line-height: 2rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    &__title::after{
+      content: "";
+      flex-grow: 1;
+      height: 2px;
+      background-color: #D0D7FB2B;
+    }
+
+    &__link {
+      width: 182px;
+      margin-right: 2.125rem;
+    }
+
+    &__buttons { 
+      display: flex;
+      flex-direction: row;
+    }
+
+
+    &__list {
+      margin-top: 2.5rem;
     }
   }

@@ -6,11 +6,12 @@
     padding: 1rem;
     margin-right: 1rem;
     margin-bottom: 1rem;
-
+    width: 293px;
+    height: 284px;
 
     &__img {
-        margin-left: auto;
-        margin-right: auto;
+        display: block;
+        margin: 1rem auto;
     }
 
     &__title {
@@ -18,22 +19,24 @@
         font-size: 1.5rem;
         line-height: 32px;
         text-align: center;
-        margin-top: 1rem;
     }
-
-
 
     &__subtext {
         font-family: $text-font;
+        color: #EFF5FAD1;
         font-size: 1.125rem;
         font-weight: 400;
         line-height: 28px;
         text-align: center;
         margin-bottom: 1rem;
+        display: block;
     }
 
     &__list {
         list-style: none;
         margin-right: 0.5rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
 }

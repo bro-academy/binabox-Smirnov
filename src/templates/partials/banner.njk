@@ -4,16 +4,20 @@
     <p class="banner__subtitle">
           We are the best way to check rarity of NFT <span class="banner__subtitle banner__subtitle--highlight">collection</span>
     </p>
-    <picture>
+    {# <picture>
         <source srcset="{{ banner.image }}, {{ banner.image1 }} 2x">
         <img src="{{ banner.image }} "alt="image" class="banner__img" width="682px" height="596px"/>
-    </picture>
+    </picture> #}
     <dl class="banner__stat">
         {% for stat in bannerStats %}
-            <dt class="banner__stat-txt">{{ stat.statname }}</dt>
-            <dd class="banner__stat-num">{{ stat.statnum }}</dd>
+            <div class="banner__stats">
+                <dt class="banner__stat-txt">{{ stat.statname }}</dt>
+                <dd class="banner__stat-num">{{ stat.statnum }}</dd>
+            </div>
         {% endfor %}
     </dl>
-    <a href="#" class="button button--glow">{{ banner.btn1 }}</a>
-    <a href="#" class="button">{{ banner.btn2 }}</a>
+    <div class="banner__buttons">
+        <a href="#" class="button button--glow">{{ banner.btn1 }}</a>
+        <a href="#" class="button">{{ banner.btn2 }}</a>
+    </div>
 </section>

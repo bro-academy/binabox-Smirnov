@@ -1,8 +1,10 @@
 @use '../global/variables.scss' as *;
 @use '../global/mixins.scss' as *;
+
 .header {
     background: $block-color;
     padding: 1rem;
+    display: flex;
 
     &__logo {
         width: 188px;
@@ -14,7 +16,13 @@
         font-family: $text-font;
         font-size: 1rem;
         font-weight: 600;
-        line-height: 24px;
+        line-height: 1.5rem;
+        display: flex;
+        flex-direction: column; // with @media change to row
+        position: relative;
+        // top: 128px;
+        margin-top: 132px;
+        right: 48px;
     }
 
     &__link {
@@ -38,12 +46,24 @@
         font-size: 2rem;
         font-weight: normal;
         color: $text-color;
+        display: none; // change with screen
+    }
+
+    &__search-area {
+        position: relative;
+        // top: 64px;
+        right: 154px;
+        width: 328px;
+        height: 48px;
+        margin-top: 5rem;
+        margin-right: 0px;
     }
 
     &__search {
         @include search-box;
-        width: 11.75rem;
+        // width: 11.75rem;
         height: 3rem;
+        width: 328px;
     }
 
     &__search-icon {
@@ -54,6 +74,13 @@
         @include search-input;
         width: 8.25rem;
     }
-      
+
+    &__buttons {
+        display: flex;
+        gap: 1rem;
+        position: relative;
+        right: 267px;
+        margin-right: 0px;
+    }
 
 }
