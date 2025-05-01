@@ -218,8 +218,207 @@
           "img": "instagram.svg"
         }
       ]
+    },
+    {
+      "face": "/img/face-1x.webp",
+      "face1": "/img/face-2x.webp",
+      "name": "Jason Smith",
+      "role": "Co - Founder",
+      "networks": [
+        {
+          "platform": "twitter",
+          "url": "/",
+          "img": "twitter.svg"
+        },
+        {
+          "platform": "facebook",
+          "url": "/",
+          "img": "facebook.svg"
+        },
+        {
+          "platform": "telegram",
+          "url": "/",
+          "img": "telegram.svg"
+        },
+        {
+          "platform": "linkedin",
+          "url": "/",
+          "img": "linkedin.svg"
+        },
+        {
+          "platform": "instagram",
+          "url": "/",
+          "img": "instagram.svg"
+        }
+      ]
+    },
+    {
+      "face": "/img/face-1x.webp",
+      "face1": "/img/face-2x.webp",
+      "name": "Jason Smith",
+      "role": "Co - Founder",
+      "networks": [
+        {
+          "platform": "twitter",
+          "url": "/",
+          "img": "twitter.svg"
+        },
+        {
+          "platform": "facebook",
+          "url": "/",
+          "img": "facebook.svg"
+        },
+        {
+          "platform": "telegram",
+          "url": "/",
+          "img": "telegram.svg"
+        },
+        {
+          "platform": "linkedin",
+          "url": "/",
+          "img": "linkedin.svg"
+        },
+        {
+          "platform": "instagram",
+          "url": "/",
+          "img": "instagram.svg"
+        }
+      ]
+    },
+    {
+      "face": "/img/face-1x.webp",
+      "face1": "/img/face-2x.webp",
+      "name": "Jason Smith",
+      "role": "Co - Founder",
+      "networks": [
+        {
+          "platform": "twitter",
+          "url": "/",
+          "img": "twitter.svg"
+        },
+        {
+          "platform": "facebook",
+          "url": "/",
+          "img": "facebook.svg"
+        },
+        {
+          "platform": "telegram",
+          "url": "/",
+          "img": "telegram.svg"
+        },
+        {
+          "platform": "linkedin",
+          "url": "/",
+          "img": "linkedin.svg"
+        },
+        {
+          "platform": "instagram",
+          "url": "/",
+          "img": "instagram.svg"
+        }
+      ]
+    },
+    {
+      "face": "/img/face-1x.webp",
+      "face1": "/img/face-2x.webp",
+      "name": "Jason Smith",
+      "role": "Co - Founder",
+      "networks": [
+        {
+          "platform": "twitter",
+          "url": "/",
+          "img": "twitter.svg"
+        },
+        {
+          "platform": "facebook",
+          "url": "/",
+          "img": "facebook.svg"
+        },
+        {
+          "platform": "telegram",
+          "url": "/",
+          "img": "telegram.svg"
+        },
+        {
+          "platform": "linkedin",
+          "url": "/",
+          "img": "linkedin.svg"
+        },
+        {
+          "platform": "instagram",
+          "url": "/",
+          "img": "instagram.svg"
+        }
+      ]
+    },
+    {
+      "face": "/img/face-1x.webp",
+      "face1": "/img/face-2x.webp",
+      "name": "Jason Smith",
+      "role": "Co - Founder",
+      "networks": [
+        {
+          "platform": "twitter",
+          "url": "/",
+          "img": "twitter.svg"
+        },
+        {
+          "platform": "facebook",
+          "url": "/",
+          "img": "facebook.svg"
+        },
+        {
+          "platform": "telegram",
+          "url": "/",
+          "img": "telegram.svg"
+        },
+        {
+          "platform": "linkedin",
+          "url": "/",
+          "img": "linkedin.svg"
+        },
+        {
+          "platform": "instagram",
+          "url": "/",
+          "img": "instagram.svg"
+        }
+      ]
+    },
+    {
+      "face": "/img/face-1x.webp",
+      "face1": "/img/face-2x.webp",
+      "name": "Jason Smith",
+      "role": "Co - Founder",
+      "networks": [
+        {
+          "platform": "twitter",
+          "url": "/",
+          "img": "twitter.svg"
+        },
+        {
+          "platform": "facebook",
+          "url": "/",
+          "img": "facebook.svg"
+        },
+        {
+          "platform": "telegram",
+          "url": "/",
+          "img": "telegram.svg"
+        },
+        {
+          "platform": "linkedin",
+          "url": "/",
+          "img": "linkedin.svg"
+        },
+        {
+          "platform": "instagram",
+          "url": "/",
+          "img": "instagram.svg"
+        }
+      ]
     }
   ],
+  
   "faqs": {
     "title": "FAQs",
     "faqscards": [

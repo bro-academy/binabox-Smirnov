@@ -2,8 +2,8 @@
 @use '../global/variables.scss' as *;
 .info {
     background-color: $block-color;
-    padding: 2rem 1rem;
-
+    padding: 4rem;
+    position: relative;
 
     &__title {
         margin-bottom: 1rem;
@@ -19,8 +19,10 @@
         font-size: 1.125rem;
         line-height: 28px;
         font-weight: 600;
-        display: block;
-        margin: 0 auto;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 4rem;
     }
 
     &__desc {
@@ -39,10 +41,13 @@
         margin-bottom: 2.5rem;
         display: flex;
         flex-wrap: wrap;
+        gap: 2rem;
+        margin-bottom: 152px;
     }
 
     &__list-item {
-        display: block;
+        width: 376px;
+        height: 234.32px;
         padding: 1.5rem;
         margin-bottom: 1rem;
         background-color: $card-color;

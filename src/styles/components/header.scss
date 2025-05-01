@@ -3,12 +3,25 @@
 
 .header {
     background: $block-color;
-    padding: 1rem;
+    padding: 2rem;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__logos {
+        display: flex;
+        gap: 17.92px;
+    }
 
     &__logo {
-        width: 188px;
-        height: 42px;
+        width: 36px;
+        height: 40px;
+        
+    }
+
+    &__nav {
+        display: flex;
+        gap: 16.5rem;
     }
 
     &__list {
@@ -18,11 +31,7 @@
         font-weight: 600;
         line-height: 1.5rem;
         display: flex;
-        flex-direction: column; // with @media change to row
-        position: relative;
-        // top: 128px;
-        margin-top: 132px;
-        right: 48px;
+        width: 401px; 
     }
 
     &__link {
@@ -46,24 +55,24 @@
         font-size: 2rem;
         font-weight: normal;
         color: $text-color;
-        display: none; // change with screen
+        margin-left: 17.92px;
     }
 
     &__search-area {
         position: relative;
         // top: 64px;
-        right: 154px;
-        width: 328px;
+        // right: 154px;
+        width: 188px;
         height: 48px;
-        margin-top: 5rem;
-        margin-right: 0px;
+        // margin-top: 5rem;
+        margin-right: 34px;
     }
 
     &__search {
         @include search-box;
-        // width: 11.75rem;
         height: 3rem;
-        width: 328px;
+        width: 188px;
+        margin-left: auto;
     }
 
     &__search-icon {
@@ -79,8 +88,23 @@
         display: flex;
         gap: 1rem;
         position: relative;
-        right: 267px;
-        margin-right: 0px;
+        margin-left: auto;
+        height: 48px;
+    }
+
+    &__buttons::before {
+        content:"";
+        flex-grow: 1;
+        width: 2px;
+        height: 24px;
+        margin-right: 1rem;
+        margin-top: 0.75rem;
+        background-color: #D0D7FB2B;
+    }
+
+    &__buttons img {
+        width: 24px;
+        margin-right: 0.5rem;
     }
 
 }

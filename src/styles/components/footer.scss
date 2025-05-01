@@ -2,7 +2,7 @@
 @use '../global/variables.scss' as *;
 .footer {
     background-color: #1A1925;
-    padding: 4rem 1rem 2rem 1rem;
+    padding: 4rem 4rem 2rem 4rem;
 
     &__txt {
         font-family: $text-font;
@@ -10,11 +10,6 @@
         font-weight: 400;
         font-size: 0.875rem;
         line-height: 20px;
-        margin-top: 2rem;
-        margin-right: 5.375rem;
-        margin-bottom: 1.25rem;
-        border-top: 1px solid #BFC5EE1F;
-        padding-top: 32px;
     }
 
 
@@ -26,5 +21,15 @@
     &__iconlist-item {
         width: 40px;
         height: 40px;
+    }
+
+    &__end {
+        padding-top: 2rem;
+        display: flex;
+        flex-direction: row;
+        gap: 67.375rem;        
+        margin-top: 2rem;
+        border-top: 1px solid #BFC5EE1F;
+
     }
 }

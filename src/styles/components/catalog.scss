@@ -2,9 +2,13 @@
 @use '../global/variables.scss' as *;
 .catalog {
     background-color: $block-color;
-    padding: 2rem 1rem;
+    padding: 4rem;
   
-  
+    &__nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
     &__box {
       padding: 0.125rem 0;
       display: flex;
@@ -26,21 +30,51 @@
       content: "";
       flex-grow: 1;
       height: 2px;
+      width: 1167px;
       background-color: #D0D7FB2B;
+      margin-right: 2rem;
     }
 
     &__link {
-      width: 182px;
-      margin-right: 2.125rem;
+      font-family: $text-font;
+      font-weight: 600;
+      font-size: 1.125rem;
+      line-height: 28px;
+      width: 108px;
     }
 
     &__buttons { 
       display: flex;
       flex-direction: row;
+      gap: 1rem;
+    }
+
+    &__chevrons {
+      margin-left: auto;
+      display: flex;
+    }
+
+    &__chevrons::before {
+      content: "";
+      flex-grow: 1;
+      height: 24px;
+      width: 2px;
+      background-color: #D0D7FB2B;
+      margin-right: 1rem;
+      margin-top: 0.75rem;
     }
 
 
     &__list {
       margin-top: 2.5rem;
+      display: flex;
+      flex-direction: row;
+      gap: 1.5rem;
+      justify-content: center;
+    }
+
+    &__list-item {
+      width: 300.8px;
+      height: 480px;
     }
   }
