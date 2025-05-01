@@ -5,7 +5,8 @@
     background-color: $card-color;
     padding: 1.5rem;
     position: relative;
-
+    display: flex;
+    flex-direction: column;
 
     &__img {
         margin-bottom: 1.5rem;
