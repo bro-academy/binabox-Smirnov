@@ -2,7 +2,7 @@
     <img src="{{ blogpage.image }}" alt="bkdimage" class="blogpage__img"/>
     <h1 class="blogpage__title">{{ blogpage.title }}</h1>
     <nav class="blogpage__nav">
-        {% for item in nav %}
+        {% for item in blogpage.nav %}
             <a href="{{ item.link }}" class="blogpage__link {% if item.link == url %} blogpage__link--target {% endif %}">{{ item.title }}</a>
         {% endfor %}
     </nav>

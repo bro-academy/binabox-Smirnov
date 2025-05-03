@@ -1,20 +1,23 @@
 <section class="story">
-    <figure class="story-fig">
-        <picture>
-            <source srcset="{{ story.image }}, {{ story.image1 }} 2x"/>
-            <img src="{{ story.image }}" alt="twoheaddragon" class="story-fig__img" width="328px" height="178px"/>
-        </picture>
-        <figcaption class="story-fig__cap">{{ story.caption }}</figcaption>
-    </figure>
-    <h2 class="story__title">{{ story.title }}</h2>
-    <span class="button button--glow">{{ story.genre }}</span>
-    <picture>
-        <img src="icon.png" alt="icon" class="story__img"/>
-    </picture>
-    <span class="story__name">{{ story.name }}</span>
-    <img src="icon.png" alt="icon" class="story__icon"/>
-    <time datetime="2022-06-20" class="story__date">{{ story.date }}</time>
-    <p class="story__desc">
+    <div class="story__main">
+        <figure class="story-fig">
+            <picture>
+                <source srcset="{{ story.image }}, {{ story.image1 }} 2x"/>
+                <img src="{{ story.image }}" alt="twoheaddragon" class="story-fig__img" width="1024px" height="557px"/>
+            </picture>
+            <figcaption class="story-fig__cap">{{ story.caption }}</figcaption>
+        </figure>
+        <h2 class="story__title">{{ story.title }}</h2>
+        <span class="button button--glow">{{ story.genre }}</span>
+        <div class="story__details">
+            <picture>
+                <img src="icon.png" alt="icon" class="story__img"/>
+            </picture>
+            <span class="story__name">{{ story.name }}</span>
+            <img src="icon.png" alt="icon" class="story__icon"/>
+            <time datetime="2022-06-20" class="story__date">{{ story.date }}</time>
+        </div>
+        <p class="story__desc">
           The Basilisks that <span class="story__desc story__desc--mark">players</span> collect are represented with
           NFTs on Ethereum’s blockchain with real-world value. Players use the
           <span class="story__desc story__desc--accent">Basilisks they have</span> gathered to battle other players to
@@ -25,17 +28,17 @@
           (DAO) called the Balthazar DAO.
         </p>
 
-    <ul class="story__list">
-        <li class="story__list-item">
-            <p class="story__desc">
+        <ul class="story__list">
+            <li class="story__list-item">
+                <p class="story__desc">
               The Basilisks that players collect are represented with NFTs on
               Ethereum’s blockchain with real-world value. Players use the
               Basilisks they have gathered to battle other players to win ether
               (ETH).
             </p>
-        </li>
-        <li class="story__list-item">
-            <p class="story__desc">
+            </li>
+            <li class="story__list-item">
+                <p class="story__desc">
               In Balthazar Dragons, players are immersed in a 3D open world to
               explore and capture dragon-like beasts called Basilisks. Balthazar
               Dragons is an upcoming fantasy role-playing
@@ -43,34 +46,34 @@
               decentralized autonomous organization (DAO) called the Balthazar
               DAO.
             </p>
-        </li>
-    </ul>
-
-    <ul class="story__set">
-        {% for item in story-set %}
-            <li class="story__set-item"><img src="{{ item.logo }}" alt="logo" class="story__icon"/>{{ item.title }}</li>
-        {% endfor %}
-    </ul>
-
-    {% include 'partials/quote.njk' %}
-
-    <ul class="story__image-list">
-        {% for item in imagelist %}
-            <li class="story__image-list-item">
-                <figure class="story-fig">
-                    <picture>
-                        <source srcset="{{ item.image }}, {{ item.image1 }} 2x"/>
-                        <img src="{{ item.image }}" alt="dragonleft" class="story-fig__img" width="328px" height="224px"/>
-                    </picture>
-                    <figcaption class="story-fig__cap">{{ item.caption }}</figcaption>
-
-                </figure>
             </li>
-        {% endfor %}
-    </ul>
+        </ul>
 
-    <h3 class="story__subtitle">{{ story.subtitle }}</h3>
-    <p class="story__desc">
+        <ul class="story__set">
+            {% for item in story.storyset %}
+                <li class="story__set-item"><img src="{{ item.logo }}" alt="logo" class="story__icon"/>{{ item.title }}</li>
+            {% endfor %}
+        </ul>
+
+        {% include 'partials/quote.njk' %}
+
+        <ul class="story__image-list">
+            {% for item in imagelist %}
+                <li class="story__image-list-item">
+                    <figure class="story-fig">
+                        <picture>
+                            <source srcset="{{ item.image }}, {{ item.image1 }} 2x"/>
+                            <img src="{{ item.image }}" alt="dragonleft" class="story-fig__img" width="500px" height="393.94px"/>
+                        </picture>
+                        <figcaption class="story-fig__cap">{{ item.caption }}</figcaption>
+
+                    </figure>
+                </li>
+            {% endfor %}
+        </ul>
+
+        <h3 class="story__subtitle">{{ story.subtitle }}</h3>
+        <p class="story__desc">
           Setting up your avatar and personalizing your nickname on Binance is
           quick and easy. Users can go to binance.com under Dashboard > Settings
           > My Profile > Avatar and Nickname. For those of you who own NFT
@@ -78,7 +81,7 @@
           your avatar to personalize your profile. For users who do not own any
           NFT avatars, check out the NFT avatar collections page to get started.
         </p>
-    <p class="story__desc">
+        <p class="story__desc">
           Alternatively, if you’re on nft.binance.com, go to User Center >
           Settings > Basic > Set Avatar and Nickname, and you’ll be redirected
           to the main site. Binance NFT Creators have the option of setting
@@ -87,44 +90,51 @@
           ecosystem.
         </p>
 
-    <h3 class="story__subtitle">{{ story.subtitle1 }}</h3>
-    <p class="story__desc">
-        {{ story.description }}
-    </p>
+        <h3 class="story__subtitle">{{ story.subtitle1 }}</h3>
+        <p class="story__desc">
+            {{ story.description }}
+        </p>
+        <div class="story__tags">
+            <div class="story__tag-block">
+                <h4 class="story__tag-title">{{ story.tagtitle }}</h4>
+                <ul class="story__taglist">
+                    {% for item in story.tags %}
+                        <li class="story__taglist-item button">{{ item.title }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="story__tag-block">
+                <h4 class="story__tag-title">{{ story.sharetitle }}</h4>
+                <ul class="story__taglist">
+                    {% for item in story.share %}
+                        <li class="story__taglist-item button">
+                            <a href="{{ item.link }}" target="_blank" class="story__link"><img src="{{ item.icon }}" alt="" class="story__icon"/></a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
 
-    <h4 class="story__tag-title">{{ story.tagtitle }}</h4>
-    <ul class="story__taglist">
-        {% for item in tags %}
-            <li class="story__taglist-item button">{{ item.title }}</li>
-        {% endfor %}
-    </ul>
+    </div>
+    <div class="story__sidebar">
+        <aside class="story-sidebar">
+            <h3 class="story-sidebar__title">{{ story.aside.title }}</h3>
+            <ul class="story-sidebar__list">
+                {% for item in story.aside.categories %}
+                    <li class="story-sidebar__list-item">
+                        <a href="{{ item.link }}" class="story-sidebar__link">{{ item.title }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </aside>
 
-    <h4 class="story__tag-title">{{ story.sharetitle }}</h4>
-    <ul class="story__taglist">
-        {% for item in share %}
-            <li class="story__taglist-item">
-                <a href="{{ item.link }}" target="_blank" class="story__link"><img src="{{ item.icon }}" alt="icon" class="story__icon"/></a>
-            </li>
-        {% endfor %}
-    </ul>
-
-    <aside class="story-sidebar">
-        <h3 class="story-sidebar__title">{{ story.aside.title }}</h3>
-        <ul class="story-sidebar__list">
-            {% for item in aside.categories %}
-                <li class="story-sidebar__list-item">
-                    <a href="{{ item.link }}" class="story-sidebar__link">{{ item.title }}</a>
-                </li>
-            {% endfor %}
-        </ul>
-    </aside>
-
-    <aside class="story-sidebar">
-        <h3 class="story-sidebar__title">{{ story.aside1.title }}</h3>
-        <ul class="story-sidebar__taglist">
-            {% for item in aside1.tags %}
-                <li class="story-sidebar__taglist-item button">{{ item.title }}</li>
-            {% endfor %}
-        </ul>
-    </aside>
+        <aside class="story-sidebar">
+            <h3 class="story-sidebar__title">{{ story.aside1.title }}</h3>
+            <ul class="story-sidebar__taglist">
+                {% for item in story.aside1.tags %}
+                    <li class="story-sidebar__taglist-item button">{{ item.title }}</li>
+                {% endfor %}
+            </ul>
+        </aside>
+    </div>
 </section>

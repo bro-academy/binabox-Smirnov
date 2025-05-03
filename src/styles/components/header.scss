@@ -4,6 +4,7 @@
 .header {
     background: $block-color;
     padding: 2rem;
+    width: 108rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -14,12 +15,13 @@
     
     &__logos {
         display: flex;
-        gap: 17.92px;
+        gap: 1.12rem;
+        width: 11.75rem;
     }
 
     &__logo {
-        width: 36px;
-        height: 40px;
+        width: 2.25rem;
+        height: 2.5rem;
         
     }
 
@@ -35,7 +37,8 @@
         font-weight: 600;
         line-height: 1.5rem;
         display: flex;
-        width: 401px; 
+        width: 25.0625rem; 
+        height: 3rem;
     }
 
     &__link {
@@ -59,23 +62,18 @@
         font-size: 2rem;
         font-weight: normal;
         color: $text-color;
-        margin-left: 17.92px;
     }
 
     &__search-area {
         position: relative;
-        // top: 64px;
-        // right: 154px;
-        width: 188px;
-        height: 48px;
-        // margin-top: 5rem;
-        margin-right: 34px;
+        width: 11.75rem;
+        height: 3rem;
     }
 
     &__search {
         @include search-box;
         height: 3rem;
-        width: 188px;
+        width: 11.75rem;
         margin-left: auto;
     }
 
@@ -92,8 +90,15 @@
         display: flex;
         gap: 1rem;
         position: relative;
-        margin-left: auto;
-        height: 48px;
+        height: 3rem;
+    }
+
+    &__buttons a{
+        width: 150px;
+    }
+
+    &__buttons button {
+        width: 159px;
     }
 
     &__buttons::before {
@@ -101,7 +106,6 @@
         flex-grow: 1;
         width: 2px;
         height: 24px;
-        margin-right: 1rem;
         margin-top: 0.75rem;
         background-color: #D0D7FB2B;
     }
