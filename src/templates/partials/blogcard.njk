@@ -3,11 +3,13 @@
         <source srcset="{{ item.blogimg }}, {{ item.blogimg1 }} 2x">
         <img src="{{ item.blogimg }}" alt="image" class="blog-card__img" width="261px" height="340px"/>
     </picture>
-    <span class="blog-card__tag">{{ item.blogtag }}</span>
-    <img src="icon.svg" alt="icon" class="blog-card__img"/>
-    <span class="blog-card__name">{{ item.blogname }}</span>
-    <img src="icon.svg" alt="icon"/>
-    <time datetime="2022-06-20" class="blog-card__date">{{ item.blogtime }}</time>
+    <div class="blog-card__details">
+        <span class="blog-card__tag">{{ item.blogtag }}</span>
+        <img src="icon.svg" alt="" class="blog-card__icon"/>
+        <span class="blog-card__name">{{ item.blogname }}</span>
+        <img src="icon.svg" alt="" class="blog-card__icon"/>
+        <time datetime="2022-06-20" class="blog-card__date">{{ item.blogtime }}</time>
+    </div>
     <h3 class="blog-card__title">{{ item.blogtitle }}</h3>
     <p class="blog-card__subtext">
         {{ item.blogtxt }}

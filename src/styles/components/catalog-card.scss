@@ -1,17 +1,22 @@
 // Catalog card block
 @use '../global/variables.scss' as *;
+@use '../global/mixins.scss' as *;
 .catalog-card {
     background-color: $card-color;
-    padding: 1rem;
-    margin-bottom: 1rem;
-
+    padding: 1.5rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
 
     &__img {
-        margin-bottom: 1rem;
+        margin-bottom: 1.5rem;
+        width: 252.8px;
+        height: 324px;
     }
 
     &__txt {
-        font-size: 1.75rem;
+        font-family: $main-font;
+        font-size: 2.25rem;
         font-weight: 400;
         line-height: 2.25rem;
         color: $text-color;
@@ -26,22 +31,20 @@
         font-weight: 500;
         line-height: 1.75rem;
         margin-right: 3.5rem;
+        color: #EFF5FAD1
     }
 
     &__tag {
-        text-align: right;
-        background-color: $text-color;
-        color: $blue-color;
-        font-family: $text-font;
-        font-size: 0.875rem;
-        font-weight: 600;
-        text-decoration: none;
-        line-height: 1.25rem;
-        padding: 0.5rem 0.625rem;
+        @include tag-new;
+        position: absolute;
+        right: 2.5rem;
+        top: 2.5rem;
     }
 
     &__tag--highlight {
-        background-color: $invalid-color;
-        color: $text-color;
+        @include tag-highlight;
+        position: absolute;
+        right: 2.5rem;
+        top: 2.5rem;
     }
 }

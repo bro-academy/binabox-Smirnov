@@ -2,8 +2,8 @@
 @use '../global/variables.scss' as *;
 .blog {
     background-color: $block-color;
-    padding: 2rem 1rem;
-
+    padding: 4rem;
+    position: relative;
 
     &__title {
         margin-bottom: 2.5rem;
@@ -19,7 +19,17 @@
         font-size: 1.125rem;
         line-height: 28px;
         font-weight: 600;
-        margin-bottom: 1.5rem;
         padding: 0.625rem 1.5rem;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 4rem;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        margin-bottom: 88px; 
     }
 }

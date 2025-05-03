@@ -104,7 +104,7 @@
       "blogname": "Tony Nguyen",
       "blogtime": "20 Jun 2022",
       "blogtitle": "Sonic Live",
-      "blogtxt": "One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet...",
+      "blogtxt": "One September 22, 2021 A volutpat nulla eros, nulla ultrice...",
       "btnlink": "/"
     },
     {
@@ -114,7 +114,7 @@
       "blogname": "Tony Nguyen",
       "blogtime": "20 Jun 2022",
       "blogtitle": "Sonic Live",
-      "blogtxt": "One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet...",
+      "blogtxt": "One September 22, 2021 A volutpat nulla eros, nulla ultrice...",
       "btnlink": "/"
     },
     {
@@ -124,7 +124,7 @@
       "blogname": "Tony Nguyen",
       "blogtime": "20 Jun 2022",
       "blogtitle": "Sonic Live",
-      "blogtxt": "One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet...",
+      "blogtxt": "One September 22, 2021 A volutpat nulla eros, nulla ultrice...",
       "btnlink": "/"
     },
     {
@@ -134,7 +134,7 @@
       "blogname": "Tony Nguyen",
       "blogtime": "20 Jun 2022",
       "blogtitle": "Sonic Live",
-      "blogtxt": "One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet...",
+      "blogtxt": "One September 22, 2021 A volutpat nulla eros, nulla ultrice...",
       "btnlink": "/"
     },
     {
@@ -144,7 +144,7 @@
       "blogname": "Tony Nguyen",
       "blogtime": "20 Jun 2022",
       "blogtitle": "Sonic Live",
-      "blogtxt": "One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet...",
+      "blogtxt": "One September 22, 2021 A volutpat nulla eros, nulla ultrice...",
       "btnlink": "/"
     },
     {
@@ -154,7 +154,7 @@
       "blogname": "Tony Nguyen",
       "blogtime": "20 Jun 2022",
       "blogtitle": "Sonic Live",
-      "blogtxt": "One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet...",
+      "blogtxt": "One September 22, 2021 A volutpat nulla eros, nulla ultrice...",
       "btnlink": "/"
     }
   ],
@@ -218,8 +218,207 @@
           "img": "instagram.svg"
         }
       ]
+    },
+    {
+      "face": "/img/face-1x.webp",
+      "face1": "/img/face-2x.webp",
+      "name": "Jason Smith",
+      "role": "Co - Founder",
+      "networks": [
+        {
+          "platform": "twitter",
+          "url": "/",
+          "img": "twitter.svg"
+        },
+        {
+          "platform": "facebook",
+          "url": "/",
+          "img": "facebook.svg"
+        },
+        {
+          "platform": "telegram",
+          "url": "/",
+          "img": "telegram.svg"
+        },
+        {
+          "platform": "linkedin",
+          "url": "/",
+          "img": "linkedin.svg"
+        },
+        {
+          "platform": "instagram",
+          "url": "/",
+          "img": "instagram.svg"
+        }
+      ]
+    },
+    {
+      "face": "/img/face-1x.webp",
+      "face1": "/img/face-2x.webp",
+      "name": "Jason Smith",
+      "role": "Co - Founder",
+      "networks": [
+        {
+          "platform": "twitter",
+          "url": "/",
+          "img": "twitter.svg"
+        },
+        {
+          "platform": "facebook",
+          "url": "/",
+          "img": "facebook.svg"
+        },
+        {
+          "platform": "telegram",
+          "url": "/",
+          "img": "telegram.svg"
+        },
+        {
+          "platform": "linkedin",
+          "url": "/",
+          "img": "linkedin.svg"
+        },
+        {
+          "platform": "instagram",
+          "url": "/",
+          "img": "instagram.svg"
+        }
+      ]
+    },
+    {
+      "face": "/img/face-1x.webp",
+      "face1": "/img/face-2x.webp",
+      "name": "Jason Smith",
+      "role": "Co - Founder",
+      "networks": [
+        {
+          "platform": "twitter",
+          "url": "/",
+          "img": "twitter.svg"
+        },
+        {
+          "platform": "facebook",
+          "url": "/",
+          "img": "facebook.svg"
+        },
+        {
+          "platform": "telegram",
+          "url": "/",
+          "img": "telegram.svg"
+        },
+        {
+          "platform": "linkedin",
+          "url": "/",
+          "img": "linkedin.svg"
+        },
+        {
+          "platform": "instagram",
+          "url": "/",
+          "img": "instagram.svg"
+        }
+      ]
+    },
+    {
+      "face": "/img/face-1x.webp",
+      "face1": "/img/face-2x.webp",
+      "name": "Jason Smith",
+      "role": "Co - Founder",
+      "networks": [
+        {
+          "platform": "twitter",
+          "url": "/",
+          "img": "twitter.svg"
+        },
+        {
+          "platform": "facebook",
+          "url": "/",
+          "img": "facebook.svg"
+        },
+        {
+          "platform": "telegram",
+          "url": "/",
+          "img": "telegram.svg"
+        },
+        {
+          "platform": "linkedin",
+          "url": "/",
+          "img": "linkedin.svg"
+        },
+        {
+          "platform": "instagram",
+          "url": "/",
+          "img": "instagram.svg"
+        }
+      ]
+    },
+    {
+      "face": "/img/face-1x.webp",
+      "face1": "/img/face-2x.webp",
+      "name": "Jason Smith",
+      "role": "Co - Founder",
+      "networks": [
+        {
+          "platform": "twitter",
+          "url": "/",
+          "img": "twitter.svg"
+        },
+        {
+          "platform": "facebook",
+          "url": "/",
+          "img": "facebook.svg"
+        },
+        {
+          "platform": "telegram",
+          "url": "/",
+          "img": "telegram.svg"
+        },
+        {
+          "platform": "linkedin",
+          "url": "/",
+          "img": "linkedin.svg"
+        },
+        {
+          "platform": "instagram",
+          "url": "/",
+          "img": "instagram.svg"
+        }
+      ]
+    },
+    {
+      "face": "/img/face-1x.webp",
+      "face1": "/img/face-2x.webp",
+      "name": "Jason Smith",
+      "role": "Co - Founder",
+      "networks": [
+        {
+          "platform": "twitter",
+          "url": "/",
+          "img": "twitter.svg"
+        },
+        {
+          "platform": "facebook",
+          "url": "/",
+          "img": "facebook.svg"
+        },
+        {
+          "platform": "telegram",
+          "url": "/",
+          "img": "telegram.svg"
+        },
+        {
+          "platform": "linkedin",
+          "url": "/",
+          "img": "linkedin.svg"
+        },
+        {
+          "platform": "instagram",
+          "url": "/",
+          "img": "instagram.svg"
+        }
+      ]
     }
   ],
+  
   "faqs": {
     "title": "FAQs",
     "faqscards": [

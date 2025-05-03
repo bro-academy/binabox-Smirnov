@@ -1,16 +1,31 @@
 // banner block
 @use '../global/variables.scss' as *;
 .banner {
-    background-image: url("../img/cube.png"), radial-gradient(circle, $blue-color, $block-color);
+    background-image:url("../img/cube.png"), radial-gradient(circle, $blue-color, $block-color); //hide on mobile
     background-repeat: no-repeat, no-repeat;
     background-position: right, top left;
-    padding: 2rem 1rem;
-  
+    padding: 64px 164px;
+    display: flex;
+    position: relative;
+
+    &__details {
+      display: flex;
+      flex-direction: column;
+      width: 866.5px;
+      margin-top: 75px;
+      margin-bottom: 75px;
+    }
+
+    &__pic {
+      width: 533.5px;
+      height: 641.8px;
+    }
+
     &__title {
-      font-size: 1.75rem;
+      font-size: 3.25rem;
       color: $text-color;
       font-weight: 400;
-      line-height: 36px;
+      line-height: 62px;
       margin-bottom: 0.5rem;
     }
   
@@ -30,9 +45,15 @@
     &__stat {
       color: $text-color;
       margin-bottom: 2rem;
+      display: flex;
+      gap: 64px;
     }
   
-  
+    &__stats {
+      display: flex;
+      flex-direction: column-reverse;
+      margin-bottom: 2rem;
+    }
   
     &__stat-txt {
       font-size: 1rem;
@@ -43,10 +64,16 @@
     }
   
     &__stat-num {
-      font-size: 1.75rem;
+      font-size: 52px;
       font-weight: 400;
-      line-height: 36px;
+      line-height: 62px;
       letter-spacing: -0.5px;
+    }
+
+    &__buttons {
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
     }
   }
   

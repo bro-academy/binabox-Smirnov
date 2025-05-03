@@ -1,14 +1,23 @@
 // Footer nav block
 @use '../global/variables.scss' as *;
 .footer-nav {
+
+    display: flex;
+    gap: 952px;
+
+    &__logos {
+        display: flex;
+        flex-direction: column;
+    }
+
     &__txt {
-        margin-right: 2rem;
         margin-bottom: 2.25rem;
         font-family: $text-font;
         color: $text-color;
         font-weight: 400;
         font-size: 0.875rem;
         line-height: 20px;
+        width: 20rem;
     }
 
     &__list-title {
@@ -30,6 +39,17 @@
         list-style: none;
         margin-right: 1.5rem;
         margin-bottom: 4rem;
+    }
+
+    &__listing {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__lists {
+        display: flex;
+        flex-direction: row;
+        gap: 1.5rem;
     }
 
 

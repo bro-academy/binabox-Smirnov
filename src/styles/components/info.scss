@@ -2,8 +2,8 @@
 @use '../global/variables.scss' as *;
 .info {
     background-color: $block-color;
-    padding: 2rem 1rem;
-
+    padding: 4rem;
+    position: relative;
 
     &__title {
         margin-bottom: 1rem;
@@ -19,10 +19,14 @@
         font-size: 1.125rem;
         line-height: 28px;
         font-weight: 600;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 4rem;
     }
 
     &__desc {
-        color: $text-color;
+        color: #EFF5FAD1;
         font-family: $text-font;
         font-size: 1.25rem;
         font-weight: 500;
@@ -35,10 +39,15 @@
         list-style: none;
         color: $text-color;
         margin-bottom: 2.5rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        margin-bottom: 88px;
     }
 
     &__list-item {
-        display: block;
+        width: 376px;
+        height: 234.32px;
         padding: 1.5rem;
         margin-bottom: 1rem;
         background-color: $card-color;
@@ -53,7 +62,7 @@
     }
 
     &__item-desc {
-        color: $text-color;
+        color: #EFF5FAD1;
         font-family: $text-font;
         font-weight: 400;
         font-size: 1.125rem;
