@@ -2,20 +2,25 @@
 @use '../global/variables.scss' as *;
 
 .blogpage {
-    background-color: #1A1925;
-    padding: 1.5rem 0 0 0;
+    background-color: $block-color;
+    padding: 4rem 0 0 0;
+    height: 23.4525rem;
 
 
     &__title {
         font-weight: 400;
-        font-size: 1.75rem;
-        line-height: 36px;
+        font-size: 3.25rem;
+        line-height: 62px;
         text-align: center;
         color: #F8F7FF;
-        margin-bottom: 1rem;
+        margin-bottom: 1.25rem;
     }
 
-
+    &__nav {
+        display: flex;
+        gap: 0.5rem;
+        justify-content: center;
+    }
 
     &__link {
         font-family: $text-font;
@@ -26,7 +31,16 @@
         color: #F8F7FF;
         text-decoration: none;
         padding: 0.375rem 0.75rem;
-        margin-bottom: 5.6875rem;
+    }
+
+    &__link:first-child::after{
+        content: "";
+        flex-grow: 1;
+        width: 2px;
+        height: 24px;
+        background-color: #D0D7FB2B;
+        margin-top: 0.25rem;
+
     }
 
     &__link--target {

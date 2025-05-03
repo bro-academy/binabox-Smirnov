@@ -1,8 +1,10 @@
 <section class="quote">
-    <blockquote class="quote-box">
-            {{ quote.quote }}
-          </blockquote>
+  <blockquote class="quote__box">
+    {{ quote.quote }}
+  </blockquote>
+  <div class="quote__details">
     <img src="icon.png" alt="icon" class="quote__icon"/>
     <span class="quote__rating">{{ quote.rating }}</span>
     <h4 class="quote__title">{{ quote.title }}</h4>
+  </div>
 </section>

@@ -6,15 +6,26 @@
     color: #F8F7FF;
     padding: 1rem;
     border-radius: 1rem;
-    margin-bottom: -0.5rem;
+    margin-bottom: 2rem;
 
+    &__box {
+        font-weight: 400;
+        font-size: 1.75rem;
+        line-height: 36px;
+        margin-bottom: 0.5rem;
+    }
+
+    &__details {
+        display: flex;
+        flex-direction: row;
+        gap: 0.5rem;
+    }
     &__rating {
         font-family: $text-font;
         font-weight: 600;
         font-size: 0.875rem;
         line-height: 20px;
         color: #EFF5FAD1;
-        margin-left: 0.5rem;
     }
 
     &__title {
@@ -22,6 +33,5 @@
         font-weight: 600;
         font-size: 0.875rem;
         line-height: 20px;
-        margin-left: 0.5rem;
     }
 }

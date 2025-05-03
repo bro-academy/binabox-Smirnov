@@ -1,25 +1,25 @@
 {
     "header": {
-    "title": "Blog",
-    "nav": [
-      {
-        "title": "Home",
-        "link": "http://localhost:8080/index.html"
-      },
-      {
-        "title": "Blog",
-        "link": "http://localhost:8080/blog.html"
-      },
-      {
-        "title": "Catalog",
-        "link": "http://localhost:8080/catalog.html"
-      },
-      {
-        "title": "Contact Us",
-        "link": "http://localhost:8080/contact.html"
-      }
-    ]
-  },
+        "title": "BINABOX",
+        "nav": [
+        {
+            "title": "Home",
+            "link": "http://localhost:8080/index.html"
+        },
+        {
+            "title": "Blog",
+            "link": "http://localhost:8080/blog.html"
+        },
+        {
+            "title": "Catalog",
+            "link": "http://localhost:8080/catalog.html"
+        },
+        {
+            "title": "Contact Us",
+            "link": "http://localhost:8080/contact.html"
+        }
+        ]
+    },
     "blogpage":{
         "image": "lines.webp",
         "title": "Our blog",
@@ -47,7 +47,7 @@
         "genre": "Genre",
         "name": "Tony Nguyen",
         "date": "20 Jun 2022",
-        "story-set": [
+        "storyset": [
             {
                 "title": "List name 1",
                 "logo": "logo.svg"

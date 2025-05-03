@@ -2,9 +2,8 @@
 @use '../global/variables.scss' as *;
 
 .story-fig {
-    &__img:first-child {
-        margin-top: 2.5rem;
-    }
+    position: relative;
+
 
     &__cap {
         font-family: $text-font;
@@ -12,5 +11,8 @@
         font-size: 1rem;
         line-height: 24px;
         color: #F8F7FF;
+        position: absolute;
+        left: 24px;
+        bottom: 12px;
     }
 }
