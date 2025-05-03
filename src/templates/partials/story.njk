@@ -117,24 +117,26 @@
 
     </div>
     <div class="story__sidebar">
-        <aside class="story-sidebar">
-            <h3 class="story-sidebar__title">{{ story.aside.title }}</h3>
-            <ul class="story-sidebar__list">
-                {% for item in story.aside.categories %}
-                    <li class="story-sidebar__list-item">
-                        <a href="{{ item.link }}" class="story-sidebar__link">{{ item.title }}</a>
-                    </li>
-                {% endfor %}
-            </ul>
-        </aside>
+        <div class="story__sidebars">
+            <aside class="story-sidebar">
+                <h3 class="story-sidebar__title">{{ story.aside.title }}</h3>
+                <ul class="story-sidebar__list">
+                    {% for item in story.aside.categories %}
+                        <li class="story-sidebar__list-item">
+                            <a href="{{ item.link }}" class="story-sidebar__link">{{ item.title }}</a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </aside>
 
-        <aside class="story-sidebar">
-            <h3 class="story-sidebar__title">{{ story.aside1.title }}</h3>
-            <ul class="story-sidebar__taglist">
-                {% for item in story.aside1.tags %}
-                    <li class="story-sidebar__taglist-item button">{{ item.title }}</li>
-                {% endfor %}
-            </ul>
-        </aside>
+            <aside class="story-sidebar">
+                <h3 class="story-sidebar__title">{{ story.aside1.title }}</h3>
+                <ul class="story-sidebar__taglist">
+                    {% for item in story.aside1.tags %}
+                        <li class="story-sidebar__taglist-item button">{{ item.title }}</li>
+                    {% endfor %}
+                </ul>
+            </aside>
+        </div>
     </div>
 </section>

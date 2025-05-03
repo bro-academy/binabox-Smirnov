@@ -55,6 +55,9 @@
         color: #78BBFA;
     }
 
+    &__list {
+        list-style: none;
+    }
 
     &__set {
         font-family: $text-font;
@@ -124,9 +127,12 @@
         height: 16px;
     }
 
-    &__sidebar {
+
+    &__sidebars {
         display: flex;
         flex-direction: column;
         gap: 1.3125rem;
+        position: sticky;
+        top: 8rem;
     }
 }
