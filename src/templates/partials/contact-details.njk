@@ -1,4 +1,5 @@
 <section class="contact-details">
+    <div class="contact-details__cards">
     {% for item in contactdetails %}
         <article class="contact-details__card">
             <img src="{{ item.icon }}" alt="contacticon" class="contact-details__icon"/>
@@ -6,4 +7,5 @@
             <span class="contact-details__info">{{ item.info }}</span>
         </article>
     {% endfor %}
+    </div>
 </section>
