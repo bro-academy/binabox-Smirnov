@@ -2,12 +2,18 @@
 
 .contact-form {
     background-color: $block-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // gap: 1.5rem;
+
     &__title {
         font-weight: 400;
-        font-size: 1.75rem;
-        line-height: 2.25rem;
+        font-size: 2.25rem;
+        line-height: 3rem;
         color: $text-color;
         margin: auto;
+        margin-top: 4rem;
     }
 
     &__subtitle {
@@ -17,39 +23,55 @@
         line-height: 1.75rem;
         color: #EFF5FAD1;
         margin-top: 0.5rem;
-        margin-bottom: 2.5rem;
+        margin: auto;
+    }
+
+    &__inputs {
+        margin-top: 2.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 6.5rem;
+        gap: 1.5rem;
+    }
+
+    &__inputs button {
+        width: 40rem;
         margin: auto;
     }
 
     &__agree-switch {
-        padding: 1rem;
+        padding: 1.5rem;
         background-color: $card-color;
-        width: 20.5rem;
+        width: 40rem;
         height: 3.6rem;
         margin: auto;
-        margin-bottom: 1.5rem;
+        display: flex;
+        flex-direction: row;
+        gap: 0.5rem;
+        justify-content: center;
+        align-items: center;
         
     }
 
     &__agree-switch label {
-        width: 15.5rem;
+        width: 34rem;
         height: 1.25rem;
         font-family: $text-font;
         color: $text-color;
         font-weight: 400;
         font-size: 0.875rem;
         line-height: 1.25rem;
-        margin: 1.125rem 0.5rem 1.125rem 1rem;
     }
 
     &__item {
         display: flex;
         flex-direction: column;
-        width: 20.5rem;
+        width: 40rem;
         height: 4.25rem;
         color: $text-color;
         margin: auto;
-        margin-bottom: 1.5rem;
+        // margin-bottom: 1.5rem;
     }
 
     &__item label {
@@ -75,7 +97,7 @@
         padding: 0.625rem 0.75rem;
         color: $text-color;
         background-color: $block-color;
-        width: 20.5rem;
+        width: 40rem;
         height: 2.5rem;
     }
 
@@ -103,6 +125,18 @@
         border: 2px solid $invalid-color;
     }
 
+    &__policy-item {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        gap: 0.25rem;
+        width: 40rem;
+        color: $text-color;
+        font-family: $text-font;
+        font-size: 0.875rem;
+        margin: auto;
+        margin-bottom: 1.5rem;
+    }
 
     // to show invlaid after form validation use Js
     // Use mixin to style checkbox later
