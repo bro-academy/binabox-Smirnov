@@ -40,8 +40,7 @@
         color: $text-color;
         margin-bottom: 2.5rem;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr;
+        grid-template-columns: repeat(4, 1fr);
         gap: 2rem;
         margin-bottom: 88px;
     }

@@ -28,18 +28,13 @@
 
     &__list {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
         margin-bottom: 88px; 
         list-style: none;
         justify-content: center;
     }
 
-    // &__list-item {
-    //     height: 100%;
-    //     width: 784px;
-    // }
 
     &__list-item:first-child {
         grid-column: 1/2;

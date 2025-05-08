@@ -10,25 +10,7 @@
     display: flex;
     flex-direction: column;
     width: 784px;
-    
-    &:first-child {
-        height: 100%;
-    }
-
-    &:last-child {
-        height: 100%;
-    }
-    
-    &:not(:first-child) {
-        height: 434px;
-    }
-
-    &:not(:last-child) {
-        height: 434px;
-    }
-    
-    
-
+    height: 100%;
 
     &__img {
         width: 100%;
