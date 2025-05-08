@@ -6,15 +6,14 @@
     background-color: $card-color;
     color: $text-color;
     padding: 1.5rem;
-    width: 784px;
     position: relative;
     display: flex;
     flex-direction: column;
-
+    width: 784px;
+    height: 100%;
 
     &__img {
-        margin-bottom: 1.5rem;
-        width: 736px;
+        width: 100%;
         height: 198px;
     }
 
@@ -47,6 +46,7 @@
         display: flex;
         flex-direction: row;
         gap: 0.5rem;
+        margin-top: 1.5rem;
     }
 
     &__name::after {
