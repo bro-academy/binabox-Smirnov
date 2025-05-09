@@ -10,8 +10,14 @@
 
     &__img {
         margin-bottom: 1.5rem;
-        width: 252.8px;
+        width: 100%;
         height: 324px;
+    }
+
+    &__img--catalog {
+        margin-bottom: 1.5rem;
+        width: 100%;
+        height: 367.2px;
     }
 
     &__txt {

@@ -126,12 +126,21 @@
     "catalog": [
         {
             "link": "/",
-            "label": "Sold out",
-            "state": "sold out",
+            "label": "New",
+            "state": "new",
             "name": "Name Product",
             "price": "199",
-            "image": "/img/scissors-1x.webp",
-            "image1": "/img/scissors-2x.webp"
+            "image": "/img/skeleton-1x.webp",
+            "image1": "/img/skeleton-2x.webp" 
+        },
+        {
+            "link": "/",
+            "label": "New",
+            "state": "new",
+            "name": "Name Product",
+            "price": "199",
+            "image": "/img/skeleton-1x.webp",
+            "image1": "/img/skeleton-2x.webp" 
         },
         {
             "link": "/",
@@ -139,8 +148,62 @@
             "state": "sold out",
             "name": "Name Product",
             "price": "199",
-            "image": "/img/scissors-1x.webp",
-            "image1": "/img/scissors-2x.webp"
-        }
+            "image": "/img/skeleton-1x.webp",
+            "image1": "/img/skeleton-2x.webp" 
+        },
+        {
+            "link": "/",
+            "label": "New",
+            "state": "new",
+            "name": "Name Product",
+            "price": "199",
+            "image": "/img/skeleton-1x.webp",
+            "image1": "/img/skeleton-2x.webp" 
+        },
+        {
+            "link": "/",
+            "label": "New",
+            "state": "new",
+            "name": "Name Product",
+            "price": "199",
+            "image": "/img/skeleton-1x.webp",
+            "image1": "/img/skeleton-2x.webp" 
+        },
+        {
+            "link": "/",
+            "label": "New",
+            "state": "new",
+            "name": "Name Product",
+            "price": "199",
+            "image": "/img/skeleton-1x.webp",
+            "image1": "/img/skeleton-2x.webp" 
+        },
+        {
+            "link": "/",
+            "label": "New",
+            "state": "new",
+            "name": "Name Product",
+            "price": "199",
+            "image": "/img/skeleton-1x.webp",
+            "image1": "/img/skeleton-2x.webp" 
+        },
+        {
+            "link": "/",
+            "label": "New",
+            "state": "new",
+            "name": "Name Product",
+            "price": "199",
+            "image": "/img/skeleton-1x.webp",
+            "image1": "/img/skeleton-2x.webp" 
+        },
+        {
+            "link": "/",
+            "label": "New",
+            "state": "new",
+            "name": "Name Product",
+            "price": "199",
+            "image": "/img/skeleton-1x.webp",
+            "image1": "/img/skeleton-2x.webp" 
+        }   
     ]
 }
