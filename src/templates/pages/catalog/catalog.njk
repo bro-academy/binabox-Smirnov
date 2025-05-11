@@ -6,6 +6,8 @@
 
 {% block content %}
     {% include 'partials/contact-nav.njk' %}
-    {% include 'partials/catalogfilter.njk' %}
-    {% include 'partials/catalogpage.njk' %}
+    <div class="catalogs__layout">
+        {% include 'partials/catalogfilter.njk' %}
+        {% include 'partials/catalogpage.njk' %}
+    </div>
 {% endblock %}

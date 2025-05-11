@@ -1,53 +1,72 @@
 @use '../global/variables.scss' as *;
 @use '../global/mixins.scss' as *;
 
-.catalog-page {
+.catalogs {
     background-color: $block-color;
     color: $text-color;
-    padding: 0rem 1rem 4rem 1rem;
+    // padding: 4rem;
+
+    &__layout {
+        display: flex;
+        gap: 4rem;
+        background-color: $block-color;
+        color: $text-color;
+        padding: 4rem;
+        justify-content: center;
+    }
+
+    &__details {
+        display: flex;
+        gap: 1rem;
+        height: 48px;
+        width: 1024px;
+        margin-bottom: 2rem;
+    }
 
     &__title {
-        width: 10.4375rem;
-        height: 2rem;
+        width: 26.46875rem;
         font-weight: 400;
-        font-size: 1.5rem;
+        font-size: 2.25rem;
         line-height: 2rem;
-        margin-bottom: 1.5rem;
     }
 
 
     &__search {
         @include search-box;
-        width: 328px;
+        width: 423.5px;
         height: 48px;
     }
 
-    &__search-icon{
+    &__search-icon {
         margin-right: 0.5rem;
     }
 
     &__search-input {
         @include search-input;
-        width: 272px;
+        width: 367.5px;
     }
 
     &__tags {
-        width: 328px;
-        height: 112px;
+        // width: 328px;
+        height: 64px;
         padding: 1rem;
         background-color: $card-color;
         margin-top: 2rem;
         margin-bottom: 2rem;
+        display: flex;
+        gap: 1rem;
+
+    }
+
+    &__tag-group {
+        display: flex;
+        gap: 1rem;
     }
 
     &__tag {
-        width: 4.625rem;
         height: 2rem;
         border: 2px solid #D0D7FB2B;
         padding: 0.375rem 0.75rem;
-        margin-right: 1rem;
-        margin-bottom: 1rem;
-
         font-family: $text-font;
         font-weight: 600;
         font-size: 0.875rem;
@@ -63,5 +82,11 @@
         margin: auto;
     }
 
-
+    &__catalog {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        width: 1024px;
+        height: 1633px;
+    }
 }
