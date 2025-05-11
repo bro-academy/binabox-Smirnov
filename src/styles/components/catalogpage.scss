@@ -1,7 +1,7 @@
 @use '../global/variables.scss' as *;
 @use '../global/mixins.scss' as *;
 
-.catalog-page {
+.catalogs {
     background-color: $block-color;
     color: $text-color;
     // padding: 4rem;
@@ -85,7 +85,6 @@
     &__catalog {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 1fr);
         gap: 2rem;
         width: 1024px;
         height: 1633px;

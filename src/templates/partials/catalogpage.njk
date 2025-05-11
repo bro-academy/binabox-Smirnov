@@ -1,9 +1,9 @@
 {# use the catalogcard.njk for card templates #}
 {# Markup Catalog page #}
 
-<section class="catalog-page">
-    <div class="catalog-page__details">
-        <h2 class="catalog-page__title">{{ catalogpage.title }}</h2>
+<section class="catalogs">
+    <div class="catalogs__details">
+        <h2 class="catalogs__title">{{ catalogpage.title }}</h2>
         <label class="button" for="sort" width="145px">
             {{ catalogpage.button }}
             <select id="sort">
@@ -12,20 +12,20 @@
                 {% endfor %}
             </select>
         </label>
-        <form action="/submit-search" method="post" class="catalog-page__form">
-            <div class="catalog-page__search">
-                <img src="icon.svg" alt="icon" class="catalog-page__search-icon"/>
+        <form action="/submit-search" method="post" class="catalogs__form">
+            <div class="catalogs__search">
+                <img src="icon.svg" alt="icon" class="catalogs__search-icon"/>
                 <label for="search" hidden>Search</label>
-                <input id="search" type="text" pattern="^[a-zA-Z0-9\s]+$" placeholder="Search" class="catalog-page__search-input" required>
+                <input id="search" type="text" pattern="^[a-zA-Z0-9\s]+$" placeholder="Search" class="catalogs__search-input" required>
                 <button type="submit" hidden></button>
             </div>
         </form>
     </div>
-    <article class="catalog-page__tags">
-        <div class="catalog-page__tag-group">
+    <article class="catalogs__tags">
+        <div class="catalogs__tag-group">
             {% for item in catalogpage.tags %}
 
-                <span class="catalog-page__tag">
+                <span class="catalogs__tag">
                     {{ item }}
                 </span>
             {% endfor %}
@@ -33,7 +33,7 @@
         <button class="button button--reset" type="reset" value="Reset">{{ catalogpage.reset }}</button>
     </article>
 
-    <div class="catalog-page__catalog">
+    <div class="catalogs__catalog">
         {% for item in catalog %}
             <a href="{{ item.link }}" class="catalog__link">
                 <article class="catalog-card">
