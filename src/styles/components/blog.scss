@@ -1,13 +1,17 @@
 // Blog block
 @use '../global/variables.scss' as *;
+@use '../global/mixins.scss' as *;
+
 .blog {
     background-color: $block-color;
-    padding: 4rem;
+    padding: 2rem 1rem 2rem 1rem;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
 
     &__title {
-        margin-bottom: 2.5rem;
-        font-size: 2.25rem;
+        font-size: 1.75rem;
         color: $text-color;
         font-weight: 400;
         line-height: 36px;
@@ -20,37 +24,48 @@
         line-height: 28px;
         font-weight: 600;
         padding: 0.625rem 1.5rem;
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        bottom: 4rem;
+
+        @include desk-l {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 4rem;
+        }
+        
     }
 
     &__list {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
-        margin-bottom: 88px; 
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
         list-style: none;
-        justify-content: center;
+
+        @include desk-l {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            margin-bottom: 88px; 
+            justify-content: center;    
+        }
     }
 
+    @include desk-l{
+        &__list-item:first-child {
+            grid-column: 1/2;
+            grid-row: 1/ span 2;
+        }
+        
+        &__list-item:last-child {
+            grid-column: 2/3;
+            grid-row: 3/ span 2;
+        }
 
-    &__list-item:first-child {
-        grid-column: 1/2;
-        grid-row: 1/ span 2;
-    }
-    
-    &__list-item:last-child {
-        grid-column: 2/3;
-        grid-row: 3/ span 2;
-    }
+        &__list-item:first-child article .blog-card__img {
+            height: 664px;
+        }
 
-    &__list-item:first-child article .blog-card__img {
-        height: 664px;
-    }
-
-    &__list-item:last-child article .blog-card__img {
-        height: 664px;
+        &__list-item:last-child article .blog-card__img {
+            height: 664px;
+        }
     }
 }

@@ -2,43 +2,61 @@
 @use '../global/mixins.scss' as *;
 
 .header {
-    background: $block-color;
-    padding: 2rem;
-    width: 108rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
     
-    &__logos {
+    &__wrapper {
+        background: $block-color;
+        width: 100%;
         display: flex;
-        gap: 1.12rem;
-        width: 11.75rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        padding: 1rem;
+    }
+
+    &__logos {
+        position: absolute;
+        bottom: 1000px;
+        display: flex;
+        margin-right: auto;
     }
 
     &__logo {
         width: 2.25rem;
         height: 2.5rem;
-        
     }
 
-    &__nav {
-        display: flex;
-        gap: 16.5rem;
+    &__txt {
+        visibility: hidden;
+        font-size: 2rem;
+        font-weight: normal;
+        color: $text-color;
     }
 
-    &__list {
+    &__burger {
+        height: 48px;
+        width: 48px;
+    }
+
+
+    &__menu {
+        position: absolute;
+        bottom: 1000px;
+    }
+
+    &__menu-list {
         list-style: none;
         font-family: $text-font;
         font-size: 1rem;
         font-weight: 600;
         line-height: 1.5rem;
         display: flex;
-        width: 25.0625rem; 
-        height: 3rem;
+        flex-direction: row;
+        justify-content: center;
     }
 
     &__link {
@@ -50,6 +68,7 @@
         padding: 0.5rem 1.25rem;
         display: inline-block;
         margin-bottom: 0.5rem;
+        // transition: all 0.35s ease-in-out;
     }
 
     &__link--active {
@@ -58,23 +77,20 @@
         border-width: 2px;
     }
 
-    &__txt {
-        font-size: 2rem;
-        font-weight: normal;
-        color: $text-color;
-    }
 
     &__search-area {
-        position: relative;
-        width: 11.75rem;
-        height: 3rem;
+        position: absolute;
+        bottom: 1000px;
+        // width: 11.75rem;
+        // height: 3rem;
     }
 
     &__search {
         @include search-box;
-        height: 3rem;
-        width: 11.75rem;
-        margin-left: auto;
+
+        // height: 3rem;
+        // width: 11.75rem;
+        // margin-left: auto;
     }
 
     &__search-icon {
@@ -83,7 +99,7 @@
 
     &__search-input {
         @include search-input;
-        width: 8.25rem;
+        // width: 8.25rem;
     }
 
     &__buttons {
@@ -91,18 +107,22 @@
         gap: 1rem;
         position: relative;
         height: 3rem;
+        margin-left: auto;
     }
 
-    &__buttons a{
-        width: 150px;
+    &__buttons a {
+        width: 48px;
+        // width: 150px;
     }
 
     &__buttons button {
-        width: 159px;
+        // width: 159px;
+        width: 48px;
     }
 
     &__buttons::before {
-        content:"";
+        visibility: hidden;
+        content: "";
         flex-grow: 1;
         width: 2px;
         height: 24px;
@@ -112,7 +132,7 @@
 
     &__buttons img {
         width: 24px;
-        margin-right: 0.5rem;
+        // margin-right: 0.5rem;
     }
 
 }

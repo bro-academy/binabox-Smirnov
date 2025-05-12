@@ -1,33 +1,44 @@
 <header class="header">
-    <a href="#" class="button button--nav" hidden><img src="icon.svg" alt="burger menu"></a>
     <nav class="header__nav">
-        <div class="header__logos">
-            <a href="#" class="header__logo">
-                <img src="logo.svg" alt="" class="header__logo"/>
-            </a>
-            <strong class="header__txt">{{ header.title }}</strong>
-        </div>
+        <div class="header__container">
+            <div class="header__wrapper">
+                <button type="button" class="header__burger button" id="burger">
+                    <span class="header__burger-line"></span>
+                    <span class="header__burger-line"></span>
+                    <span class="header__burger-line"></span>
+                    <span class="header__burger-line"></span>
+                </button>
+                <div class="header__logos">
+                    <a href="#" class="header__logo">
+                        <img src="logo.svg" alt="" class="header__logo"/>
+                    </a>
+                    <strong class="header__txt">{{ header.title }}</strong>
+                </div>
 
-        <ul class="header__list">
-            {% for item in header.nav %}
-                <li class="header__item">
-                    <a href="{{ item.link }}" class="header__link {% if item.link == url %} header__link--active {% endif %}">{{ item.title }}</a>
-                </li>
-            {% endfor %}
-        </ul>
-        <form action="/submit-search" method="post" class="header__search-area">
-            <div class="header__search">
-                <img src="icon.svg" alt="icon" class="header__search-icon"/>
-                <label for="search" hidden>Search</label>
-                <input id="search" type="text" pattern="^[a-zA-Z0-9\s]+$" placeholder="Search" class="header__search-input" required>
-                <button type="submit" hidden></button>
+                <div class="header__menu">
+                    <ul class="header__menu-list">
+                        {% for item in header.nav %}
+                            <li class="header__menu-item">
+                                <a href="{{ item.link }}" class="header__link {% if item.link == url %} header__link--active {% endif %}">{{ item.title }}</a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+
+                
+                <form action="/submit-search" method="post" class="header__search-area">
+                    <div class="header__search">
+                        <img src="icon.svg" alt="icon" class="header__search-icon"/>
+                        <label for="search" hidden>Search</label>
+                        <input id="search" type="text" pattern="^[a-zA-Z0-9\s]+$" placeholder="Search" class="header__search-input" required>
+                        <button type="submit" hidden></button>
+                    </div>
+                </form>
+                <div class="header__buttons">
+                    <a href="#" target="_blank" class="button"><img src="icon.svg">Discord</a>
+                    <button type="button" class="button button--glow"><img src="icon.svg">Connect</button>
+                </div>
             </div>
-        </form>
-
+        </div class="header__container">
     </nav>
-
-    <div class="header__buttons">
-        <a href="#" target="_blank" class="button"><img src="icon.svg">Discord</a>
-        <button type="button" class="button button--glow"><img src="icon.svg">Connect</button>
-    </div>
 </header>
