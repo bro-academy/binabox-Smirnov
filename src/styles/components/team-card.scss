@@ -9,17 +9,16 @@
     width: 293px;
     height: 284px;
 
-    @include desk-l {
+    @include tablet {
         height: 316px;
+    }
+    @include desk-l {
+        width: 293px;
     }
 
     &__img {
         display: block;
-        margin: auto;
-
-        @include desk-l {
-            margin: 1rem auto;
-        }
+        margin: 0 auto 1rem;
     }
 
     &__title {
