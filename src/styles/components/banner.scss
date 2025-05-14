@@ -3,7 +3,7 @@
 @use '../global/mixins.scss' as *;
 
 .banner {
-    background-image: radial-gradient(circle, $blue-color, $block-color);
+    background-image: radial-gradient(at top left, $blue-color, $block-color, $block-color, $block-color);
     background-repeat: no-repeat, no-repeat;
     background-position: right, top left;
     padding: 2rem 1rem;
@@ -28,7 +28,7 @@
       width: 100%;
     }
 
-    &__pic {
+    &__pic { // fix banner image 
       visibility: hidden;
       position: absolute;
 
