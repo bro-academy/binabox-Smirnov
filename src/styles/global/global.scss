@@ -1,5 +1,6 @@
 // Tags
 @use '../global/variables.scss' as *;
+@use '../global/mixins.scss' as *;
 
 * {
     margin: 0;
@@ -20,9 +21,13 @@ html {
 
 body {
     font-family: $main-font;
-    // padding-top: 112px;
     padding-top: 80px;
     overflow-x: hidden;
+
+
+    @include desk {
+        padding-top: 112px;
+    }
 }
 
 a {
