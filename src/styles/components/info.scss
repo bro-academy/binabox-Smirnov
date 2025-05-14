@@ -11,6 +11,14 @@
     gap: 2.5rem;
     justify-content: center;
 
+    @include tablet {
+        padding: 0 1.5rem 4rem 1.5rem;
+    }
+
+    @include desk {
+        padding: 4rem;
+    }
+
     @include desk-l {
         padding: 4rem;
     }
@@ -22,6 +30,13 @@
         font-weight: 400;
         line-height: 36px;
         text-align: center;
+
+        @include desk {
+            font-size: 2.25rem;
+            line-height: 48px;  
+        }
+
+
     }
 
     &__link {
@@ -30,6 +45,13 @@
         line-height: 28px;
         font-weight: 600;
         margin-bottom: 2rem;
+
+        @include tablet {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 4rem;
+        }
 
         @include desk-l {   
             position: absolute;
@@ -48,6 +70,7 @@
         font-weight: 500;
         line-height: 28px;
         text-align: center;
+        width: 100%;
     }
 
     &__list {
@@ -59,24 +82,48 @@
         justify-content: center;
         align-items: center;
 
+        @include tablet {
+            gap: 2rem;
+            margin-bottom: 152px;
+        }
+
+        @include desk {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
         @include desk-l {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             gap: 2rem;
-            margin-bottom: 88px;
         }
 
     }
 
     &__list-item {
         width: 328px;
-        // height: 218.32px;
         padding: 1.5rem;
         background-color: $card-color;
+
+        @include tablet {
+            width: 100%;
+            padding: 2rem;
+        }
 
         @include desk-l {
             width: 376px;
             height: 234.32px;
+        }
+    }
+
+    &__list-item:last-child{
+        @include desk {
+            grid-column: 1/ span 3;
+        }
+
+        @include desk-l {
+            grid-column: auto;
         }
     }
 
