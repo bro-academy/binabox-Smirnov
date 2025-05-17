@@ -96,3 +96,11 @@
     background-color: $invalid-color;
     color: $text-color;
 }
+
+
+@mixin unselectable {
+    -webkit-user-select: none; 
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}

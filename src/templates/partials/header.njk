@@ -15,25 +15,26 @@
                     <strong class="header__txt">{{ header.title }}</strong>
                 </div>
 
-                <div class="header__menu">
-                    <ul class="header__menu-list">
-                        {% for item in header.nav %}
-                            <li class="header__menu-item">
-                                <a href="{{ item.link }}" class="header__link {% if item.link == url %} header__link--active {% endif %}">{{ item.title }}</a>
-                            </li>
-                        {% endfor %}
-                    </ul>
-                </div>
-
-                
-                <form action="/submit-search" method="post" class="header__search-area">
-                    <div class="header__search">
-                        <img src="icon.svg" alt="icon" class="header__search-icon"/>
-                        <label for="search" hidden>Search</label>
-                        <input id="search" type="text" pattern="^[a-zA-Z0-9\s]+$" placeholder="Search" class="header__search-input" required>
-                        <button type="submit" hidden></button>
+                <div class="header__mobile-panel">
+                    <div class="header__menu">
+                        <ul class="header__menu-list">
+                            {% for item in header.nav %}
+                                <li class="header__menu-item">
+                                    <a href="{{ item.link }}" class="header__link {% if item.link == url %} header__link--active {% endif %}">{{ item.title }}</a>
+                                </li>
+                            {% endfor %}
+                        </ul>
                     </div>
-                </form>
+
+                    <form action="/submit-search" method="post" class="header__search-area">
+                        <div class="header__search">
+                            <img src="icon.svg" alt="icon" class="header__search-icon"/>
+                            <label for="search" hidden>Search</label>
+                            <input id="search" type="text" pattern="^[a-zA-Z0-9\s]+$" placeholder="Search" class="header__search-input" required>
+                            <button type="submit" hidden></button>
+                        </div>
+                    </form>
+                </div>
                 <div class="header__buttons">
                     <a href="#" target="_blank" class="button"><img src="icon.svg">Discord</a>
                     <button type="button" class="button button--glow"><img src="icon.svg">Connect</button>

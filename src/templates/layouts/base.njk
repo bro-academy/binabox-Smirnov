@@ -16,20 +16,244 @@
 
     <script>
       window.addEventListener("load", (event) => {
-    const burgerOpener = document.querySelector(".header__burger");
-    const menu = document.querySelector(".header__menu");
-    const searchArea = document.querySelector(".header__search-area");
-    
-    burgerOpener.addEventListener("click", () => {
-        menu.classList.toggle("header__menu--active");
-        searchArea.classList.toggle("header__search-area--active");
-    });
+        const burgerOpener = document.querySelector(".header__burger");
+        const mobilePanel = document.querySelector(".header__mobile-panel");
+        const menu = document.querySelector(".header__menu");
+        const searchArea = document.querySelector(".header__search-area");
 
-    window.addEventListener("resize", () => {
-        menu.classList.remove("header__menu--active");
-        searchArea.classList.remove("header__search-area--active");
-    });
-});
+        burgerOpener.addEventListener("click", () => {
+          mobilePanel
+            .classList
+            .toggle("header__mobile-panel--active");
+        });
+
+        window.addEventListener("resize", () => {
+          if (window.innerWidth >= 678) { // Match your desk breakpoint
+            mobilePanel
+              .classList
+              .remove("header__mobile-panel--active");
+            document.body.style.overflow = "";
+          }
+        });
+      });
+    </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const scroller = document.querySelector('.catalog__scroller');
+        const track = document.querySelector('.catalog__list');
+        const leftButton = document.querySelector('.left-chevron');
+        const rightButton = document.querySelector('.right-chevron');
+        const cards = document.querySelectorAll('.catalog__list-item')
+
+        // Scroll to first card on load
+        scroller.scrollTo(0, 0);
+
+        // Chevron navigation
+        const scrollAmount = 300; // Adjust based on card width + gap
+
+        leftButton.addEventListener('click', () => {
+          scroller.scrollBy({
+            left: -scrollAmount,
+            behavior: 'smooth'
+          });
+        });
+
+        rightButton.addEventListener('click', () => {
+          scroller.scrollBy({left: scrollAmount, behavior: 'smooth'});
+        });
+
+        // Touch/mouse drag scrolling
+        let isDown = false;
+        let startX;
+        let scrollLeft;
+
+        scroller.addEventListener('mousedown', (e) => {
+          isDown = true;
+          startX = e.pageX - scroller.offsetLeft;
+          scrollLeft = scroller.scrollLeft;
+          scroller.style.cursor = 'grabbing';
+        });
+
+        scroller.addEventListener('touchstart', (e) => {
+          isDown = true;
+          startX = e
+            .touches[0]
+            .pageX - scroller.offsetLeft;
+          scrollLeft = scroller.scrollLeft;
+        });
+
+        scroller.addEventListener('mouseleave', () => {
+          isDown = false;
+          scroller.style.cursor = 'grab';
+        });
+
+        scroller.addEventListener('mouseup', () => {
+          isDown = false;
+          scroller.style.cursor = 'grab';
+        });
+
+        scroller.addEventListener('touchend', () => {
+          isDown = false;
+        });
+
+        scroller.addEventListener('mousemove', (e) => {
+          if (!isDown) 
+            return;
+          e.preventDefault();
+          const x = e.pageX - scroller.offsetLeft;
+          const walk = (x - startX) * 2; // Scroll speed multiplier
+          scroller.scrollLeft = scrollLeft - walk;
+        });
+
+        scroller.addEventListener('touchmove', (e) => {
+          if (!isDown) 
+            return;
+          e.preventDefault();
+          const x = e
+            .touches[0]
+            .pageX - scroller.offsetLeft;
+          const walk = (x - startX) * 2;
+          scroller.scrollLeft = scrollLeft - walk;
+        });
+
+        // Disable buttons at scroll extremes
+        const updateButtonStates = () => {
+          leftButton.disabled = scroller.scrollLeft <= 0;
+          rightButton.disabled = scroller.scrollLeft >= (track.scrollWidth - scroller.clientWidth);
+        };
+
+        scroller.addEventListener('scroll', updateButtonStates);
+        window.addEventListener('resize', updateButtonStates);
+        updateButtonStates(); // Initial check
+      });
+    </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const blogscroller = document.querySelector('.blog__scroller');
+        const blogtrack = document.querySelector('.blog__list');
+        const card = document.querySelectorAll('.blog__list-item')
+
+        blogscroller.scrollTo(0, 0);
+
+        // Touch/mouse drag scrolling
+        let isDown = false;
+        let startX;
+        let scrollLeft;
+
+        blogscroller.addEventListener('mousedown', (e) => {
+          isDown = true;
+          startX = e.pageX - blogscroller.offsetLeft;
+          scrollLeft = blogscroller.scrollLeft;
+          blogscroller.style.cursor = 'grabbing';
+        });
+
+        blogscroller.addEventListener('touchstart', (e) => {
+          isDown = true;
+          startX = e
+            .touches[0]
+            .pageX - blogscroller.offsetLeft;
+          scrollLeft = blogscroller.scrollLeft;
+        });
+
+        blogscroller.addEventListener('mouseleave', () => {
+          isDown = false;
+          blogscroller.style.cursor = 'grab';
+        });
+
+        blogscroller.addEventListener('mouseup', () => {
+          isDown = false;
+          blogscroller.style.cursor = 'grab';
+        });
+
+        blogscroller.addEventListener('touchend', () => {
+          isDown = false;
+        });
+
+        blogscroller.addEventListener('mousemove', (e) => {
+          if (!isDown) 
+            return;
+          e.preventDefault();
+          const x = e.pageX - blogscroller.offsetLeft;
+          const walk = (x - startX) * 2; // Scroll speed multiplier
+          blogscroller.scrollLeft = scrollLeft - walk;
+        });
+
+        blogscroller.addEventListener('touchmove', (e) => {
+          if (!isDown) 
+            return;
+          e.preventDefault();
+          const x = e
+            .touches[0]
+            .pageX - blogscroller.offsetLeft;
+          const walk = (x - startX) * 2;
+          blogscroller.scrollLeft = scrollLeft - walk;
+        });
+
+      });
+    </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const teamscroller = document.querySelector('.team__scroller');
+        const teamtrack = document.querySelector('.team__list');
+        const teamcard = document.querySelectorAll('.team__list-item')
+
+        teamscroller.scrollTo(0, 0);
+
+        // Touch/mouse drag scrolling
+        let isDown = false;
+        let startX;
+        let scrollLeft;
+
+        teamscroller.addEventListener('mousedown', (e) => {
+          isDown = true;
+          startX = e.pageX - teamscroller.offsetLeft;
+          scrollLeft = teamscroller.scrollLeft;
+          teamscroller.style.cursor = 'grabbing';
+        });
+
+        teamscroller.addEventListener('touchstart', (e) => {
+          isDown = true;
+          startX = e
+            .touches[0]
+            .pageX - teamscroller.offsetLeft;
+          scrollLeft = teamscroller.scrollLeft;
+        });
+
+        teamscroller.addEventListener('mouseleave', () => {
+          isDown = false;
+          teamscroller.style.cursor = 'grab';
+        });
+
+        teamscroller.addEventListener('mouseup', () => {
+          isDown = false;
+          teamscroller.style.cursor = 'grab';
+        });
+
+        teamscroller.addEventListener('touchend', () => {
+          isDown = false;
+        });
+
+        teamscroller.addEventListener('mousemove', (e) => {
+          if (!isDown) 
+            return;
+          e.preventDefault();
+          const x = e.pageX - teamscroller.offsetLeft;
+          const walk = (x - startX) * 2; // Scroll speed multiplier
+          teamscroller.scrollLeft = scrollLeft - walk;
+        });
+
+        teamscroller.addEventListener('touchmove', (e) => {
+          if (!isDown) 
+            return;
+          e.preventDefault();
+          const x = e
+            .touches[0]
+            .pageX - teamscroller.offsetLeft;
+          const walk = (x - startX) * 2;
+          teamscroller.scrollLeft = scrollLeft - walk;
+        });
+
+      });
     </script>
   </head>
   <body>

@@ -115,6 +115,14 @@
       margin-top: 0.75rem;
     }
 
+    &__scroller {
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      scroll-behavior: smooth;
+      -webkit-overflow-scrolling: touch;
+      width: 100%;
+      scrollbar-width: none;
+    }
 
     &__list {
       display: grid;
@@ -122,12 +130,14 @@
       gap: 1.5rem;
       justify-content: center;
       list-style: none;
-      width: 100%;
+      width: max-content;
+      @include unselectable;
     }
 
     &__list-item {
       width: 328px;
       height: 444px;
+      scroll-snap-align: start; 
       
       @include tablet {
         width: 303px;

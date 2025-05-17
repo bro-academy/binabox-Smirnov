@@ -34,7 +34,7 @@
     }
 
     &__txt {
-        position:absolute;
+        position: absolute;
         visibility: hidden;
         font-size: 2rem;
         font-weight: normal;
@@ -94,27 +94,46 @@
         border-width: 2px;
     }
 
-    &__menu,
-    &__search-area {
+    &__mobile-panel {
         position: fixed;
+        top: 10px;
         left: 0;
         width: 100%;
         background: $block-color;
         z-index: 2;
-        transform: translateY(-200%);
-        transition: transform 1.5s ease-in-out;
+        transform: translateY(-100%);
+        transition: transform 0.3s ease-in-out;
+        display: flex;
+        flex-direction: column;
         padding: 1rem;
+        max-height: calc(100vh - 80px);
+
+        @include desk {
+            position: static;
+            transform: none;
+            height: auto;
+            flex-direction: row;
+            align-items: center;
+            background: transparent;
+            padding: 0;
+        }
+    }
+
+    &__mobile-panel--active {
+        transform: translateY(20%);
     }
 
     &__menu {
-        top: calc(80px + 60px);
-        height: auto;
+        order: 2;
+        margin-top: 2rem;
+        padding-bottom: 0;
         padding-bottom: 1rem;
 
         @include desk {
             position: static;
             transform: none;
-            margin: auto;
+            order: initial;
+            margin-left: auto;
         }
 
         @include desk-l {
@@ -123,39 +142,27 @@
     }
 
     &__search-area {
-        top: 80px;
-        padding: 1rem;
+        order: 1;
 
         @include desk {
+            padding: 1rem;
             position: static;
             transform: none;
             margin-left: auto;
+            order: initial;
         }
     }
 
-    &__menu--active {
-        transform: translateY(0);
-    }
 
-    &__search-area--active {
-        transform: translateY(0);
-    }
 
-    &__menu--active,
-    &__search-area--active {
-        transform: translateY(0);
-    }
-
-    
     &__search {
         @include search-box;
-        
+
         @include desk {
-           height: 3rem;
+            height: 3rem;
             width: 11.75rem;
-            margin-left: auto;
         }
-        
+
     }
 
     &__search-icon {
@@ -177,7 +184,6 @@
         gap: 1rem;
         position: relative;
         height: 3rem;
-        // margin-left: auto;
     }
 
     &__buttons a {
@@ -186,9 +192,9 @@
 
         @include desk {
             font-size: 1.125rem;
-            width: 150px; 
+            width: 150px;
         }
-        
+
     }
 
     &__buttons button {
@@ -217,7 +223,6 @@
 
     &__buttons img {
         width: 24px;
-        // margin-right: 0.5rem;
     }
 
 }
