@@ -1,8 +1,11 @@
 <section class="info">
-    <h2 class="info__title">{{ abouts.title }}</h2>
-    <p class="info__desc">
-          {{ abouts.description }}
+    <div class="info__texts">
+        <h2 class="info__title">{{ abouts.title }}</h2>
+        <p class="info__desc">
+            {{ abouts.description }}
         </p>
+    </div>
+
     <ol class="info__list">
         {% for item in abouts.cards %}
             <li class="info__list-item">
@@ -13,5 +16,6 @@
             </li>
         {% endfor %}
     </ol>
+    
     <a href="{{ abouts.btnlink }}" class="info__link button">{{ abouts.btn }}</a>
 </section>

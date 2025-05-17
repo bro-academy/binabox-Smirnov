@@ -1,5 +1,7 @@
 // Footer block
 @use '../global/variables.scss' as *;
+@use '../global/mixins.scss' as *;
+
 .footer {
     background-color: #1A1925;
     padding: 4rem 4rem 2rem 4rem;
@@ -26,10 +28,28 @@
     &__end {
         padding-top: 2rem;
         display: flex;
-        flex-direction: row;
-        gap: 67.375rem;        
+        flex-direction: column;
+        gap: 1.25rem; 
         margin-top: 2rem;
         border-top: 1px solid #BFC5EE1F;
 
+        @include tablet {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;     
+        }
+
+        @include desk {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        @include desk-l {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        
     }
 }

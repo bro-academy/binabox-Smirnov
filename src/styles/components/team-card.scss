@@ -1,15 +1,24 @@
 // Team card block
 @use '../global/variables.scss' as *;
+@use '../global/mixins.scss' as *;
+
 .team-card {
     background-color: $card-color;
     color: $text-color;
     padding: 1rem;
     width: 293px;
-    height: 316px;
+    height: 284px;
+
+    @include tablet {
+        height: 316px;
+    }
+    @include desk-l {
+        width: 293px;
+    }
 
     &__img {
         display: block;
-        margin: 1rem auto;
+        margin: 0 auto 1rem;
     }
 
     &__title {

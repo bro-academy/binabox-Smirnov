@@ -1,9 +1,33 @@
 // Footer nav block
 @use '../global/variables.scss' as *;
+@use '../global/mixins.scss' as *;
+
 .footer-nav {
 
     display: flex;
-    gap: 952px;
+    flex-direction: column;
+
+    @include tablet {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    @include desk {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 1rem;
+ 
+    }
+
+    @include desk-l {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+    
 
     &__logos {
         display: flex;
