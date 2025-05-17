@@ -8,7 +8,6 @@
     background-position: right, top left;
     padding: 2rem 1rem;
     position: relative;
-    width: 100%;
 
 
     @include tablet {
@@ -34,7 +33,6 @@
 
       @include desk {
         visibility: visible;
-        position: absolute;
         right: 118.88px;
         width: 437.24px;
         height: 526px;
