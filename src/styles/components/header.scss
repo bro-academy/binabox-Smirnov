@@ -98,7 +98,8 @@
         position: fixed;
         top: 10px;
         left: 0;
-        width: 100%;
+        width: 100vw;
+        height: 100vh;
         background: $block-color;
         z-index: 2;
         transform: translateY(-100%);
@@ -120,7 +121,7 @@
     }
 
     &__mobile-panel--active {
-        transform: translateY(20%);
+        transform: translateY(70px);
     }
 
     &__menu {
