@@ -2,43 +2,78 @@
 @use '../global/mixins.scss' as *;
 
 .header {
-    background: $block-color;
-    padding: 2rem;
-    width: 108rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    
+
+    &__wrapper {
+        background: $block-color;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-between;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        padding: 1rem;
+    }
+
     &__logos {
         display: flex;
-        gap: 1.12rem;
-        width: 11.75rem;
+        margin-right: auto;
     }
 
     &__logo {
         width: 2.25rem;
         height: 2.5rem;
-        
+        margin-left: 1rem;
+
+        @include desk {
+            margin: auto;
+        }
     }
 
-    &__nav {
-        display: flex;
-        gap: 16.5rem;
+    &__txt {
+        position: absolute;
+        visibility: hidden;
+        font-size: 2rem;
+        font-weight: normal;
+        color: $text-color;
+
+        @include desk {
+            position: relative;
+            visibility: visible;
+        }
     }
 
-    &__list {
+    &__burger {
+        height: 48px;
+        width: 48px;
+        cursor: pointer;
+        font-size: 22px;
+        position: relative;
+        padding: 0;
+
+        @include desk {
+            display: none;
+        }
+    }
+
+
+
+    &__menu-list {
         list-style: none;
         font-family: $text-font;
         font-size: 1rem;
         font-weight: 600;
         line-height: 1.5rem;
         display: flex;
-        width: 25.0625rem; 
-        height: 3rem;
+        flex-direction: column;
+        justify-content: center;
+
+        @include desk {
+            flex-direction: row;
+        }
     }
 
     &__link {
@@ -50,6 +85,7 @@
         padding: 0.5rem 1.25rem;
         display: inline-block;
         margin-bottom: 0.5rem;
+        white-space: nowrap;
     }
 
     &__link--active {
@@ -58,23 +94,74 @@
         border-width: 2px;
     }
 
-    &__txt {
-        font-size: 2rem;
-        font-weight: normal;
-        color: $text-color;
+    &__mobile-panel {
+        position: fixed;
+        top: 10px;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: $block-color;
+        z-index: 2;
+        transform: translateY(-100%);
+        transition: transform 0.3s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        max-height: calc(100vh - 80px);
+
+        @include desk {
+            position: static;
+            transform: none;
+            height: auto;
+            flex-direction: row;
+            align-items: center;
+            background: transparent;
+            padding: 0;
+        }
+    }
+
+    &__mobile-panel--active {
+        transform: translateY(70px);
+    }
+
+    &__menu {
+        order: 2;
+        margin-top: 2rem;
+        padding-bottom: 0;
+        padding-bottom: 1rem;
+
+        @include desk {
+            position: static;
+            transform: none;
+            order: initial;
+            margin-left: auto;
+        }
+
+
     }
 
     &__search-area {
-        position: relative;
-        width: 11.75rem;
-        height: 3rem;
+        order: 1;
+
+        @include desk {
+            padding: 1rem;
+            position: static;
+            transform: none;
+            margin-left: auto;
+            order: initial;
+        }
     }
+
+
 
     &__search {
         @include search-box;
-        height: 3rem;
-        width: 11.75rem;
-        margin-left: auto;
+
+        @include desk {
+            height: 3rem;
+            width: 11.75rem;
+        }
+
     }
 
     &__search-icon {
@@ -83,7 +170,12 @@
 
     &__search-input {
         @include search-input;
-        width: 8.25rem;
+
+        width: 90%;
+
+        @include desk {
+            width: 4rem;
+        }
     }
 
     &__buttons {
@@ -93,26 +185,43 @@
         height: 3rem;
     }
 
-    &__buttons a{
-        width: 150px;
+    &__buttons a {
+        width: 48px;
+        font-size: 0;
+
+        @include desk {
+            font-size: 1.125rem;
+            width: 150px;
+        }
+
     }
 
     &__buttons button {
-        width: 159px;
+        width: 48px;
+        font-size: 0;
+
+        @include tablet {
+            font-size: 1.125rem;
+            width: 159px;
+        }
     }
 
     &__buttons::before {
-        content:"";
+        visibility: hidden;
+        content: "";
         flex-grow: 1;
         width: 2px;
         height: 24px;
         margin-top: 0.75rem;
         background-color: #D0D7FB2B;
+
+        @include desk {
+            visibility: visible;
+        }
     }
 
     &__buttons img {
         width: 24px;
-        margin-right: 0.5rem;
     }
 
 }

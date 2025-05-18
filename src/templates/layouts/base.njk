@@ -1,22 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="keywords" content="HTML, Binabox, Homepage" /> {#fix#}
-    <title>{{ title }}</title>   {#fix#}
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <meta name="keywords" content="HTML, Binabox, Homepage"/>
+    {#fix#}
+    <title>{{ title }}</title>
+    {#fix#}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Poppins:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css/"> {#fix#} 
-    <link rel="stylesheet" href="css/style.css" /> {#fix#}
+    <link rel="stylesheet" href="css/normalize.css/">
+    <link rel="stylesheet" href="css/style.css"/>
+
+    <script>
+      window.addEventListener("load", (event) => {
+        const burgerOpener = document.querySelector(".header__burger");
+        const mobilePanel = document.querySelector(".header__mobile-panel");
+        const menu = document.querySelector(".header__menu");
+        const searchArea = document.querySelector(".header__search-area");
+
+        burgerOpener.addEventListener("click", () => {
+          mobilePanel
+            .classList
+            .toggle("header__mobile-panel--active");
+        });
+
+        window.addEventListener("resize", () => {
+          if (window.innerWidth >= 678) { // Match your desk breakpoint
+            mobilePanel
+              .classList
+              .remove("header__mobile-panel--active");
+            document.body.style.overflow = "";
+          }
+        });
+      });
+    </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const scroller = document.querySelector('.catalog__scroller');
+        const track = document.querySelector('.catalog__list');
+        const leftButton = document.querySelector('.left-chevron');
+        const rightButton = document.querySelector('.right-chevron');
+        const cards = document.querySelectorAll('.catalog__list-item');
+
+        // Scroll to first card on load
+        scroller.scrollTo(0, 0);
+
+        // Chevron navigation
+        const scrollAmount = 300; // Adjust based on card width + gap
+
+        leftButton.addEventListener('click', () => {
+          scroller.scrollBy({
+            left: -scrollAmount,
+            behavior: 'smooth'
+          });
+        });
+
+        rightButton.addEventListener('click', () => {
+          scroller.scrollBy({left: scrollAmount, behavior: 'smooth'});
+        });
+
+        // Enhanced touch/mouse drag scrolling with vertical scroll detection
+        let isDown = false;
+        let startX,
+          startY;
+        let scrollLeft;
+
+        const handleStart = (e) => {
+          isDown = true;
+          startX = e.pageX || e
+            .touches[0]
+            .pageX - scroller.offsetLeft;
+          startY = e.pageY || e
+            .touches[0]
+            .pageY;
+          scrollLeft = scroller.scrollLeft;
+          scroller.style.cursor = 'grabbing';
+        };
+
+        const handleMove = (e) => {
+          if (!isDown) 
+            return;
+          
+          const x = e.pageX || e
+            .touches[0]
+            .pageX - scroller.offsetLeft;
+          const y = e.pageY || e
+            .touches[0]
+            .pageY;
+          const xDiff = Math.abs(x - startX);
+          const yDiff = Math.abs(y - startY);
+
+          // Only prevent default if we're definitely scrolling horizontally
+          if (xDiff > yDiff && xDiff > 5) {
+            e.preventDefault();
+            const walk = (x - startX) * 2;
+            scroller.scrollLeft = scrollLeft - walk;
+          }
+        };
+
+        const handleEnd = () => {
+          isDown = false;
+          scroller.style.cursor = 'grab';
+        };
+
+        // Mouse events
+        scroller.addEventListener('mousedown', handleStart);
+        scroller.addEventListener('mousemove', handleMove);
+        scroller.addEventListener('mouseup', handleEnd);
+        scroller.addEventListener('mouseleave', handleEnd);
+
+        // Touch events
+        scroller.addEventListener('touchstart', handleStart, {passive: false});
+        scroller.addEventListener('touchmove', handleMove, {passive: false});
+        scroller.addEventListener('touchend', handleEnd);
+
+        // Disable buttons at scroll extremes
+        const updateButtonStates = () => {
+          const buffer = 5; // Small buffer to account for rounding
+          leftButton.disabled = scroller.scrollLeft <= buffer;
+          rightButton.disabled = scroller.scrollLeft >= (track.scrollWidth - scroller.clientWidth - buffer);
+        };
+
+        scroller.addEventListener('scroll', updateButtonStates);
+        window.addEventListener('resize', updateButtonStates);
+        updateButtonStates(); // Initial check
+      }); 
+    </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const blogscroller = document.querySelector('.blog__scroller');
+
+        // Initialize scroll position
+        blogscroller.scrollTo(0, 0);
+
+        // Touch/mouse drag scrolling with vertical scroll detection
+        let isDown = false;
+        let startX,
+          startY;
+        let scrollLeft;
+
+        const handleTouchStart = (e) => {
+          isDown = true;
+          startX = e.pageX || e
+            .touches[0]
+            .pageX - blogscroller.offsetLeft;
+          startY = e.pageY || e
+            .touches[0]
+            .pageY;
+          scrollLeft = blogscroller.scrollLeft;
+          blogscroller.style.cursor = 'grabbing';
+        };
+
+        const handleTouchMove = (e) => {
+          if (!isDown) 
+            return;
+          
+          const x = e.pageX || e
+            .touches[0]
+            .pageX - blogscroller.offsetLeft;
+          const y = e.pageY || e
+            .touches[0]
+            .pageY;
+          const xDiff = Math.abs(x - startX);
+          const yDiff = Math.abs(y - startY);
+
+          // Only prevent default if we're definitely scrolling horizontally
+          if (xDiff > yDiff && xDiff > 5) {
+            e.preventDefault();
+            const walk = (x - startX) * 2;
+            blogscroller.scrollLeft = scrollLeft - walk;
+          }
+        };
+
+        const handleTouchEnd = () => {
+          isDown = false;
+          blogscroller.style.cursor = 'grab';
+        };
+
+        // Mouse events
+        blogscroller.addEventListener('mousedown', handleTouchStart);
+        blogscroller.addEventListener('mousemove', handleTouchMove);
+        blogscroller.addEventListener('mouseup', handleTouchEnd);
+        blogscroller.addEventListener('mouseleave', handleTouchEnd);
+
+        // Touch events
+        blogscroller.addEventListener('touchstart', handleTouchStart, {passive: false});
+        blogscroller.addEventListener('touchmove', handleTouchMove, {passive: false});
+        blogscroller.addEventListener('touchend', handleTouchEnd);
+      });
+    </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const teamscroller = document.querySelector('.team__scroller');
+
+        // Initialize scroll position
+        teamscroller.scrollTo(0, 0);
+
+        // Touch/mouse drag scrolling with vertical scroll detection
+        let isDown = false;
+        let startX,
+          startY;
+        let scrollLeft;
+
+        const handleTouchStart = (e) => {
+          isDown = true;
+          startX = e.pageX || e
+            .touches[0]
+            .pageX - teamscroller.offsetLeft;
+          startY = e.pageY || e
+            .touches[0]
+            .pageY;
+          scrollLeft = teamscroller.scrollLeft;
+          teamscroller.style.cursor = 'grabbing';
+        };
+
+        const handleTouchMove = (e) => {
+          if (!isDown) 
+            return;
+          
+          const x = e.pageX || e
+            .touches[0]
+            .pageX - teamscroller.offsetLeft;
+          const y = e.pageY || e
+            .touches[0]
+            .pageY;
+          const xDiff = Math.abs(x - startX);
+          const yDiff = Math.abs(y - startY);
+
+          // Only prevent default if we're definitely scrolling horizontally
+          if (xDiff > yDiff && xDiff > 5) {
+            e.preventDefault();
+            const walk = (x - startX) * 2;
+            teamscroller.scrollLeft = scrollLeft - walk;
+          }
+        };
+
+        const handleTouchEnd = () => {
+          isDown = false;
+          teamscroller.style.cursor = 'grab';
+        };
+
+        // Mouse events
+        teamscroller.addEventListener('mousedown', handleTouchStart);
+        teamscroller.addEventListener('mousemove', handleTouchMove);
+        teamscroller.addEventListener('mouseup', handleTouchEnd);
+        teamscroller.addEventListener('mouseleave', handleTouchEnd);
+
+        // Touch events
+        teamscroller.addEventListener('touchstart', handleTouchStart, {passive: false});
+        teamscroller.addEventListener('touchmove', handleTouchMove, {passive: false});
+        teamscroller.addEventListener('touchend', handleTouchEnd);
+      });
+    </script>
   </head>
-<body>
-{% include "partials/header.njk" %}
-<main>
-{% block content %}{% endblock %}
-</main>
-{% include "partials/footer.njk" %}
-</body>
+  <body>
+    {% include "partials/header.njk" %}
+    <main>
+      {% block content %}{% endblock %}
+    </main>
+    {% include "partials/footer.njk" %}
+  </body>
 </html>

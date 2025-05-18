@@ -1,17 +1,42 @@
 // info block
 @use '../global/variables.scss' as *;
+@use '../global/mixins.scss' as *;
+
 .info {
     background-color: $block-color;
-    padding: 4rem;
+    padding: 2rem 1rem 2rem 1rem;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    justify-content: center;
+
+    @include tablet {
+        padding: 0 1.5rem 4rem 1.5rem;
+    }
+
+    @include desk {
+        padding: 4rem;
+    }
+
+    @include desk-l {
+        padding: 4rem;
+    }
 
     &__title {
         margin-bottom: 1rem;
-        font-size: 2.25rem;
+        font-size: 1.75rem;
         color: $text-color;
         font-weight: 400;
         line-height: 36px;
         text-align: center;
+
+        @include desk {
+            font-size: 2.25rem;
+            line-height: 48px;  
+        }
+
+
     }
 
     &__link {
@@ -19,10 +44,23 @@
         font-size: 1.125rem;
         line-height: 28px;
         font-weight: 600;
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        bottom: 4rem;
+        margin-bottom: 2rem;
+
+        @include tablet {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 4rem;
+        }
+
+        @include desk-l {   
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 4rem;
+        }
+
+        
     }
 
     &__desc {
@@ -32,25 +70,61 @@
         font-weight: 500;
         line-height: 28px;
         text-align: center;
-        margin-bottom: 2.5rem;
+        width: 100%;
     }
 
     &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
         list-style: none;
         color: $text-color;
-        margin-bottom: 2.5rem;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 2rem;
-        margin-bottom: 88px;
+        justify-content: center;
+        align-items: center;
+
+        @include tablet {
+            gap: 2rem;
+            margin-bottom: 152px;
+        }
+
+        @include desk {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        @include desk-l {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+        }
+
     }
 
     &__list-item {
-        width: 376px;
-        height: 234.32px;
+        width: 328px;
         padding: 1.5rem;
-        margin-bottom: 1rem;
         background-color: $card-color;
+
+        @include tablet {
+            width: 100%;
+            padding: 2rem;
+        }
+
+        @include desk-l {
+            width: 376px;
+            height: 234.32px;
+        }
+    }
+
+    &__list-item:last-child{
+        @include desk {
+            grid-column: 1/ span 3;
+        }
+
+        @include desk-l {
+            grid-column: auto;
+        }
     }
 
     &__item-title {

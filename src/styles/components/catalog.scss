@@ -1,15 +1,33 @@
 // catalog block
 @use '../global/variables.scss' as *;
+@use '../global/mixins.scss' as *;
+
 .catalog {
     background-color: $block-color;
-    padding: 4rem;
+    padding: 2rem 1rem 2rem 1rem;
   
+    @include tablet {
+      padding: 0rem 1.5rem 4rem 1.5rem;
+    }
+
+    @include desk {
+      padding: 4rem;
+    }
+
     &__nav {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
+      margin-bottom: 2.5rem;
+      width: 100%;
+
+      @include tablet {
+        flex-direction: row;
+      }
     }
+
+
     &__box {
       padding: 0.125rem 0;
       display: flex;
@@ -24,15 +42,37 @@
       display: inline-flex;
       align-items: center;
       gap: 2rem;
+      margin-bottom: 2rem;
+
+      @include tablet {
+        font-size: 1.75rem;
+        margin-bottom: 0;
+        margin-right: auto;
+      }
+
+      @include desk {
+        font-size: 1.5rem;
+      }
     }
 
     &__title::after{
       content: "";
       flex-grow: 1;
       height: 2px;
-      width: 1167px;
+      width: 11.3125rem; // make to fill remaining space
       background-color: #D0D7FB2B;
-      margin-right: 2rem;
+
+      @include tablet {
+        margin-right: 2rem;
+      }
+
+      @include desk {
+        width: 44.9375rem;
+      }
+
+      @include desk-l {
+        width: 1167px;
+      }
     }
 
     &__link {
@@ -41,12 +81,23 @@
       font-size: 1.125rem;
       line-height: 28px;
       height: 48px;
+      width: 182px;
+
+      @include tablet {
+        width: 108px;
+        white-space: nowrap;
+      }
+      
     }
 
     &__buttons { 
       display: flex;
       flex-direction: row;
       gap: 1rem;
+
+      @include tablet {
+        margin-left: auto;
+      }
     }
 
     &__chevrons {
@@ -64,17 +115,49 @@
       margin-top: 0.75rem;
     }
 
+    &__scroller {
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      scroll-behavior: smooth;
+      -webkit-overflow-scrolling: touch;
+      width: 100%;
+      scrollbar-width: none;
+      overflow-y: clip;
+      touch-action: pan-y pinch-zoom;
+
+    }
 
     &__list {
       display: grid;
       grid-template-columns: repeat(5, 1fr);
-      margin-top: 2.5rem;
       gap: 1.5rem;
       justify-content: center;
+      list-style: none;
+      width: max-content;
+      
+      @include desk {
+        @include unselectable;
+      }
     }
 
     &__list-item {
-      width: 300.8px;
-      height: 480px;
+      width: 328px;
+      height: 444px;
+      scroll-snap-align: start; 
+      
+      @include tablet {
+        width: 303px;
+        height: 480px;
+      }
+
+      @include desk {
+        width: 270px;
+        height: 480px;
+      }
+
+      @include desk-l {
+        width: 300.8px;
+        height: 480px;
+      }
     }
   }
