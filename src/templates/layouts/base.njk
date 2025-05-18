@@ -43,7 +43,7 @@
         const track = document.querySelector('.catalog__list');
         const leftButton = document.querySelector('.left-chevron');
         const rightButton = document.querySelector('.right-chevron');
-        const cards = document.querySelectorAll('.catalog__list-item')
+        const cards = document.querySelectorAll('.catalog__list-item');
 
         // Scroll to first card on load
         scroller.scrollTo(0, 0);
@@ -62,197 +62,197 @@
           scroller.scrollBy({left: scrollAmount, behavior: 'smooth'});
         });
 
-        // Touch/mouse drag scrolling
+        // Enhanced touch/mouse drag scrolling with vertical scroll detection
         let isDown = false;
-        let startX;
+        let startX,
+          startY;
         let scrollLeft;
 
-        scroller.addEventListener('mousedown', (e) => {
+        const handleStart = (e) => {
           isDown = true;
-          startX = e.pageX - scroller.offsetLeft;
+          startX = e.pageX || e
+            .touches[0]
+            .pageX - scroller.offsetLeft;
+          startY = e.pageY || e
+            .touches[0]
+            .pageY;
           scrollLeft = scroller.scrollLeft;
           scroller.style.cursor = 'grabbing';
-        });
+        };
 
-        scroller.addEventListener('touchstart', (e) => {
-          isDown = true;
-          startX = e
-            .touches[0]
-            .pageX - scroller.offsetLeft;
-          scrollLeft = scroller.scrollLeft;
-        });
-
-        scroller.addEventListener('mouseleave', () => {
-          isDown = false;
-          scroller.style.cursor = 'grab';
-        });
-
-        scroller.addEventListener('mouseup', () => {
-          isDown = false;
-          scroller.style.cursor = 'grab';
-        });
-
-        scroller.addEventListener('touchend', () => {
-          isDown = false;
-        });
-
-        scroller.addEventListener('mousemove', (e) => {
+        const handleMove = (e) => {
           if (!isDown) 
             return;
-          e.preventDefault();
-          const x = e.pageX - scroller.offsetLeft;
-          const walk = (x - startX) * 2; // Scroll speed multiplier
-          scroller.scrollLeft = scrollLeft - walk;
-        });
-
-        scroller.addEventListener('touchmove', (e) => {
-          if (!isDown) 
-            return;
-          e.preventDefault();
-          const x = e
+          
+          const x = e.pageX || e
             .touches[0]
             .pageX - scroller.offsetLeft;
-          const walk = (x - startX) * 2;
-          scroller.scrollLeft = scrollLeft - walk;
-        });
+          const y = e.pageY || e
+            .touches[0]
+            .pageY;
+          const xDiff = Math.abs(x - startX);
+          const yDiff = Math.abs(y - startY);
+
+          // Only prevent default if we're definitely scrolling horizontally
+          if (xDiff > yDiff && xDiff > 5) {
+            e.preventDefault();
+            const walk = (x - startX) * 2;
+            scroller.scrollLeft = scrollLeft - walk;
+          }
+        };
+
+        const handleEnd = () => {
+          isDown = false;
+          scroller.style.cursor = 'grab';
+        };
+
+        // Mouse events
+        scroller.addEventListener('mousedown', handleStart);
+        scroller.addEventListener('mousemove', handleMove);
+        scroller.addEventListener('mouseup', handleEnd);
+        scroller.addEventListener('mouseleave', handleEnd);
+
+        // Touch events
+        scroller.addEventListener('touchstart', handleStart, {passive: false});
+        scroller.addEventListener('touchmove', handleMove, {passive: false});
+        scroller.addEventListener('touchend', handleEnd);
 
         // Disable buttons at scroll extremes
         const updateButtonStates = () => {
-          leftButton.disabled = scroller.scrollLeft <= 0;
-          rightButton.disabled = scroller.scrollLeft >= (track.scrollWidth - scroller.clientWidth);
+          const buffer = 5; // Small buffer to account for rounding
+          leftButton.disabled = scroller.scrollLeft <= buffer;
+          rightButton.disabled = scroller.scrollLeft >= (track.scrollWidth - scroller.clientWidth - buffer);
         };
 
         scroller.addEventListener('scroll', updateButtonStates);
         window.addEventListener('resize', updateButtonStates);
         updateButtonStates(); // Initial check
-      });
+      }); 
     </script>
     <script>
       document.addEventListener('DOMContentLoaded', () => {
         const blogscroller = document.querySelector('.blog__scroller');
-        const blogtrack = document.querySelector('.blog__list');
-        const card = document.querySelectorAll('.blog__list-item')
 
+        // Initialize scroll position
         blogscroller.scrollTo(0, 0);
 
-        // Touch/mouse drag scrolling
+        // Touch/mouse drag scrolling with vertical scroll detection
         let isDown = false;
-        let startX;
+        let startX,
+          startY;
         let scrollLeft;
 
-        blogscroller.addEventListener('mousedown', (e) => {
+        const handleTouchStart = (e) => {
           isDown = true;
-          startX = e.pageX - blogscroller.offsetLeft;
+          startX = e.pageX || e
+            .touches[0]
+            .pageX - blogscroller.offsetLeft;
+          startY = e.pageY || e
+            .touches[0]
+            .pageY;
           scrollLeft = blogscroller.scrollLeft;
           blogscroller.style.cursor = 'grabbing';
-        });
+        };
 
-        blogscroller.addEventListener('touchstart', (e) => {
-          isDown = true;
-          startX = e
-            .touches[0]
-            .pageX - blogscroller.offsetLeft;
-          scrollLeft = blogscroller.scrollLeft;
-        });
-
-        blogscroller.addEventListener('mouseleave', () => {
-          isDown = false;
-          blogscroller.style.cursor = 'grab';
-        });
-
-        blogscroller.addEventListener('mouseup', () => {
-          isDown = false;
-          blogscroller.style.cursor = 'grab';
-        });
-
-        blogscroller.addEventListener('touchend', () => {
-          isDown = false;
-        });
-
-        blogscroller.addEventListener('mousemove', (e) => {
+        const handleTouchMove = (e) => {
           if (!isDown) 
             return;
-          e.preventDefault();
-          const x = e.pageX - blogscroller.offsetLeft;
-          const walk = (x - startX) * 2; // Scroll speed multiplier
-          blogscroller.scrollLeft = scrollLeft - walk;
-        });
-
-        blogscroller.addEventListener('touchmove', (e) => {
-          if (!isDown) 
-            return;
-          e.preventDefault();
-          const x = e
+          
+          const x = e.pageX || e
             .touches[0]
             .pageX - blogscroller.offsetLeft;
-          const walk = (x - startX) * 2;
-          blogscroller.scrollLeft = scrollLeft - walk;
-        });
+          const y = e.pageY || e
+            .touches[0]
+            .pageY;
+          const xDiff = Math.abs(x - startX);
+          const yDiff = Math.abs(y - startY);
 
+          // Only prevent default if we're definitely scrolling horizontally
+          if (xDiff > yDiff && xDiff > 5) {
+            e.preventDefault();
+            const walk = (x - startX) * 2;
+            blogscroller.scrollLeft = scrollLeft - walk;
+          }
+        };
+
+        const handleTouchEnd = () => {
+          isDown = false;
+          blogscroller.style.cursor = 'grab';
+        };
+
+        // Mouse events
+        blogscroller.addEventListener('mousedown', handleTouchStart);
+        blogscroller.addEventListener('mousemove', handleTouchMove);
+        blogscroller.addEventListener('mouseup', handleTouchEnd);
+        blogscroller.addEventListener('mouseleave', handleTouchEnd);
+
+        // Touch events
+        blogscroller.addEventListener('touchstart', handleTouchStart, {passive: false});
+        blogscroller.addEventListener('touchmove', handleTouchMove, {passive: false});
+        blogscroller.addEventListener('touchend', handleTouchEnd);
       });
     </script>
     <script>
       document.addEventListener('DOMContentLoaded', () => {
         const teamscroller = document.querySelector('.team__scroller');
-        const teamtrack = document.querySelector('.team__list');
-        const teamcard = document.querySelectorAll('.team__list-item')
 
+        // Initialize scroll position
         teamscroller.scrollTo(0, 0);
 
-        // Touch/mouse drag scrolling
+        // Touch/mouse drag scrolling with vertical scroll detection
         let isDown = false;
-        let startX;
+        let startX,
+          startY;
         let scrollLeft;
 
-        teamscroller.addEventListener('mousedown', (e) => {
+        const handleTouchStart = (e) => {
           isDown = true;
-          startX = e.pageX - teamscroller.offsetLeft;
+          startX = e.pageX || e
+            .touches[0]
+            .pageX - teamscroller.offsetLeft;
+          startY = e.pageY || e
+            .touches[0]
+            .pageY;
           scrollLeft = teamscroller.scrollLeft;
           teamscroller.style.cursor = 'grabbing';
-        });
+        };
 
-        teamscroller.addEventListener('touchstart', (e) => {
-          isDown = true;
-          startX = e
-            .touches[0]
-            .pageX - teamscroller.offsetLeft;
-          scrollLeft = teamscroller.scrollLeft;
-        });
-
-        teamscroller.addEventListener('mouseleave', () => {
-          isDown = false;
-          teamscroller.style.cursor = 'grab';
-        });
-
-        teamscroller.addEventListener('mouseup', () => {
-          isDown = false;
-          teamscroller.style.cursor = 'grab';
-        });
-
-        teamscroller.addEventListener('touchend', () => {
-          isDown = false;
-        });
-
-        teamscroller.addEventListener('mousemove', (e) => {
+        const handleTouchMove = (e) => {
           if (!isDown) 
             return;
-          e.preventDefault();
-          const x = e.pageX - teamscroller.offsetLeft;
-          const walk = (x - startX) * 2; // Scroll speed multiplier
-          teamscroller.scrollLeft = scrollLeft - walk;
-        });
-
-        teamscroller.addEventListener('touchmove', (e) => {
-          if (!isDown) 
-            return;
-          e.preventDefault();
-          const x = e
+          
+          const x = e.pageX || e
             .touches[0]
             .pageX - teamscroller.offsetLeft;
-          const walk = (x - startX) * 2;
-          teamscroller.scrollLeft = scrollLeft - walk;
-        });
+          const y = e.pageY || e
+            .touches[0]
+            .pageY;
+          const xDiff = Math.abs(x - startX);
+          const yDiff = Math.abs(y - startY);
 
+          // Only prevent default if we're definitely scrolling horizontally
+          if (xDiff > yDiff && xDiff > 5) {
+            e.preventDefault();
+            const walk = (x - startX) * 2;
+            teamscroller.scrollLeft = scrollLeft - walk;
+          }
+        };
+
+        const handleTouchEnd = () => {
+          isDown = false;
+          teamscroller.style.cursor = 'grab';
+        };
+
+        // Mouse events
+        teamscroller.addEventListener('mousedown', handleTouchStart);
+        teamscroller.addEventListener('mousemove', handleTouchMove);
+        teamscroller.addEventListener('mouseup', handleTouchEnd);
+        teamscroller.addEventListener('mouseleave', handleTouchEnd);
+
+        // Touch events
+        teamscroller.addEventListener('touchstart', handleTouchStart, {passive: false});
+        teamscroller.addEventListener('touchmove', handleTouchMove, {passive: false});
+        teamscroller.addEventListener('touchend', handleTouchEnd);
       });
     </script>
   </head>

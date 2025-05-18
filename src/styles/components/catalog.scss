@@ -122,6 +122,9 @@
       -webkit-overflow-scrolling: touch;
       width: 100%;
       scrollbar-width: none;
+      overflow-y: clip;
+      touch-action: pan-y pinch-zoom;
+
     }
 
     &__list {
@@ -131,7 +134,10 @@
       justify-content: center;
       list-style: none;
       width: max-content;
-      @include unselectable;
+      
+      @include desk {
+        @include unselectable;
+      }
     }
 
     &__list-item {

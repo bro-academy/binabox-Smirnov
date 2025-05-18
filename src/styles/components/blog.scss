@@ -49,11 +49,14 @@
 
     &__scroller {
         overflow-x: auto;
+        overflow-y: hidden;
         scroll-snap-type: x mandatory;
         scroll-behavior: smooth;
         -webkit-overflow-scrolling: touch;
         width: 100%;
         scrollbar-width: none;
+
+        touch-action: pan-y pinch-zoom;
 
         @include tablet {
             scroll-snap-type: none;
@@ -66,15 +69,14 @@
         flex-direction: row;
         gap: 1rem;
         list-style: none;
-        justify-content: center;
         align-items: center;
-        // width: max-content; // card width breaks
-        @include unselectable;
 
         @include tablet {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 1.5rem;
+            justify-content: center;
+            @include unselectable;
         }
 
         @include desk {
